@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Filipino Mahjong: Joker Rules — Press Kit</title>
+<style>
+  @page { size: letter; margin: 0; }
+
+  :root {
+    --blue-dark: #06101e;
+    --blue-felt: #0e2448;
+    --blue-mid: #152038;
+    --gold: #c9a84c;
+    --gold-light: #e8c96d;
+    --ivory: #f7f2e4;
+    --ivory-dark: #e8dfc8;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Crimson Text', Georgia, serif;
+    background: var(--blue-dark);
+    color: var(--ivory);
+    line-height: 1.45;
+    width: 8.5in;
+    min-height: 11in;
+    margin: 0 auto;
+  }
+
+  .page {
+    background: radial-gradient(ellipse at 30% 20%, var(--blue-mid) 0%, var(--blue-dark) 70%);
+    padding: 0.5in 0.55in;
+    min-height: 11in;
+    position: relative;
+  }
+
+  /* HEADER */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1.5px solid var(--gold);
+    padding-bottom: 14px;
+    margin-bottom: 18px;
+  }
+  .header .brand {
+    font-family: 'Cinzel', Georgia, serif;
+    color: var(--gold);
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-bottom: 4px;
+  }
+  .header h1 {
+    font-family: 'Cinzel', Georgia, serif;
+    color: var(--ivory);
+    font-size: 26px;
+    letter-spacing: 1.5px;
+    line-height: 1.1;
+  }
+  .header h1 em { color: var(--gold); font-style: normal; }
+  .header .tag {
+    font-family: 'Cinzel', Georgia, serif;
+    color: var(--gold-light);
+    font-size: 9px;
+    letter-spacing: 2.5px;
+    text-align: right;
+  }
+  .header .press {
+    font-family: 'Cinzel', Georgia, serif;
+    color: var(--gold);
+    font-size: 11px;
+    letter-spacing: 4px;
+    border: 1px solid var(--gold);
+    padding: 4px 10px;
+    margin-top: 6px;
+    display: inline-block;
+  }
+
+  /* HERO + QUICK FACTS */
+  .top-grid {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 14px;
+    margin-bottom: 16px;
+  }
+  .hero-blurb {
+    background: rgba(14, 36, 72, 0.55);
+    border: 1px solid rgba(201, 168, 76, 0.3);
+    border-radius: 6px;
+    padding: 14px 16px;
+  }
+  .hero-blurb h2 {
+    font-family: 'Cinzel', Georgia, serif;
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    color: var(--gold);
+    margin-bottom: 8px;
+  }
+  .hero-blurb p {
+    font-size: 11.5px;
+    color: var(--ivory-dark);
+    margin-bottom: 7px;
+    line-height: 1.5;
+  }
+  .hero-blurb p:last-child { margin-bottom: 0; }
+  .hero-blurb p strong { color: var(--ivory); }
+
+  .facts {
+    background: rgba(14, 36, 72, 0.55);
+    border: 1px solid rgba(201, 168, 76, 0.3);
+    border-radius: 6px;
+    padding: 14px 16px;
+  }
+  .facts h2 {
+    font-family: 'Cinzel', Georgia, serif;
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    color: var(--gold);
+    margin-bottom: 10px;
+  }
+  .facts dl { font-size: 10.5px; color: var(--ivory-dark); }
+  .facts dt {
+    font-family: 'Cinzel', Georgia, serif;
+    color: var(--gold-light);
+    font-size: 8.5px;
+    letter-spacing: 1.5px;
+    margin-top: 6px;
+  }
+  .facts dt:first-child { margin-top: 0; }
+  .facts dd { margin-left: 0; line-height: 1.4; }
+
+  /* RULES BAND */
+  .rules-band {
+    margin-bottom: 16px;
+  }
+  .rules-band h2 {
+    font-family: 'Cinzel', Georgia, serif;
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    color: var(--gold);
+    margin-bottom: 9px;
+    text-align: center;
+  }
+  .divider {
+    width: 60px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    margin: 0 auto 10px;
+  }
+  .rules-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+  .rule {
+    background: rgba(14, 36, 72, 0.4);
+    border-left: 2px solid var(--gold);
+    padding: 8px 10px;
+  }
+  .rule .term {
+    font-family: 'Cinzel', Georgia, serif;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 3px;
+  }
+  .rule p {
+    font-size: 9.5px;
+    color: var(--ivory-dark);
+    line-height: 1.35;
+  }
+
+  /* SCREENSHOTS */
+  .shots {
+    margin-bottom: 14px;
+  }
+  .shots h2 {
+    font-family: 'Cinzel', Georgia, serif;
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    color: var(--gold);
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  .shots-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+  }
+  .shot {
+    border: 1px solid rgba(201, 168, 76, 0.4);
+    border-radius: 4px;
+    overflow: hidden;
+    background: var(--blue-felt);
+  }
+  .shot img {
+    display: block;
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+  }
+  .shot-cap {
+    font-family: 'Cinzel', Georgia, serif;
+    font-size: 7.5px;
+    letter-spacing: 1px;
+    color: var(--gold-light);
+    text-align: center;
+    padding: 4px 2px;
+    border-top: 1px solid rgba(201, 168, 76, 0.2);
+  }
+
+  /* PULL QUOTE */
+  .quote {
+    background: rgba(201, 168, 76, 0.1);
+    border-left: 3px solid var(--gold);
+    padding: 11px 14px;
+    margin-bottom: 14px;
+    font-style: italic;
+    color: var(--ivory);
+    font-size: 11px;
+    line-height: 1.5;
+  }
+  .quote .who {
+    display: block;
+    font-style: normal;
+    font-family: 'Cinzel', Georgia, serif;
+    font-size: 8.5px;
+    letter-spacing: 1.5px;
+    color: var(--gold);
+    margin-top: 5px;
+  }
+
+  /* CONTACT FOOTER */
+  .footer {
+    border-top: 1.5px solid var(--gold);
+    padding-top: 11px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 14px;
+    font-size: 9.5px;
+  }
+  .footer .col h3 {
+    font-family: 'Cinzel', Georgia, serif;
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: var(--gold);
+    margin-bottom: 5px;
+  }
+  .footer .col p,
+  .footer .col a {
+    color: var(--ivory-dark);
+    text-decoration: none;
+    line-height: 1.5;
+    word-break: break-word;
+  }
+  .footer .col a { color: var(--gold-light); }
+
+  /* GOOGLE FONTS via embedded link won't render in WeasyPrint without internet.
+     We rely on serif/sans-serif fallback if Cinzel/Crimson aren't installed.
+     Looks fine either way. */
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div>
+      <div class="brand">BAYANIHAN GAMES PRESENTS</div>
+      <h1>FILIPINO MAHJONG: <em>JOKER RULES</em></h1>
+    </div>
+    <div>
+      <div class="tag">17 TILES • JOKERS • BISAKLAT • FREE</div>
+      <span class="press">PRESS KIT</span>
+    </div>
+  </div>
+
+  <!-- HERO + FACTS -->
+  <div class="top-grid">
+    <div class="hero-blurb">
+      <h2>THE STORY</h2>
+      <p>If you're Pinoy, you know the sound. Tiles clacking on a folding table. Tito laughing too loud. Tita asking who shuffled wrong. Someone yelling <strong>"Bisaklat!"</strong> and the whole room losing it.</p>
+      <p>That's the mahjong I grew up watching. Jokers. Sagasa. Sietepares. Tódas. The 17-tile version we actually play. Every other mahjong app played it the international way — beautiful games, but not ours. So I built one that does it right.</p>
+      <p><strong>Filipino Mahjong: Joker Rules</strong> is the version Lola taught Tita who taught me — the first authentic Filipino mahjong app on the Google Play Store. Free, no sign-up, no paywall. Built by one Pinoy developer because the game my pamilya plays deserved a proper app.</p>
+    </div>
+    <div class="facts">
+      <h2>QUICK FACTS</h2>
+      <dl>
+        <dt>STUDIO</dt>
+        <dd>Bayanihan Games</dd>
+        <dt>PLATFORMS</dt>
+        <dd>Android (live) · iOS (in development) · Browser (filipinomj.com)</dd>
+        <dt>PRICE</dt>
+        <dd>Free · No IAP · No paywall</dd>
+        <dt>GENRE</dt>
+        <dd>Card · Mahjong · Single-player</dd>
+        <dt>RULESET</dt>
+        <dd>17-tile Filipino · Joker tiles · Bisaklat, Sagasa, Sietepares, Tódas, Escalera</dd>
+        <dt>RELEASE</dt>
+        <dd>2026</dd>
+      </dl>
+    </div>
+  </div>
+
+  <!-- RULES BAND -->
+  <div class="rules-band">
+    <h2>WHAT MAKES IT FILIPINO</h2>
+    <div class="divider"></div>
+    <div class="rules-grid">
+      <div class="rule"><span class="term">JOKER TILES</span><p>Wildcards that substitute for any suit — the signature mechanic missing from international mahjong apps.</p></div>
+      <div class="rule"><span class="term">BISAKLAT</span><p>Winning on the very first draw before any discard. The rarest, highest-paid hand in Filipino mahjong.</p></div>
+      <div class="rule"><span class="term">SAGASA</span><p>Completing your pung off another player's discard for an instant payout.</p></div>
+      <div class="rule"><span class="term">SIETEPARES</span><p>Seven pairs win — the high-risk, high-reward path for ambitious players.</p></div>
+      <div class="rule"><span class="term">TÓDAS</span><p>The full clean win. Both elegant and lucrative — a signature Filipino mahjong climax.</p></div>
+      <div class="rule"><span class="term">17-TILE HAND</span><p>The authentic Filipino variant — four more tiles than the 13-tile international version, changing the entire game flow.</p></div>
+    </div>
+  </div>
+
+  <!-- SCREENSHOTS -->
+  <div class="shots">
+    <h2>IN GAME</h2>
+    <div class="divider"></div>
+    <div class="shots-row">
+      <div class="shot">
+        <img src="../Images/Screenshots/FMJ1.jpeg" alt="The table">
+        <div class="shot-cap">THE TABLE</div>
+      </div>
+      <div class="shot">
+        <img src="../Images/Screenshots/FMJ3.jpeg" alt="Calls">
+        <div class="shot-cap">CALLS</div>
+      </div>
+      <div class="shot">
+        <img src="../Images/Screenshots/FMJ5.jpeg" alt="Tódas">
+        <div class="shot-cap">TÓDAS</div>
+      </div>
+      <div class="shot">
+        <img src="../Images/Screenshots/FMJ_howtoplay.jpeg" alt="How to play">
+        <div class="shot-cap">HOW TO PLAY</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PULL QUOTE -->
+  <div class="quote">
+    "Every other mahjong app played it the international way — beautiful games, but not ours. No Jokers. No Bisaklat. The version my pamilya plays just didn't exist on any app store. So I built it."
+    <span class="who">— ANDREW MEDINA, BAYANIHAN GAMES</span>
+  </div>
+
+  <!-- CONTACT FOOTER -->
+  <div class="footer">
+    <div class="col">
+      <h3>FOR PRESS &amp; PARTNERSHIPS</h3>
+      <p><strong style="color:var(--ivory)">Andrew Medina</strong> · Solo developer, Bayanihan Games</p>
+      <p>Available for interviews, demos, and additional materials.</p>
+    </div>
+    <div class="col">
+      <h3>CONTACT</h3>
+      <p><a href="mailto:filipinomahjong@gmail.com">filipinomahjong@gmail.com</a></p>
+    </div>
+    <div class="col">
+      <h3>LINKS</h3>
+      <p><a href="https://filipinomj.com">filipinomj.com</a></p>
+      <p><a href="https://play.google.com/store/apps/details?id=com.bayanihangames.filipinomj">Google Play</a></p>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
