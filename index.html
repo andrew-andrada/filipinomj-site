@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Filipino Mahjong: Joker Rules — Play Online Free</title>
+<meta name="description" content="Play Filipino Mahjong online free. Joker rules, sagasa, bisaklat, sietepares, and the classic 17-tile game played across the Philippines. In your browser or as an Android app.">
+
+<!-- Open Graph / social previews -->
+<meta property="og:title" content="Filipino Mahjong: Joker Rules">
+<meta property="og:description" content="Play the classic 17-tile Filipino Mahjong online — joker rules, sagasa, bisaklat, and more. Free in your browser.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://filipinomj.com/">
+<meta property="og:image" content="https://filipinomj.com/Images/App%20Icon.jpg">
+
+<!-- Twitter card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Filipino Mahjong: Joker Rules">
+<meta name="twitter:description" content="Play the classic 17-tile Filipino Mahjong online — free in your browser.">
+<meta name="twitter:image" content="https://filipinomj.com/Images/App%20Icon.jpg">
+
+<link rel="icon" type="image/jpeg" href="Images/App Icon.jpg">
+<link rel="apple-touch-icon" href="Images/App Icon.jpg">
+
+<!-- Google Analytics (matches game page) -->
+<script>if(!window.Capacitor){var ga=document.createElement('script');ga.async=true;ga.src='https://www.googletagmanager.com/gtag/js?id=G-T8VQ9275N0';document.head.appendChild(ga);window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-T8VQ9275N0');}</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --blue-dark:#06101e;
+  --blue-felt:#0e2448;
+  --blue-mid:#152038;
+  --gold:#c9a84c;
+  --gold-light:#e8c96d;
+  --ivory:#f7f2e4;
+  --ivory-dark:#e8dfc8;
+  --wood-rim:#2a1208;
+  --joker-purple:#7b2d8b;
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Crimson Text',Georgia,serif;
+  background:radial-gradient(ellipse at 40% 30%,var(--blue-mid) 0%,var(--blue-dark) 60%,#020810 100%);
+  min-height:100vh;
+  color:var(--ivory);
+  line-height:1.6;
+  overflow-x:hidden;
+}
+
+/* ---------- Header ---------- */
+header{
+  width:100%;
+  background:linear-gradient(180deg,#040c18 0%,#0a1628 100%);
+  border-bottom:2px solid var(--gold);
+  padding:10px 20px;
+  display:flex;align-items:center;justify-content:space-between;
+  box-shadow:0 3px 20px rgba(0,0,0,.7);
+  position:sticky;top:0;z-index:10;
+}
+header .brand{
+  font-family:'Cinzel',serif;
+  font-size:18px;
+  color:var(--gold);
+  letter-spacing:3px;
+  text-shadow:0 0 20px rgba(201,168,76,.35);
+  text-decoration:none;
+}
+header nav{display:flex;gap:6px}
+header nav a{
+  font-family:'Cinzel',serif;
+  font-size:11px;
+  color:var(--gold);
+  text-decoration:none;
+  padding:4px 10px;
+  border:1px solid rgba(201,168,76,.35);
+  border-radius:5px;
+  letter-spacing:1px;
+  transition:background .15s ease;
+}
+header nav a:hover{background:rgba(201,168,76,.12)}
+
+/* ---------- Hero ---------- */
+.hero{
+  max-width:1100px;
+  margin:0 auto;
+  padding:60px 24px 40px;
+  text-align:center;
+  position:relative;
+}
+/* Art-deco gold frame: thin gold outline + four corner brackets.
+   Sits inside the hero and holds the logo, headline, CTAs. */
+.hero-frame{
+  position:relative;
+  max-width:720px;
+  margin:0 auto;
+  padding:44px 36px 40px;
+  border:1px solid rgba(201,168,76,.45);
+  border-radius:4px;
+  box-shadow:inset 0 0 60px rgba(201,168,76,.06),0 0 40px rgba(0,0,0,.35);
+}
+.hero-frame::before,
+.hero-frame::after,
+.hero-frame > .corner-bl,
+.hero-frame > .corner-br{
+  content:'';
+  position:absolute;
+  width:22px;height:22px;
+  border:2px solid var(--gold);
+}
+.hero-frame::before{top:-2px;left:-2px;border-right:none;border-bottom:none}
+.hero-frame::after{top:-2px;right:-2px;border-left:none;border-bottom:none}
+.hero-frame > .corner-bl{bottom:-2px;left:-2px;border-right:none;border-top:none}
+.hero-frame > .corner-br{bottom:-2px;right:-2px;border-left:none;border-top:none}
+.hero-frame > *:last-child{margin-bottom:0}
+@media (max-width:600px){
+  .hero-frame{padding:30px 18px 26px;max-width:95%}
+  .hero-frame::before,.hero-frame::after,
+  .hero-frame > .corner-bl,.hero-frame > .corner-br{width:14px;height:14px}
+}
+.hero .logo{
+  max-width:520px;width:85%;
+  height:auto;
+  margin:0 auto 20px;
+  filter:drop-shadow(0 4px 30px rgba(201,168,76,.25));
+}
+.hero .tagline{
+  font-family:'Cinzel',serif;
+  font-size:14px;
+  color:var(--gold-light);
+  letter-spacing:4px;
+  margin-bottom:14px;
+  opacity:.85;
+}
+.hero h1{
+  font-family:'Cinzel',serif;
+  font-size:clamp(28px,5vw,44px);
+  color:var(--ivory);
+  font-weight:600;
+  letter-spacing:2px;
+  margin-bottom:18px;
+  line-height:1.2;
+}
+.hero h1 em{color:var(--gold);font-style:normal}
+.hero .lede{
+  font-size:clamp(16px,2.2vw,19px);
+  max-width:640px;
+  margin:0 auto 34px;
+  color:var(--ivory-dark);
+}
+.cta-row{
+  display:flex;gap:14px;justify-content:center;flex-wrap:wrap;
+  margin-bottom:18px;
+}
+.btn{
+  font-family:'Cinzel',serif;
+  font-size:14px;
+  letter-spacing:3px;
+  padding:14px 32px;
+  border-radius:8px;
+  text-decoration:none;
+  cursor:pointer;
+  border:none;
+  transition:transform .15s ease,box-shadow .15s ease;
+  display:inline-block;
+}
+.btn-primary{
+  background:linear-gradient(180deg,var(--gold-light) 0%,var(--gold) 100%);
+  color:#0a0800;
+  font-weight:700;
+  box-shadow:0 4px 20px rgba(201,168,76,.4),inset 0 1px 0 rgba(255,255,255,.3);
+}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 6px 26px rgba(201,168,76,.55)}
+.btn-secondary{
+  background:transparent;
+  color:var(--gold);
+  border:1px solid rgba(201,168,76,.5);
+}
+.btn-secondary:hover{background:rgba(201,168,76,.12)}
+
+/* Decorative floating tiles */
+.tile-deco{
+  position:absolute;
+  width:60px;height:80px;
+  background:linear-gradient(180deg,var(--ivory) 0%,var(--ivory-dark) 100%);
+  border-radius:6px;
+  box-shadow:0 4px 14px rgba(0,0,0,.5),inset 0 -3px 0 rgba(0,0,0,.15);
+  display:flex;align-items:center;justify-content:center;
+  padding:8px;
+  opacity:.85;
+}
+.tile-deco img{max-width:100%;max-height:100%}
+.tile-deco.t1{top:30px;left:5%;transform:rotate(-12deg)}
+.tile-deco.t2{top:80px;right:6%;transform:rotate(14deg)}
+.tile-deco.t3{bottom:20px;left:8%;transform:rotate(8deg)}
+.tile-deco.t4{bottom:50px;right:9%;transform:rotate(-10deg)}
+
+/* Floating call-word decorations — scatter around the hero alongside the tiles */
+.call-deco{
+  position:absolute;
+  font-family:'Cinzel',serif;
+  font-weight:700;
+  color:var(--gold);
+  letter-spacing:2px;
+  text-shadow:0 0 18px rgba(201,168,76,.35),0 2px 4px rgba(0,0,0,.4);
+  pointer-events:none;
+  white-space:nowrap;
+  opacity:.55;
+}
+.call-deco.c1{top:180px;left:14%;font-size:30px;transform:rotate(-6deg)}
+.call-deco.c2{top:120px;right:18%;font-size:26px;transform:rotate(8deg)}
+.call-deco.c3{top:320px;left:2%;font-size:22px;transform:rotate(-10deg)}
+.call-deco.c4{top:280px;right:3%;font-size:28px;transform:rotate(12deg)}
+.call-deco.c5{bottom:110px;left:16%;font-size:20px;transform:rotate(5deg);letter-spacing:3px}
+.call-deco.c6{bottom:150px;right:14%;font-size:24px;transform:rotate(-7deg)}
+
+@media (max-width:760px){
+  .tile-deco{width:44px;height:60px;padding:5px}
+  .tile-deco.t1{top:10px;left:2%}
+  .tile-deco.t2{top:40px;right:2%}
+  .tile-deco.t3,.tile-deco.t4{display:none}
+  .call-deco{font-size:16px!important;letter-spacing:1px!important}
+  .call-deco.c3,.call-deco.c5,.call-deco.c6{display:none}
+  .call-deco.c1{top:80px;left:4%}
+  .call-deco.c2{top:50px;right:4%}
+  .call-deco.c4{top:140px;right:2%}
+}
+
+/* Lightbox for enlarging screenshots */
+.lightbox{
+  position:fixed;
+  inset:0;
+  background:rgba(3,8,16,.92);
+  backdrop-filter:blur(6px);
+  -webkit-backdrop-filter:blur(6px);
+  z-index:200;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:40px 20px;
+  cursor:zoom-out;
+}
+.lightbox.active{display:flex;animation:lb-fade .2s ease-out}
+@keyframes lb-fade{from{opacity:0}to{opacity:1}}
+.lightbox img{
+  max-width:100%;
+  max-height:calc(100vh - 80px);
+  box-shadow:0 20px 60px rgba(0,0,0,.8);
+  border-radius:12px;
+  border:1px solid rgba(201,168,76,.3);
+  cursor:default;
+}
+.lightbox-close{
+  position:absolute;
+  top:18px;right:22px;
+  background:rgba(0,0,0,.5);
+  color:var(--gold);
+  border:1px solid var(--gold);
+  border-radius:50%;
+  width:42px;height:42px;
+  font-size:18px;
+  cursor:pointer;
+  font-family:'Cinzel',serif;
+  display:flex;align-items:center;justify-content:center;
+  transition:background .15s ease;
+}
+.lightbox-close:hover{background:rgba(201,168,76,.18)}
+.screens .shot{cursor:zoom-in}
+
+/* ---------- Sections ---------- */
+section{
+  max-width:1000px;
+  margin:0 auto;
+  padding:50px 24px;
+}
+section h2{
+  font-family:'Cinzel',serif;
+  font-size:clamp(22px,3.5vw,30px);
+  color:var(--gold);
+  letter-spacing:3px;
+  text-align:center;
+  margin-bottom:10px;
+  text-shadow:0 0 20px rgba(201,168,76,.25);
+}
+section .section-sub{
+  text-align:center;
+  color:var(--ivory-dark);
+  opacity:.75;
+  max-width:600px;
+  margin:0 auto 36px;
+  font-size:16px;
+}
+.divider{
+  width:80px;height:2px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  margin:0 auto 28px;
+}
+
+/* Feature grid */
+.features{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:22px;
+}
+.feature{
+  background:rgba(14,36,72,.4);
+  border:1px solid rgba(201,168,76,.18);
+  border-radius:12px;
+  padding:26px 22px;
+  text-align:center;
+  transition:border-color .2s ease,transform .2s ease;
+}
+.feature:hover{border-color:rgba(201,168,76,.45);transform:translateY(-3px)}
+.feature .icon{
+  font-size:34px;
+  margin-bottom:12px;
+  color:var(--gold);
+}
+.feature h3{
+  font-family:'Cinzel',serif;
+  color:var(--gold-light);
+  font-size:14px;
+  letter-spacing:2px;
+  margin-bottom:10px;
+}
+.feature p{color:var(--ivory-dark);font-size:15px}
+
+/* Screenshots gallery */
+.screens{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:18px;
+  max-width:900px;
+  margin:0 auto;
+}
+.screens .shot{
+  position:relative;
+  border-radius:14px;
+  overflow:hidden;
+  border:1px solid rgba(201,168,76,.28);
+  background:#0a1628;
+  box-shadow:0 8px 24px rgba(0,0,0,.5),inset 0 0 0 1px rgba(255,255,255,.03);
+  transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
+}
+.screens .shot:hover{
+  transform:translateY(-4px);
+  border-color:rgba(201,168,76,.55);
+  box-shadow:0 14px 30px rgba(0,0,0,.6);
+}
+.screens .shot img{
+  display:block;
+  width:100%;
+  height:auto;
+}
+.screens .caption{
+  font-family:'Cinzel',serif;
+  font-size:11px;
+  letter-spacing:2px;
+  color:var(--gold-light);
+  text-align:center;
+  padding:10px 8px;
+  background:linear-gradient(180deg,rgba(14,36,72,.4) 0%,rgba(6,16,30,.7) 100%);
+  border-top:1px solid rgba(201,168,76,.18);
+}
+
+/* Rules preview */
+.rules-preview{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:16px;
+}
+.rule-card{
+  background:linear-gradient(180deg,rgba(14,36,72,.5) 0%,rgba(6,16,30,.5) 100%);
+  border-left:3px solid var(--gold);
+  padding:18px 22px;
+  border-radius:6px;
+}
+.rule-card .term{
+  font-family:'Cinzel',serif;
+  color:var(--gold);
+  font-size:13px;
+  letter-spacing:2px;
+  margin-bottom:6px;
+  display:block;
+}
+.rule-card p{color:var(--ivory-dark);font-size:15px;margin:0}
+
+/* Big CTA band */
+.cta-band{
+  background:linear-gradient(180deg,#0a1628 0%,#040c18 100%);
+  border-top:1px solid rgba(201,168,76,.25);
+  border-bottom:1px solid rgba(201,168,76,.25);
+  padding:50px 24px;
+  text-align:center;
+  margin-top:20px;
+}
+.cta-band h2{margin-bottom:8px}
+.cta-band p{color:var(--ivory-dark);margin-bottom:24px;opacity:.85}
+
+/* Footer */
+footer{
+  padding:30px 24px 40px;
+  text-align:center;
+  color:var(--ivory-dark);
+  opacity:.6;
+  font-size:13px;
+}
+footer a{color:var(--gold);text-decoration:none}
+footer a:hover{text-decoration:underline}
+footer .foot-links{margin-bottom:10px}
+footer .foot-links a{margin:0 10px;letter-spacing:1px;font-family:'Cinzel',serif;font-size:11px}
+</style>
+</head>
+<body>
+
+<header>
+  <a href="/" class="brand">FILIPINO MAHJONG</a>
+  <nav>
+    <a href="#features">About</a>
+    <a href="how-to-play.html">Rules</a>
+    <a href="play.html">Play</a>
+  </nav>
+</header>
+
+<!-- Hero -->
+<div class="hero">
+  <div class="tile-deco t1"><img src="Images/Tile faces/Suits/08-characters-1.svg" alt=""></div>
+  <div class="tile-deco t2"><img src="Images/Tile faces/Flowers/03-red-dragon.svg" alt=""></div>
+  <div class="tile-deco t3"><img src="Images/Tile faces/Flowers/35-spring.svg" alt=""></div>
+  <div class="tile-deco t4"><img src="Images/Tile faces/Suits/17-circles-1.svg" alt=""></div>
+  <div class="call-deco c1" aria-hidden="true">Pung!</div>
+  <div class="call-deco c2" aria-hidden="true">Chow!</div>
+  <div class="call-deco c3" aria-hidden="true">7 Pairs</div>
+  <div class="call-deco c4" aria-hidden="true">Búnot!</div>
+  <div class="call-deco c5" aria-hidden="true">Sagása!</div>
+  <div class="call-deco c6" aria-hidden="true">Tódas!</div>
+
+  <div class="hero-frame">
+    <span class="corner-bl"></span><span class="corner-br"></span>
+    <img src="filipino_mj_logo_v3.svg" alt="Filipino Mahjong" class="logo">
+    <div class="cta-row">
+      <a href="play.html" class="btn btn-primary">PLAY NOW</a>
+      <a href="how-to-play.html" class="btn btn-secondary">HOW TO PLAY</a>
+    </div>
+    <div class="tagline">JOKER RULES • 17 TILES • FREE TO PLAY</div>
+    <h1>The way Pinoys play at home with <em>jokers</em>, now in your browser or mobile.</h1>
+    <p class="lede">Jokers. Sagasa. Bisaklat. Sietepares. The rules your Lola taught you, faithfully rebuilt. Play free online or download the Android app (Apple coming soon).</p>
+  </div>
+</div>
+
+<!-- Features -->
+<section id="features">
+  <h2>WHY THIS ONE</h2>
+  <div class="divider"></div>
+  <p class="section-sub">Finally a Filipino version with jokers, with real sounds and calls from your Tita. Laro tayo!</p>
+
+  <div class="features">
+    <div class="feature">
+      <div class="icon">◆</div>
+      <h3>AUTHENTIC RULES</h3>
+      <p>17-tile hand, jokers, todas, 7 pairs, escalera, and double pay for bunot!</p>
+    </div>
+    <div class="feature">
+      <div class="icon">♪</div>
+      <h3>TABLE SOUNDS</h3>
+      <p>Tile shuffles, discards, and the hand-called "pung," "chow," "kang" — recorded for that real family feel.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">◈</div>
+      <h3>PLAY ANYWHERE</h3>
+      <p>Browser on desktop or mobile, or install the free Android app (iOS coming soon). Same game, same rules, wherever you are.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">✦</div>
+      <h3>FREE. ALWAYS.</h3>
+      <p>No sign-up, no paywall, no pay-to-win. Open the page, deal the tiles, play.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Rules preview -->
+<section id="rules">
+  <h2>THE FILIPINO RULES</h2>
+  <div class="divider"></div>
+  <p class="section-sub">Pinoy style. Welcome to all players! Free tuition to learn how to play compared to paying your Tito for lessons. Learn how to play Filipino Mahjong in a round or two.</p>
+
+  <div class="rules-preview">
+    <div class="rule-card">
+      <span class="term">JOKERS</span>
+      <p>Wildcards that substitute for any suit (Balls, Char, or Sticks). Use them to todas or for more ambition and get 7 pairs!</p>
+    </div>
+    <div class="rule-card">
+      <span class="term">FLOWERS</span>
+      <p>Begin with no flowers or collect 13 for an immediate payout.</p>
+    </div>
+    <div class="rule-card">
+      <span class="term">Bunot</span>
+      <p>Draw the winning tile and double your earnings! Don't wait too long or Kuya will Todas.</p>      
+    </div>
+    <div class="rule-card">
+      <span class="term">SIETEPARES</span>
+      <p>Only for those with ambition. Get double the payout for 7 pairs.</p>
+    </div>
+    <div class="rule-card">
+      <span class="term">SAGASA</span>
+      <p>Complete your pung and earn an immediate payout.</p>
+    </div>
+    <div class="rule-card">
+      <span class="term">BISAKLAT</span>
+      <p>Winning on the very first draw before any discard. Rare, and paid accordingly.</p>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:28px">
+    <a href="how-to-play.html" class="btn btn-secondary">READ THE FULL RULES</a>
+  </div>
+</section>
+
+<!-- Screenshots -->
+<section id="screens-section">
+  <h2>SEE IT IN PLAY</h2>
+  <div class="divider"></div>
+  <p class="section-sub">The real game, on your phone or in your browser. Same rules, same sounds.</p>
+
+  <div class="screens">
+    <div class="shot">
+      <img src="Images/Screenshots/Home screen.jpeg" alt="Home screen" loading="lazy">
+      <div class="caption">MAIN MENU</div>
+    </div>
+    <div class="shot">
+      <img src="Images/Screenshots/FMJ1.jpeg" alt="In-game board view" loading="lazy">
+      <div class="caption">THE TABLE</div>
+    </div>
+    <div class="shot">
+      <img src="Images/Screenshots/FMJ3.jpeg" alt="Calling a meld" loading="lazy">
+      <div class="caption">CALLS</div>
+    </div>
+    <div class="shot">
+      <img src="Images/Screenshots/FMJ5.jpeg" alt="Winning hand" loading="lazy">
+      <div class="caption">TÓDAS</div>
+    </div>
+    <div class="shot">
+      <img src="Images/Screenshots/FMJ_howtoplay.jpeg" alt="How to play screen" loading="lazy">
+      <div class="caption">HOW TO PLAY</div>
+    </div>
+    <div class="shot">
+      <img src="Images/Screenshots/FMJ_leaderboard.jpeg" alt="Leaderboard and stats" loading="lazy">
+      <div class="caption">LEADERBOARD</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA band -->
+<div class="cta-band">
+  <h2>READY TO DEAL?</h2>
+  <div class="divider"></div>
+  <p>Three AI opponents. Authentic rules. One click.</p>
+  <a href="play.html" class="btn btn-primary">PLAY FILIPINO MAHJONG</a>
+</div>
+
+<footer>
+  <div class="foot-links">
+    <a href="play.html">PLAY</a>
+    <a href="how-to-play.html">RULES</a>
+    <a href="privacy-policy.html">PRIVACY</a>
+  </div>
+  <div>© <span id="year"></span> filipinomj.com • Built with respect for the tradition.</div>
+</footer>
+
+<!-- Lightbox for screenshot enlargement -->
+<div id="lightbox" class="lightbox" role="dialog" aria-label="Enlarged screenshot" aria-hidden="true">
+  <button class="lightbox-close" aria-label="Close">✕</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Screenshot lightbox
+  (function(){
+    var box=document.getElementById('lightbox');
+    var boxImg=document.getElementById('lightbox-img');
+    function open(src,alt){
+      boxImg.src=src;
+      boxImg.alt=alt||'';
+      box.classList.add('active');
+      box.setAttribute('aria-hidden','false');
+      document.body.style.overflow='hidden';
+    }
+    function close(){
+      box.classList.remove('active');
+      box.setAttribute('aria-hidden','true');
+      document.body.style.overflow='';
+    }
+    document.querySelectorAll('.screens .shot').forEach(function(shot){
+      shot.addEventListener('click',function(){
+        var img=shot.querySelector('img');
+        if(img)open(img.src,img.alt);
+      });
+    });
+    // Click on backdrop or close button closes; click on image itself does nothing
+    box.addEventListener('click',close);
+    boxImg.addEventListener('click',function(e){e.stopPropagation();});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+  })();
+</script>
+
+</body>
+</html>
