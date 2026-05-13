@@ -32,7 +32,7 @@ But every mahjong app I tried played it the international way — Hong Kong, Rii
 
 So I built one that does it right.
 
-**Filipino Mahjong: Joker Rules** is the version Lola taught Tita who taught me. Authentic 17-tile gameplay, three AI opponents, real table sounds and calls, the full Pinoy rule set. Free, no sign-up, no paywall — built in my spare time as one Pinoy developer because the game my family plays deserved a proper app.
+**Filipino Mahjong: Joker Rules** is the version Lola taught Tita who taught me. Authentic 17-tile gameplay, real table sounds and calls, the full Pinoy rule set. I even named the bots after the people I learned from — you'll be sitting across from **Lola Winnie**, **Tita Nene**, and **Kuya Edgar** every game. Climb a 7-tier Filipino ranked ladder from Baguhan all the way to Hari ng Mahjong. Free, no sign-up, no paywall — built in my spare time as one Fil-Am developer because the game my family plays deserved a proper app.
 
 Whether you're in Manila or Mississauga, whether your titos taught you when you were eight or you just watched from the doorway — this one's for you.
 
@@ -46,4 +46,5 @@ Mga kababayan — laro na tayo.
 
 - Swap "Lola taught Tita who taught me" for whoever actually taught you. The specific lineage hits harder than the generic.
 - The "Manila or Mississauga" line is intentional alliteration — pick whatever Pinoy diaspora city pair feels right (Manila/Mississauga, Manila/Milpitas, Quezon/Queens, etc.). It signals you understand the diaspora reader without listing every city.
-- "Built in my spare time as one Pinoy developer" — keep this. Solo-dev framing is a story people root for.
+- "Built in my spare time as one Fil-Am developer" — keep this. Solo-dev framing is a story people root for.
+- The named bots (Lola Winnie, Tita Nene, Kuya Edgar) are the strongest piece of the v1.5 story. If you ever want to share who they're actually named after in real life, that personal hook lands even harder. Even just "Lola Winnie is who I learned from" in a TikTok caption is a different kind of post from "three AI opponents."

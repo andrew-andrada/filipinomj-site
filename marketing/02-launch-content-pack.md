@@ -20,7 +20,7 @@ Replace `[PLAY_STORE_LINK]` everywhere with:
 
 The 17-tile Pinoy version. Jokers. Bisaklat. Sagása. Sietepares. Finally an app that plays it the way our titos and titas play.
 
-Three AI opponents. Real table sounds. The calls you grew up hearing.
+Sit down with **Lola Winnie, Tita Nene, and Kuya Edgar**. Climb a 7-tier Filipino ranked ladder from Baguhan all the way to Hari ng Mahjong. Real table sounds, the calls you grew up hearing, 56 milestones to chase.
 
 Free, no sign-up, no paywall.
 
@@ -114,6 +114,76 @@ Filipino Mahjong: Joker Rules. Free on Android. The kitchen table, in your pocke
 
 ---
 
+## Post 6 — Meet the bots (v1.5 — highest cultural resonance)
+**Suggested image:** Three-panel carousel or single image showing the three named opponents — Lola Winnie (West seat), Tita Nene (North seat), Kuya Edgar (East seat). Use in-game screenshots of each seat with the name labels visible. Could also be a fun illustration: three stylized portraits in the gold-on-blue site palette.
+
+**Format:** 4-slide carousel.
+
+| Slide | Visual | Text |
+|---|---|---|
+| 1 | Gold-on-blue title card | "Meet your opponents." |
+| 2 | Lola Winnie at the West seat | "🪑 WEST · LOLA WINNIE — She's seen every hand. She's waiting for you." |
+| 3 | Tita Nene at the North seat | "🪑 NORTH · TITA NENE — She deals first. She watches everyone." |
+| 4 | Kuya Edgar at the East seat | "🪑 EAST · KUYA EDGAR — He plays for keeps. Don't underestimate him." |
+
+(Bonus slide 5 if you want: "Beat all three to become Table Champion. 🃏 Link in bio.")
+
+**Caption:**
+
+I named the bots after the people I learned from. The first time you face Lola Winnie at the table, something clicks — this isn't just a mahjong app, it's the version we play.
+
+Lola Winnie. Tita Nene. Kuya Edgar. Three named AI opponents (plus a rotating cast of titos, titas, and lolos who sub in). Beat all three and unlock Table Champion.
+
+Free on Android. iPhone coming. Link in bio. 🀄
+
+#FilipinoMahjong #LolaWinnie #TitaNene #KuyaEdgar #Pinoy #FilipinoCommunity #MahjongPilipino #BayanihanGames
+
+---
+
+## Post 7 — Climb the ranks (v1.5)
+**Suggested image:** A vertical ladder graphic showing the 7 Filipino rank tiers from Baguhan (bottom, bronze) to Hari ng Mahjong (top, gold), styled in the gold-on-blue palette. Each tier with its Tagalog name and a brief gloss.
+
+**Caption:**
+
+Seven Filipino tiers. From Baguhan (beginner) to Hari ng Mahjong (king of mahjong).
+
+🥉 Baguhan
+🥈 Tito / Tita
+🥉 Manlalaro
+🟣 Mahjongista
+🟠 Dalubhasa
+🔴 Kampeon
+👑 Hari ng Mahjong
+
+Every win earns rating. Every loss costs some. Where do you start? Where can you climb?
+
+Elo-based ranked mode unlocks after your 5th game. Beat bots ranked above you and watch your rating jump. Beat Lola Winnie at very-hard difficulty and you're not in Baguhan anymore.
+
+Free on Android. iPhone coming. Link in bio. 🀄
+
+#FilipinoMahjong #HariNgMahjong #PinoyGaming #Mahjong #MahjongPilipino #Baguhan #Mahjongista #FilipinoCommunity
+
+---
+
+## Post 8 — Daily challenges (v1.5)
+**Suggested image:** Screenshot of the daily challenge banner from in-game ("📅 Daily Challenge — Win 1 game today · +100 XP") on a phone, with the streak count visible.
+
+**Caption:**
+
+A new challenge every day. Build a streak. Miss a day per week and your grace day saves you — miss two and you start over.
+
+🌞 Common: "Play 3 games today" · +80 XP
+🌒 Uncommon: "Win a game without calling Chow" · +140 XP
+🌑 Rare: "Win with Bisaklat today" · big XP
+
+The kind of small daily ritual the game my pamilya plays deserves. Open the app, claim today's challenge, deal the tiles.
+
+Free on Android. iPhone coming. 🀄
+
+#FilipinoMahjong #DailyChallenge #PinoyGaming #MahjongPilipino #FilipinoCommunity
+
+---
+
 # 2. Facebook (post for Filipino community groups)
 
 **Where to post (search and join these first — don't cold-post):**
@@ -134,9 +204,12 @@ It's the 17-tile Pinoy version with Jokers, Bisaklat, Sagása, Sietepares — th
 
 Why I built it: every other mahjong app I tried played it the wrong way. No Jokers. No Bisaklat. No Sietepares. So I made one that does it right.
 
-✅ Three AI opponents
+✅ Three named AI opponents — Lola Winnie, Tita Nene, Kuya Edgar (plus a rotating cast)
 ✅ Real table sounds and calls
 ✅ Authentic Filipino rules (17 tiles, Jokers, all the calls)
+✅ 7-tier Filipino ranked ladder (Baguhan → Hari ng Mahjong)
+✅ 30-level XP system + 56 achievements to chase
+✅ Daily challenges with streak rewards
 ✅ Free, no sign-up, no paywall
 ✅ Plays in your browser too — filipinomj.com
 
@@ -162,8 +235,12 @@ So I built it.
 
 **What's in:**
 - Authentic 17-tile Filipino rules
-- Jokers, Sagása, Bisaklat, Sietepares, Tódas
-- Three AI opponents
+- Jokers, Sagása, Bisaklat, Sietepares, Tódas, Escalera
+- Three named AI opponents: Lola Winnie, Tita Nene, Kuya Edgar (plus rotating cast)
+- 4 difficulty levels — bots scale by your ranked rating
+- 7-tier Filipino ranked ladder: Baguhan → Tito/Tita → Manlalaro → Mahjongista → Dalubhasa → Kampeon → Hari ng Mahjong
+- 30-level XP system with soft-prestige stars past Lv 30
+- 56 achievements + daily challenges with streak rewards
 - Real table sounds and calls
 - Free on Google Play (no sign-up, no paywall, no aggressive ads)
 - Also playable in browser at filipinomj.com
@@ -184,7 +261,7 @@ Would love feedback from anyone who plays. Did I get the rules right? Anything o
 
 Free on Google Play. Solo Pinoy developer. Built it because no existing app played the rules my family uses.
 
-Includes Jokers, Sagása, Bisaklat, Sietepares, Tódas. Three AI opponents. Real table sounds. Browser-playable too at filipinomj.com.
+Includes Jokers, Sagása, Bisaklat, Sietepares, Tódas, Escalera. Three named AI opponents (Lola Winnie, Tita Nene, Kuya Edgar) across 4 difficulty levels. 7-tier Filipino ranked ladder (Baguhan → Hari ng Mahjong). 56 achievements. Daily challenges. Real table sounds. Browser-playable too at filipinomj.com.
 
 iOS version next. Looking for honest feedback from anyone who knows the game. Salamat po.
 
@@ -198,12 +275,14 @@ iOS version next. Looking for honest feedback from anyone who knows the game. Sa
 
 **Body:**
 
-Solo developer here. Just launched my first Android game. It's a free single-player Filipino mahjong simulator with the actual Filipino rule set — Jokers, 17 tiles per hand, Sagása, Bisaklat, Sietepares, Tódas.
+Solo developer here. Just launched my first Android game. It's a free single-player Filipino mahjong simulator with the actual Filipino rule set — Jokers, 17 tiles per hand, Sagása, Bisaklat, Sietepares, Tódas, Escalera.
 
 Different from international/Hong Kong/Riichi mahjong. If you've never played the Filipino variant, the in-game tutorial walks you through it.
 
 - Free, no IAP, no aggressive ads
-- Three AI opponents
+- Three named AI opponents across 4 difficulty levels (Elo-based — bots scale with you)
+- 30-level XP + 7-tier ranked ladder + 56 achievements
+- Daily challenges with streak rewards (and one grace day per week)
 - Single-player, plays offline
 - Real table sounds and call audio
 - Browser version too: filipinomj.com
@@ -233,7 +312,7 @@ I built a free Android app + browser version because no existing app handles the
 Browser: filipinomj.com
 Android: [PLAY_STORE_LINK]
 
-Free, single-player vs AI. iOS coming.
+Free, single-player vs AI (3 named bots, 4 difficulty levels with Elo-style rating). 30-level XP + 7-tier ranked ladder (Baguhan → Hari ng Mahjong). iOS coming.
 
 ---
 
@@ -286,7 +365,25 @@ Tag the tito who taught you these. Free on Android — link in bio. 🇵🇭🀄
 
 ---
 
-## Script 3 — "I built this" personal story (60s, highest organic potential)
+## Script 3 — "Meet Lola Winnie" character intro (30s, v1.5 — strongest cultural pull)
+
+**(0–2s) Hook:** In-game shot of the West seat showing "Lola Winnie" name label. On-screen text: "Meet Lola Winnie."
+
+**(2–10s):** Show Lola Winnie playing — drawing a tile, calling Pung. Voiceover: "She's at the West seat. She's seen every hand. She's waiting for you."
+
+**(10–18s):** Cut to Lola Winnie winning a hand. Voiceover: "Beat her at hard difficulty and you've earned the achievement. Beat her at very-hard and you're somebody."
+
+**(18–28s):** Quick cuts of Tita Nene and Kuya Edgar at their seats. Voiceover: "Tita Nene deals first. Kuya Edgar plays for keeps. Beat all three to become Table Champion."
+
+**(28–30s) End card:** Logo + "Free on Google Play — iPhone coming."
+
+**Caption:**
+The bots are named after the people I learned mahjong from. Lola Winnie hits different. 🀄 Free on Android — link in bio.
+#FilipinoMahjong #LolaWinnie #FilipinoTok #PinoyTok #MahjongPilipino
+
+---
+
+## Script 4 — "I built this" personal story (60s, highest organic potential)
 
 **(0–4s) Hook:** Developer to camera. "I'm a Pinoy developer. I built a mahjong app."
 
@@ -320,7 +417,11 @@ Free on Android. iPhone coming. Link in bio. 🀄
 | Day 10 | Instagram | Post 3 (why I built this carousel) |
 | Day 12 | TikTok | Script 2 (3 terms explained) |
 | Day 14 | Instagram | Post 5 (diaspora) |
-| Day 14 | TikTok | Script 3 (personal story — highest reach potential) |
+| Day 14 | TikTok | Script 4 (personal story — highest reach potential) |
+| Day 17 | Instagram | Post 6 (Meet the bots — Lola Winnie, Tita Nene, Kuya Edgar) |
+| Day 19 | TikTok | Script 3 (Meet Lola Winnie) |
+| Day 22 | Instagram | Post 7 (Climb the 7 Filipino ranks) |
+| Day 26 | Instagram | Post 8 (Daily challenges) |
 
 Don't post all at once on launch day. Drip the content so the algorithm sees you as consistent, not spammy.
 

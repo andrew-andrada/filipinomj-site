@@ -33,8 +33,11 @@ No payment expected, no pressure to post — just thought you'd enjoy playing it
 **Quick details:**
 - Free on Google Play (iPhone version coming soon)
 - Browser-playable at filipinomj.com
-- Three AI opponents, real table sounds, full Filipino rule set
-- Solo Pinoy developer, first published game
+- Three named AI opponents — Lola Winnie, Tita Nene, Kuya Edgar (plus a rotating cast)
+- 7-tier Filipino ranked ladder: Baguhan → Hari ng Mahjong (Elo-based)
+- 30-level XP system, 56 achievements, daily challenges
+- Full Filipino rule set, real table sounds, in-game tutorial
+- Solo Fil-Am developer, first published game
 
 📱 Play Store: https://play.google.com/store/apps/details?id=com.bayanihangames.filipinomj
 🌐 Website: https://filipinomj.com
@@ -95,9 +98,12 @@ I'd like to share a story I think would resonate with your readers: a solo Filip
 
 **Filipino Mahjong: Joker Rules**, released [launch date], is the only mahjong app in any major store that handles the full Filipino rule set: 17 tiles per hand, Joker wildcards, Bisaklat (first-draw wins), Sagása, Sietepares, Tódas. Every other mahjong app uses international, Hong Kong, or Japanese (Riichi) rules.
 
+The current version (v1.5) ships with three named Filipino AI opponents — Lola Winnie, Tita Nene, and Kuya Edgar — plus a 7-tier Filipino ranked ladder (Baguhan, Tito/Tita, Manlalaro, Mahjongista, Dalubhasa, Kampeon, Hari ng Mahjong), a 30-level XP system, and 56 achievements tied to specifically Filipino mahjong moments.
+
 **Why it's a story:**
-- Solo Pinoy developer, first published game
+- Solo Fil-Am developer (Andrew Andrada), first published game
 - Built specifically because the cultural variant didn't exist on any app store
+- The AI opponents are named after the people he learned mahjong from (Lola Winnie, Tita Nene, Kuya Edgar) — a uniquely Filipino texture that other mahjong apps don't have
 - Free, no monetization — labor of love and small-scale cultural preservation
 - Resonates with the Filipino diaspora (US, Canada, Australia, Middle East, EU)
 - iOS version in active development for [target month/year]

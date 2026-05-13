@@ -39,7 +39,7 @@ The way Pinoys play at home — finally on your phone.
 
 🀄 FILIPINO MAHJONG: JOKER RULES 🀄
 
-Authentic 17-tile Filipino mahjong with the rules your family actually uses. Built by a Pinoy developer because no other mahjong app got it right.
+Authentic 17-tile Filipino mahjong with the rules your family actually uses. Built by a Fil-Am developer because no other mahjong app got it right.
 
 WHAT MAKES IT FILIPINO
 
@@ -57,9 +57,34 @@ WHAT MAKES IT FILIPINO
 
 ★ 17-Tile Hand — The authentic Filipino variant, not the 13-tile international version.
 
+SIT DOWN WITH THE PAMILYA
+
+★ Three named AI opponents — Lola Winnie at the west seat, Tita Nene dealing from the north, Kuya Edgar playing for keeps at the east. Plus a rotating cast of titos, titas, and lolos (Ate Darl, Tito Willie, Lolo Efren, Manay Gigi, Tita Baby, and more) who sub in.
+
+★ 4 difficulty levels — easy, normal, hard, very_hard. Bots scale by your ranked rating so the table always feels like the right fight.
+
+CLIMB THE FILIPINO RANK LADDER
+
+7 Tagalog-named tiers with III/II/I sub-divisions, Elo-based:
+
+★ Baguhan — beginner
+★ Tito / Tita — the regular weekend players
+★ Manlalaro — competent player
+★ Mahjongista — committed mahjong head
+★ Dalubhasa — expert
+★ Kampeon — champion
+★ Hari ng Mahjong — king of mahjong
+
+Every win earns rating. Every loss costs some. Abandons cost more. Bisaklat wins bring rating bonuses because they deserve to.
+
+PROGRESSION + ACHIEVEMENTS
+
+✓ 30-level XP system with soft-prestige stars past Level 30
+✓ 56 achievements across 4 sections — first-time milestones (bronze), win-type achievements (silver), streaks and XP (gold), defeating named bots (red+gold)
+✓ Daily challenges with streak rewards and a one-day-per-week grace day so you don't lose your streak to a busy Tuesday
+
 WHAT'S IN THE GAME
 
-✓ Three AI opponents
 ✓ Real table sounds — tile shuffles, discards, hand calls (pung, chow, kang)
 ✓ In-game tutorial — learn the rules in a round or two
 ✓ Free, no sign-up, no paywall, no pay-to-win
@@ -83,11 +108,11 @@ THE STORY
 
 This is the mahjong I grew up watching. Tiles clacking on a folding table. Tito laughing too loud. Tita asking who shuffled wrong. Someone yelling "Bisaklat!" and the whole room losing it.
 
-Every other mahjong app played it the international way — beautiful games, but not ours. So I built one that does it right.
+Every other mahjong app played it the international way — beautiful games, but not ours. So I built one that does it right. Even named the bots after the people I learned from.
 
 Free. No sign-up. No paywall. The game your pamilya already knows.
 
-— Bayanihan Games
+— Bayanihan Games · Fil-Am solo dev
 
 iPhone version coming soon. Visit filipinomj.com for browser play and the full rules.
 
@@ -95,10 +120,10 @@ Mga kababayan, laro na tayo. 🇵🇭🀄
 
 KEYWORDS
 
-filipino mahjong, mahjong pilipino, pinoy mahjong, philippines mahjong, joker mahjong, 17 tile mahjong, bisaklat, sietepares, sagasa, todas, escalera, mahjong filipino rules, filipino card game, pinoy game, filipino game, free mahjong, single player mahjong, offline mahjong, mahjong with jokers, authentic mahjong
+filipino mahjong, mahjong pilipino, pinoy mahjong, philippines mahjong, joker mahjong, 17 tile mahjong, bisaklat, sietepares, sagasa, todas, escalera, baguhan, manlalaro, mahjongista, dalubhasa, kampeon, hari ng mahjong, mahjong filipino rules, filipino card game, pinoy game, filipino game, free mahjong, single player mahjong, offline mahjong, mahjong with jokers, authentic mahjong, ranked mahjong, filipino ranked
 ```
 
-*Character count: ~2,650 — well under 4,000.*
+*Character count: ~3,650 — under 4,000.*
 
 ---
 
@@ -114,8 +139,15 @@ filipino mahjong, mahjong pilipino, pinoy mahjong, philippines mahjong, joker ma
 - pinoy mahjong
 - joker mahjong rules
 - 17 tile mahjong
+- baguhan mahjong
+- mahjongista
+- hari ng mahjong
+- dalubhasa
+- kampeon mahjong
 
 These have almost zero competition on the Play Store. Anyone searching them is your customer.
+
+The Filipino-tier names (baguhan, mahjongista, dalubhasa, kampeon, hari ng mahjong) are especially valuable — they're inside the long description and they're terms a Pinoy might type if they're looking specifically for a Filipino mahjong app. No international or HK app has these.
 
 **Tier 2 — should rank for these (medium competition):**
 - filipino mahjong
