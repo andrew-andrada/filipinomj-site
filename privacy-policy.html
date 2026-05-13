@@ -12,196 +12,489 @@
     gtag('config', 'G-T8VQ9275N0');
   </script>
   <!-- End Google tag (gtag.js) -->
+
   <title>Privacy Policy — Filipino Mahjong: Joker Rules</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="description" content="Privacy policy for Filipino Mahjong: Joker Rules. We don't collect personal information, no account required, all game data stays on your device.">
+  <link rel="icon" type="image/png" href="Images/App Icon_3.png">
+  <link rel="apple-touch-icon" href="Images/App Icon_3.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: 'Crimson Text', Georgia, serif;
-      font-size: 17px;
-      line-height: 1.8;
-      color: #1a1a2e;
-      background: #f9f7f2;
+    *{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --blue-dark:#06101e;
+      --blue-felt:#0e2448;
+      --blue-mid:#152038;
+      --gold:#c9a84c;
+      --gold-light:#e8c96d;
+      --ivory:#f7f2e4;
+      --ivory-dark:#e8dfc8;
+      --ink:#1a1a2e;
+      --ink-soft:#2a2a3e;
+      --paper:#f9f7f2;
+      --paper-tint:#eef2f8;
     }
-    header {
-      background: linear-gradient(180deg, #06101e 0%, #0e2448 100%);
-      border-bottom: 3px solid #c9a84c;
-      padding: 32px 24px;
-      text-align: center;
+    html{scroll-behavior:smooth}
+    body{
+      font-family:'Crimson Text',Georgia,serif;
+      font-size:17px;
+      line-height:1.75;
+      color:var(--ink);
+      background:var(--paper);
     }
-    header h1 {
-      font-family: 'Cinzel', 'Palatino Linotype', Palatino, serif;
-      font-size: 28px;
-      color: #c9a84c;
-      letter-spacing: 3px;
-      margin-bottom: 6px;
+
+    /* === STICKY NAV (matches index.html) === */
+    .site-nav{
+      position:sticky;top:0;z-index:20;
+      background:linear-gradient(180deg,#040c18 0%,#0a1628 100%);
+      border-bottom:2px solid var(--gold);
+      padding:10px 20px;
+      display:flex;align-items:center;justify-content:space-between;
+      box-shadow:0 3px 20px rgba(0,0,0,.45);
     }
-    header p {
-      font-family: 'Cinzel', 'Palatino Linotype', Palatino, serif;
-      font-size: 13px;
-      color: #e8c96d;
-      opacity: 0.7;
-      letter-spacing: 2px;
+    .site-nav .brand{
+      font-family:'Cinzel',serif;
+      font-size:18px;
+      font-weight:600;
+      color:var(--gold);
+      letter-spacing:3px;
+      text-shadow:0 0 20px rgba(201,168,76,.35);
+      text-decoration:none;
     }
-    .container {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 48px 24px 80px;
+    .site-nav nav{display:flex;gap:6px}
+    .site-nav nav a{
+      font-family:'Cinzel',serif;
+      font-size:11px;
+      color:var(--gold);
+      text-decoration:none;
+      padding:4px 10px;
+      border:1px solid rgba(201,168,76,.35);
+      border-radius:5px;
+      letter-spacing:1px;
+      transition:background .15s ease;
     }
-    .last-updated {
-      font-size: 13px;
-      color: #888;
-      margin-bottom: 40px;
-      font-style: italic;
+    .site-nav nav a:hover{background:rgba(201,168,76,.12)}
+    .site-nav nav a.current{background:rgba(201,168,76,.18)}
+
+    /* === PAGE HEADER === */
+    header.page-header{
+      background:radial-gradient(ellipse at 50% 30%,var(--blue-mid) 0%,var(--blue-dark) 80%);
+      border-bottom:3px solid var(--gold);
+      padding:48px 24px 40px;
+      text-align:center;
+      position:relative;
     }
-    h2 {
-      font-family: 'Cinzel', 'Palatino Linotype', Palatino, serif;
-      font-size: 18px;
-      font-weight: 600;
-      color: #0e2448;
-      margin: 40px 0 12px;
-      padding-bottom: 8px;
-      border-bottom: 1px solid #c9a84c;
-      letter-spacing: 1px;
+    header.page-header::before,
+    header.page-header::after{
+      content:'';
+      position:absolute;
+      width:60px;height:1px;
+      top:50%;
+      background:linear-gradient(90deg,transparent,var(--gold),transparent);
     }
-    p { margin-bottom: 16px; color: #2a2a3e; }
-    ul { margin: 0 0 16px 24px; color: #2a2a3e; }
-    ul li { margin-bottom: 8px; }
-    a { color: #0e2448; text-decoration: underline; }
-    a:hover { color: #c9a84c; }
-    .highlight-box {
-      background: #eef2f8;
-      border-left: 4px solid #c9a84c;
-      border-radius: 0 8px 8px 0;
-      padding: 16px 20px;
-      margin: 20px 0;
+    header.page-header::before{left:24px}
+    header.page-header::after{right:24px}
+    header.page-header h1{
+      font-family:'Cinzel',serif;
+      font-size:clamp(22px,4vw,30px);
+      font-weight:600;
+      color:var(--gold);
+      letter-spacing:3px;
+      margin-bottom:8px;
+      text-shadow:0 0 24px rgba(201,168,76,.3);
     }
-    .highlight-box p { margin: 0; font-size: 15px; }
-    footer {
-      background: #06101e;
-      color: #e8dfc8;
-      text-align: center;
-      padding: 24px;
-      font-size: 13px;
-      font-family: 'Cinzel', 'Palatino Linotype', Palatino, serif;
-      letter-spacing: 1px;
+    header.page-header p.eyebrow{
+      font-family:'Cinzel',serif;
+      font-size:12px;
+      font-weight:400;
+      color:var(--gold-light);
+      opacity:0.8;
+      letter-spacing:4px;
     }
-    footer a { color: #c9a84c; }
+
+    /* === MAIN CONTAINER === */
+    .container{
+      max-width:780px;
+      margin:0 auto;
+      padding:48px 24px 80px;
+    }
+    .last-updated{
+      font-size:13px;
+      color:#888;
+      margin-bottom:24px;
+      font-style:italic;
+      font-family:'Cinzel',serif;
+      letter-spacing:1px;
+    }
+
+    /* === HIGHLIGHT BOX === */
+    .highlight-box{
+      background:linear-gradient(180deg,var(--paper-tint) 0%,#fff 100%);
+      border:1px solid rgba(201,168,76,0.4);
+      border-left:4px solid var(--gold);
+      border-radius:0 8px 8px 0;
+      padding:20px 24px;
+      margin-bottom:36px;
+      box-shadow:0 2px 12px rgba(14,36,72,0.06);
+    }
+    .highlight-box .label{
+      font-family:'Cinzel',serif;
+      font-size:11px;
+      font-weight:600;
+      color:var(--blue-felt);
+      letter-spacing:2px;
+      margin-bottom:8px;
+      display:block;
+    }
+    .highlight-box p{margin:0;font-size:16px;color:var(--ink-soft);line-height:1.65}
+
+    /* === TABLE OF CONTENTS === */
+    .toc{
+      background:#fff;
+      border:1px solid rgba(201,168,76,0.3);
+      border-radius:8px;
+      padding:24px 28px;
+      margin-bottom:48px;
+      box-shadow:0 2px 12px rgba(14,36,72,0.05);
+    }
+    .toc-label{
+      font-family:'Cinzel',serif;
+      font-size:11px;
+      font-weight:600;
+      color:var(--gold);
+      letter-spacing:3px;
+      margin-bottom:14px;
+      padding-bottom:10px;
+      border-bottom:1px solid rgba(201,168,76,0.25);
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+    .toc-label::after{
+      content:'';
+      flex:1;
+      height:1px;
+      background:linear-gradient(90deg,rgba(201,168,76,0.35),transparent);
+    }
+    .toc ol{
+      list-style:none;
+      counter-reset:toc;
+      column-count:2;
+      column-gap:32px;
+    }
+    @media (max-width:600px){.toc ol{column-count:1}}
+    .toc ol li{
+      counter-increment:toc;
+      padding:5px 0;
+      break-inside:avoid;
+      font-family:'Cinzel',serif;
+      font-size:12px;
+      letter-spacing:0.5px;
+    }
+    .toc ol li::before{
+      content:counter(toc,decimal-leading-zero) ".  ";
+      color:var(--gold);
+      font-weight:600;
+      margin-right:4px;
+    }
+    .toc ol li a{
+      color:var(--blue-felt);
+      text-decoration:none;
+      transition:color .15s ease;
+    }
+    .toc ol li a:hover{color:var(--gold)}
+
+    /* === BODY CONTENT === */
+    section.policy-section{margin-bottom:36px;scroll-margin-top:80px}
+    section.policy-section h2{
+      font-family:'Cinzel',serif;
+      font-size:18px;
+      font-weight:600;
+      color:var(--blue-felt);
+      margin:0 0 14px;
+      padding-bottom:10px;
+      border-bottom:1px solid var(--gold);
+      letter-spacing:1px;
+      display:flex;
+      align-items:baseline;
+      gap:10px;
+    }
+    section.policy-section h2 .num{
+      font-size:13px;
+      color:var(--gold);
+      font-weight:400;
+    }
+    section.policy-section p{margin-bottom:14px;color:var(--ink-soft)}
+    section.policy-section ul{margin:0 0 14px 24px;color:var(--ink-soft)}
+    section.policy-section ul li{margin-bottom:6px}
+    section.policy-section a{color:var(--blue-felt);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px}
+    section.policy-section a:hover{color:var(--gold)}
+
+    /* Section group dividers (between major content blocks) */
+    .group-divider{
+      width:80px;height:2px;
+      background:linear-gradient(90deg,transparent,var(--gold),transparent);
+      margin:48px auto;
+    }
+
+    /* Back to top */
+    .back-to-top{
+      text-align:center;
+      margin-top:40px;
+      font-family:'Cinzel',serif;
+      font-size:11px;
+      letter-spacing:2px;
+    }
+    .back-to-top a{
+      color:var(--gold);
+      text-decoration:none;
+      border:1px solid rgba(201,168,76,0.5);
+      padding:8px 18px;
+      border-radius:5px;
+      transition:background .15s ease;
+    }
+    .back-to-top a:hover{background:rgba(201,168,76,0.12)}
+
+    /* === FOOTER === */
+    footer.site-footer{
+      background:linear-gradient(180deg,#0a1628 0%,#040c18 100%);
+      border-top:2px solid var(--gold);
+      color:var(--ivory-dark);
+      padding:40px 24px 32px;
+      text-align:center;
+    }
+    footer.site-footer .foot-links{
+      margin-bottom:16px;
+      display:flex;
+      gap:8px;
+      justify-content:center;
+      flex-wrap:wrap;
+    }
+    footer.site-footer .foot-links a{
+      font-family:'Cinzel',serif;
+      font-size:11px;
+      color:var(--gold);
+      letter-spacing:2px;
+      text-decoration:none;
+      padding:4px 10px;
+      border:1px solid rgba(201,168,76,.35);
+      border-radius:5px;
+      transition:background .15s ease;
+    }
+    footer.site-footer .foot-links a:hover{background:rgba(201,168,76,.12)}
+    footer.site-footer .foot-links a.current{background:rgba(201,168,76,.18)}
+    footer.site-footer .copyright{
+      font-family:'Cinzel',serif;
+      font-size:11px;
+      color:var(--ivory-dark);
+      opacity:0.6;
+      letter-spacing:1.5px;
+    }
+    footer.site-footer .copyright a{color:var(--gold);text-decoration:none}
+    footer.site-footer .copyright a:hover{text-decoration:underline}
+
+    /* === PRINT STYLES === */
+    @media print{
+      .site-nav,.toc,.back-to-top{display:none}
+      body{background:#fff;font-size:11pt;line-height:1.5}
+      header.page-header{background:none;color:var(--ink);padding:24px 0;border-bottom:2px solid var(--gold)}
+      header.page-header h1,header.page-header p.eyebrow{color:var(--ink)}
+      footer.site-footer{background:none;color:var(--ink);border-top:1px solid var(--gold)}
+      footer.site-footer .foot-links{display:none}
+      a{color:var(--ink)!important;text-decoration:underline}
+    }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Filipino Mahjong: Joker Rules</h1>
-  <p>PRIVACY POLICY</p>
+<!-- Sticky site nav (matches index.html) -->
+<div class="site-nav">
+  <a href="/" class="brand">FILIPINO MAHJONG</a>
+  <nav>
+    <a href="/#features">About</a>
+    <a href="how-to-play.html">Rules</a>
+    <a href="https://play.google.com/store/apps/details?id=com.bayanihangames.filipinomj">Play</a>
+  </nav>
+</div>
+
+<!-- Page-specific header -->
+<header class="page-header">
+  <p class="eyebrow">FILIPINO MAHJONG: JOKER RULES</p>
+  <h1>PRIVACY POLICY</h1>
 </header>
 
 <div class="container">
 
   <p class="last-updated">Last updated: May 4, 2026</p>
 
+  <!-- The short version -->
   <div class="highlight-box">
-    <p><strong>The short version:</strong> Filipino Mahjong: Joker Rules does not collect your personal information, does not require an account, and stores all game data locally on your device only. We do not sell or share your data with anyone.</p>
+    <span class="label">THE SHORT VERSION</span>
+    <p>Filipino Mahjong: Joker Rules does not collect your personal information, does not require an account, and stores all game data locally on your device only. We do not sell or share your data with anyone.</p>
   </div>
 
-  <h2>1. Who We Are</h2>
-  <p>Filipino Mahjong: Joker Rules is an independently developed mobile game. If you have any questions about this privacy policy, you can contact us at <a href="mailto:filipinomahjong@gmail.com">filipinomahjong@gmail.com</a>.</p>
+  <!-- Table of contents -->
+  <nav class="toc" aria-label="Table of contents">
+    <div class="toc-label">CONTENTS</div>
+    <ol>
+      <li><a href="#section-1">Who We Are</a></li>
+      <li><a href="#section-2">Information We Collect</a></li>
+      <li><a href="#section-3">Accounts and Registration</a></li>
+      <li><a href="#section-4">In-App Purchases</a></li>
+      <li><a href="#section-5">Advertising</a></li>
+      <li><a href="#section-6">Children's Privacy</a></li>
+      <li><a href="#section-7">Data Storage and Security</a></li>
+      <li><a href="#section-8">How to Delete Your Data</a></li>
+      <li><a href="#section-9">Third-Party Services</a></li>
+      <li><a href="#section-10">Changes to This Policy</a></li>
+      <li><a href="#section-11">Your Rights</a></li>
+      <li><a href="#section-12">Contact Us</a></li>
+    </ol>
+  </nav>
 
-  <h2>2. Information We Collect</h2>
-  <p>Filipino Mahjong: Joker Rules is designed with privacy in mind. We collect minimal information to make the game function properly.</p>
+  <section class="policy-section" id="section-1">
+    <h2><span class="num">01</span><span>Who We Are</span></h2>
+    <p>Filipino Mahjong: Joker Rules is an independently developed mobile game by Bayanihan Games. If you have any questions about this privacy policy, you can contact us at <a href="mailto:filipinomahjong@gmail.com">filipinomahjong@gmail.com</a>.</p>
+  </section>
 
-  <p><strong>Information stored locally on your device:</strong></p>
-  <ul>
-    <li><strong>Username</strong> — a display name you choose when you first open the app. This is stored only on your device and is never transmitted to any server.</li>
-    <li><strong>Chip balance</strong> — your in-game currency balance, stored locally so it persists between sessions.</li>
-    <li><strong>Game history</strong> — your win/loss record, total winnings, and recent game results, stored locally for your personal stats and leaderboard display.</li>
-    <li><strong>Game preferences</strong> — settings such as sound on/off, stored locally on your device.</li>
-    <li><strong>Game state</strong> — timestamps and session data used for features like the 2-hour chip refill timer and daily bonus tracking, stored locally on your device.</li>
-  </ul>
+  <section class="policy-section" id="section-2">
+    <h2><span class="num">02</span><span>Information We Collect</span></h2>
+    <p>Filipino Mahjong: Joker Rules is designed with privacy in mind. We collect minimal information to make the game function properly.</p>
 
-  <p>All of the above data is stored using your device's local storage. It never leaves your device and is never transmitted to us or any third party. Note: when accessing the web version at filipinomj.com, anonymized analytics data is collected via Google Analytics, and in the Android/iOS app anonymized gameplay statistics are collected via Google Firebase Analytics. The app also reports anonymous crash diagnostics via Google Firebase Crashlytics. All three are described in Section 9.</p>
+    <p><strong>Information stored locally on your device:</strong></p>
+    <ul>
+      <li><strong>Username</strong> — a display name you choose when you first open the app. This is stored only on your device and is never transmitted to any server.</li>
+      <li><strong>Chip balance</strong> — your in-game currency balance, stored locally so it persists between sessions.</li>
+      <li><strong>Game history</strong> — your win/loss record, total winnings, and recent game results, stored locally for your personal stats and leaderboard display.</li>
+      <li><strong>Game preferences</strong> — settings such as sound on/off, stored locally on your device.</li>
+      <li><strong>Game state</strong> — timestamps and session data used for features like the 2-hour chip refill timer and daily bonus tracking, stored locally on your device.</li>
+    </ul>
 
-  <p><strong>Information we do NOT collect:</strong></p>
-  <ul>
-    <li>Your real name</li>
-    <li>Your email address</li>
-    <li>Your location</li>
-    <li>Your contacts or address book</li>
-    <li>Your phone number</li>
-    <li>Any payment or financial information</li>
-    <li>Any device identifiers beyond what is standard for app operation</li>
-  </ul>
+    <p>All of the above data is stored using your device's local storage. It never leaves your device and is never transmitted to us or any third party. Note: when accessing the web version at filipinomj.com, anonymized analytics data is collected via Google Analytics, and in the Android/iOS app anonymized gameplay statistics are collected via Google Firebase Analytics. The app also reports anonymous crash diagnostics via Google Firebase Crashlytics. All three are described in <a href="#section-9">Section 9</a>.</p>
 
-  <h2>3. Accounts and Registration</h2>
-  <p>Filipino Mahjong: Joker Rules does not require you to create an account or register in any way. There are no passwords. The username you enter in the game is stored only on your device and is used solely for display purposes within the app. It is never sent to any server.</p>
+    <p><strong>Information we do NOT collect:</strong></p>
+    <ul>
+      <li>Your real name</li>
+      <li>Your email address</li>
+      <li>Your location</li>
+      <li>Your contacts or address book</li>
+      <li>Your phone number</li>
+      <li>Any payment or financial information</li>
+      <li>Any device identifiers beyond what is standard for app operation</li>
+    </ul>
+  </section>
 
-  <h2>4. In-App Purchases and Virtual Currency</h2>
-  <p>Filipino Mahjong: Joker Rules uses a virtual currency system (chips) for gameplay purposes. These chips have no real-world monetary value and cannot be exchanged, transferred, or redeemed for real money or any goods or services outside of the app.</p>
-  <p>The app may offer the ability to purchase additional virtual chips using real money through Google Play's billing system. Any such transactions are processed entirely by Google Play. We do not collect, store, or have access to any payment card information or financial data. All payment processing is governed by Google's Privacy Policy and Terms of Service.</p>
+  <section class="policy-section" id="section-3">
+    <h2><span class="num">03</span><span>Accounts and Registration</span></h2>
+    <p>Filipino Mahjong: Joker Rules does not require you to create an account or register in any way. There are no passwords. The username you enter in the game is stored only on your device and is used solely for display purposes within the app. It is never sent to any server.</p>
+  </section>
 
-  <h2>5. Advertising</h2>
-  <p>Filipino Mahjong: Joker Rules may display advertisements provided by Google AdMob. AdMob may collect and use certain information about your device and usage to provide relevant advertisements. This may include:</p>
-  <ul>
-    <li>Advertising ID (a resettable identifier on your device)</li>
-    <li>Device type and operating system version</li>
-    <li>General location information (country or region level)</li>
-    <li>App usage and interaction data</li>
-  </ul>
-  <p>This data is collected and used by Google AdMob in accordance with <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>. You can opt out of personalized advertising at any time through your device settings:</p>
-  <ul>
-    <li><strong>Android:</strong> Settings → Google → Ads → Opt out of Ads Personalization</li>
-    <li><strong>iOS:</strong> Settings → Privacy &amp; Security → Apple Advertising → Personalized Ads (off). To deny app-tracking requests entirely: Settings → Privacy &amp; Security → Tracking → Allow Apps to Request to Track (off).</li>
-  </ul>
-  <p>We do not have access to the data that AdMob collects and we do not use it for any purpose beyond displaying advertisements within the app.</p>
+  <section class="policy-section" id="section-4">
+    <h2><span class="num">04</span><span>In-App Purchases and Virtual Currency</span></h2>
+    <p>Filipino Mahjong: Joker Rules uses a virtual currency system (chips) for gameplay purposes. These chips have no real-world monetary value and cannot be exchanged, transferred, or redeemed for real money or any goods or services outside of the app.</p>
+    <p>The app may offer the ability to purchase additional virtual chips using real money through Google Play's billing system. Any such transactions are processed entirely by Google Play. We do not collect, store, or have access to any payment card information or financial data. All payment processing is governed by Google's Privacy Policy and Terms of Service.</p>
+  </section>
 
-  <h2>6. Children's Privacy</h2>
-  <p>Filipino Mahjong: Joker Rules is not intended for children under the age of 13. We do not knowingly collect any personal information from children under 13. The game involves simulated gambling mechanics (virtual chips with no real monetary value) and is rated for users aged 13 and older.</p>
-  <p>If you believe a child under 13 has used this application, please contact us at <a href="mailto:filipinomahjong@gmail.com">filipinomahjong@gmail.com</a> and we will take appropriate steps.</p>
+  <section class="policy-section" id="section-5">
+    <h2><span class="num">05</span><span>Advertising</span></h2>
+    <p>Filipino Mahjong: Joker Rules may display advertisements provided by Google AdMob. AdMob may collect and use certain information about your device and usage to provide relevant advertisements. This may include:</p>
+    <ul>
+      <li>Advertising ID (a resettable identifier on your device)</li>
+      <li>Device type and operating system version</li>
+      <li>General location information (country or region level)</li>
+      <li>App usage and interaction data</li>
+    </ul>
+    <p>This data is collected and used by Google AdMob in accordance with <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>. You can opt out of personalized advertising at any time through your device settings:</p>
+    <ul>
+      <li><strong>Android:</strong> Settings → Google → Ads → Opt out of Ads Personalization</li>
+      <li><strong>iOS:</strong> Settings → Privacy &amp; Security → Apple Advertising → Personalized Ads (off). To deny app-tracking requests entirely: Settings → Privacy &amp; Security → Tracking → Allow Apps to Request to Track (off).</li>
+    </ul>
+    <p>We do not have access to the data that AdMob collects and we do not use it for any purpose beyond displaying advertisements within the app.</p>
+  </section>
 
-  <h2>7. Data Storage and Security</h2>
-  <p>All game data is stored locally on your device using standard browser and app local storage mechanisms. We do not operate any servers that store your personal information. As a result, your game data is as secure as your device itself.</p>
-  <p>If you uninstall the app, all locally stored game data including your username, chip balance, and game history will be permanently deleted from your device.</p>
+  <section class="policy-section" id="section-6">
+    <h2><span class="num">06</span><span>Children's Privacy</span></h2>
+    <p>Filipino Mahjong: Joker Rules is not intended for children under the age of 13. We do not knowingly collect any personal information from children under 13. The game involves simulated gambling mechanics (virtual chips with no real monetary value) and is rated for users aged 13 and older.</p>
+    <p>If you believe a child under 13 has used this application, please contact us at <a href="mailto:filipinomahjong@gmail.com">filipinomahjong@gmail.com</a> and we will take appropriate steps.</p>
+  </section>
 
-  <h2>8. How to Delete Your Data</h2>
-  <p>You can delete all data stored by Filipino Mahjong: Joker Rules at any time through two methods:</p>
-  <ul>
-    <li><strong>In-app reset:</strong> Go to Settings within the app and tap "Reset Account." This clears all game data including your username, balance, and history.</li>
-    <li><strong>Uninstall the app:</strong> Uninstalling Filipino Mahjong: Joker Rules from your device permanently removes all locally stored data.</li>
-  </ul>
-  <p>Since we do not store any of your data on external servers, there is no additional data deletion request necessary beyond these steps.</p>
+  <div class="group-divider"></div>
 
-  <h2>9. Third-Party Services</h2>
-  <p>Filipino Mahjong: Joker Rules currently uses or may use the following third-party services:</p>
-  <ul>
-    <li><strong>Google AdMob</strong> — for displaying advertisements. Governed by <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</li>
-    <li><strong>Google Play</strong> — for app distribution and in-app purchases. Governed by <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</li>
-    <li><strong>Google Fonts</strong> — for typography. Fonts are loaded from Google's servers. Governed by <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</li>
-    <li><strong>Google Analytics (web version only)</strong> — for website analytics on filipinomj.com. Google Analytics (GA4) sets cookies and collects information such as IP address, browser type, pages visited, session duration, and referrer URL. This tracking is <em>not</em> active in the Android/iOS app. Governed by <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</li>
-    <li><strong>Google Firebase Analytics (Android/iOS app only)</strong> — for anonymous gameplay and usage statistics within the mobile app. Firebase Analytics collects information such as which menus you open, how many games you start and finish, ad interactions, and general device/OS information. No personally identifiable information is collected. You can opt out of personalized tracking in your device's advertising ID settings. Governed by <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</li>
-    <li><strong>Google Firebase Crashlytics (Android/iOS app only)</strong> — for crash and error reporting. When the app crashes or encounters an unhandled error, Crashlytics collects diagnostic information such as device model, operating system version, app version, and a stack trace describing where the crash occurred. This helps us identify and fix bugs quickly. No personally identifiable information is included in crash reports. Governed by <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</li>
-  </ul>
-  <p>We do not sell, trade, or otherwise transfer your information to any other outside parties.</p>
+  <section class="policy-section" id="section-7">
+    <h2><span class="num">07</span><span>Data Storage and Security</span></h2>
+    <p>All game data is stored locally on your device using standard browser and app local storage mechanisms. We do not operate any servers that store your personal information. As a result, your game data is as secure as your device itself.</p>
+    <p>If you uninstall the app, all locally stored game data including your username, chip balance, and game history will be permanently deleted from your device.</p>
+  </section>
 
-  <h2>10. Changes to This Privacy Policy</h2>
-  <p>We may update this privacy policy from time to time as the app adds new features such as a global leaderboard or additional third-party services. When we make significant changes we will update the "Last updated" date at the top of this page. We encourage you to review this policy periodically.</p>
-  <p>Continued use of Filipino Mahjong: Joker Rules after any changes to this policy constitutes your acceptance of the updated terms.</p>
+  <section class="policy-section" id="section-8">
+    <h2><span class="num">08</span><span>How to Delete Your Data</span></h2>
+    <p>You can delete all data stored by Filipino Mahjong: Joker Rules at any time through two methods:</p>
+    <ul>
+      <li><strong>In-app reset:</strong> Go to Settings within the app and tap "Reset Account." This clears all game data including your username, balance, and history.</li>
+      <li><strong>Uninstall the app:</strong> Uninstalling Filipino Mahjong: Joker Rules from your device permanently removes all locally stored data.</li>
+    </ul>
+    <p>Since we do not store any of your data on external servers, there is no additional data deletion request necessary beyond these steps.</p>
+  </section>
 
-  <h2>11. Your Rights</h2>
-  <p>Since Filipino Mahjong: Joker Rules stores all data locally on your device and does not transmit personal information to any server, you have full control over your data at all times through the methods described in Section 8.</p>
-  <p>If you have any questions about your rights or wish to make a request, please contact us at <a href="mailto:filipinomahjong@gmail.com">filipinomahjong@gmail.com</a>.</p>
+  <section class="policy-section" id="section-9">
+    <h2><span class="num">09</span><span>Third-Party Services</span></h2>
+    <p>Filipino Mahjong: Joker Rules currently uses or may use the following third-party services:</p>
+    <ul>
+      <li><strong>Google AdMob</strong> — for displaying advertisements. Governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+      <li><strong>Google Play</strong> — for app distribution and in-app purchases. Governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+      <li><strong>Google Fonts</strong> — for typography. Fonts are loaded from Google's servers. Governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+      <li><strong>Google Analytics (web version only)</strong> — for website analytics on filipinomj.com. Google Analytics (GA4) sets cookies and collects information such as IP address, browser type, pages visited, session duration, and referrer URL. This tracking is <em>not</em> active in the Android/iOS app. Governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+      <li><strong>Google Firebase Analytics (Android/iOS app only)</strong> — for anonymous gameplay and usage statistics within the mobile app. Firebase Analytics collects information such as which menus you open, how many games you start and finish, ad interactions, and general device/OS information. No personally identifiable information is collected. You can opt out of personalized tracking in your device's advertising ID settings. Governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+      <li><strong>Google Firebase Crashlytics (Android/iOS app only)</strong> — for crash and error reporting. When the app crashes or encounters an unhandled error, Crashlytics collects diagnostic information such as device model, operating system version, app version, and a stack trace describing where the crash occurred. This helps us identify and fix bugs quickly. No personally identifiable information is included in crash reports. Governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+    </ul>
+    <p>We do not sell, trade, or otherwise transfer your information to any other outside parties.</p>
+  </section>
 
-  <h2>12. Contact Us</h2>
-  <p>If you have any questions, concerns, or feedback about this privacy policy or Filipino Mahjong: Joker Rules's privacy practices, please contact us:</p>
-  <ul>
-    <li><strong>Email:</strong> <a href="mailto:filipinomahjong@gmail.com">filipinomahjong@gmail.com</a></li>
-    <li><strong>Website:</strong> <a href="https://filipinomj.com">filipinomj.com</a></li>
-  </ul>
+  <div class="group-divider"></div>
+
+  <section class="policy-section" id="section-10">
+    <h2><span class="num">10</span><span>Changes to This Privacy Policy</span></h2>
+    <p>We may update this privacy policy from time to time as the app adds new features such as a global leaderboard or additional third-party services. When we make significant changes we will update the "Last updated" date at the top of this page. We encourage you to review this policy periodically.</p>
+    <p>Continued use of Filipino Mahjong: Joker Rules after any changes to this policy constitutes your acceptance of the updated terms.</p>
+  </section>
+
+  <section class="policy-section" id="section-11">
+    <h2><span class="num">11</span><span>Your Rights</span></h2>
+    <p>Since Filipino Mahjong: Joker Rules stores all data locally on your device and does not transmit personal information to any server, you have full control over your data at all times through the methods described in <a href="#section-8">Section 8</a>.</p>
+    <p>If you have any questions about your rights or wish to make a request, please contact us at <a href="mailto:filipinomahjong@gmail.com">filipinomahjong@gmail.com</a>.</p>
+  </section>
+
+  <section class="policy-section" id="section-12">
+    <h2><span class="num">12</span><span>Contact Us</span></h2>
+    <p>If you have any questions, concerns, or feedback about this privacy policy or the privacy practices of Filipino Mahjong: Joker Rules, please contact us:</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:filipinomahjong@gmail.com">filipinomahjong@gmail.com</a></li>
+      <li><strong>Website:</strong> <a href="https://filipinomj.com">filipinomj.com</a></li>
+    </ul>
+  </section>
+
+  <div class="back-to-top">
+    <a href="#top">↑ BACK TO TOP</a>
+  </div>
 
 </div>
 
-<footer>
-  <p>© 2026 Filipino Mahjong: Joker Rules · <a href="mailto:filipinomahjong@gmail.com">filipinomahjong@gmail.com</a></p>
+<!-- Footer (matches index.html) -->
+<footer class="site-footer">
+  <div class="foot-links">
+    <a href="https://play.google.com/store/apps/details?id=com.bayanihangames.filipinomj">PLAY</a>
+    <a href="how-to-play.html">RULES</a>
+    <a href="privacy-policy.html" class="current">PRIVACY</a>
+  </div>
+  <div class="copyright">© <span id="year"></span> filipinomj.com · <a href="mailto:filipinomahjong@gmail.com">filipinomahjong@gmail.com</a></div>
 </footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>

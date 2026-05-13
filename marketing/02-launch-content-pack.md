@@ -18,7 +18,7 @@ Replace `[PLAY_STORE_LINK]` everywhere with:
 
 🀄 Mga kababayan — Filipino Mahjong: Joker Rules is LIVE on Android.
 
-The 17-tile Pinoy version. Jokers. Bisaklat. Sagasa. Sietepares. Finally an app that plays it the way our titos and titas play.
+The 17-tile Pinoy version. Jokers. Bisaklat. Sagása. Sietepares. Finally an app that plays it the way our titos and titas play.
 
 Three AI opponents. Real table sounds. The calls you grew up hearing.
 
@@ -57,7 +57,7 @@ Free on Android. iPhone coming. Link in bio.
 |---|---|---|
 | 1 | Plain gold-on-blue card | "I built a mahjong game." |
 | 2 | Same card style | "Because the version my family plays didn't exist on the App Store." |
-| 3 | Photo of a Pinoy mahjong table (use a generic Pinoy family table photo or your own) | "Jokers. Sagasa. Bisaklat. Sietepares." |
+| 3 | Photo of a Pinoy mahjong table (use a generic Pinoy family table photo or your own) | "Jokers. Sagása. Bisaklat. Sietepares." |
 | 4 | Game screenshot | "17 tiles. Real calls. Real sounds." |
 | 5 | App icon / Play badge | "Free. No sign-up. No paywall. Forever." |
 | 6 | Plain card | "On Android now. iPhone coming soon." |
@@ -65,7 +65,7 @@ Free on Android. iPhone coming. Link in bio.
 
 **Caption:**
 
-Started building this because the mahjong I grew up watching wasn't on any app store. The Pinoy version. 17 tiles, Jokers, Bisaklat, Sagasa, Sietepares. The way Lola taught Tita who taught me.
+Started building this because the mahjong I grew up watching wasn't on any app store. The Pinoy version. 17 tiles, Jokers, Bisaklat, Sagása, Sietepares. The way Lola taught Tita who taught me.
 
 Now it exists. Free on Google Play — iPhone next.
 
@@ -80,7 +80,7 @@ Solo Pinoy developer. First game. Built it for the pamilya everywhere. 🀄🇵�
 
 **Storyboard:**
 - (0–3s) Hook text on screen: "3 Filipino mahjong calls only Pinoys know"
-- (3–13s) **SAGASA** — gameplay clip of completing a pung off a discard. Voiceover: "Sagasa. Stealing someone's discard to complete your pung. Instant payout."
+- (3–13s) **SAGÁSA** — gameplay clip of completing a pung off a discard. Voiceover: "Sagása. Stealing someone's discard to complete your pung. Instant payout."
 - (13–25s) **BISAKLAT** — gameplay clip of first-draw win. Voiceover: "Bisaklat. Winning on the very first draw before anyone discards. The rarest hand in the game."
 - (25–35s) **SIETEPARES** — gameplay clip of seven pairs. Voiceover: "Sietepares. Seven pairs. For the ambitious."
 - (35–45s) End card: app icon + "Free on Google Play — iPhone coming."
@@ -130,7 +130,7 @@ Mga kababayan! 👋
 
 I'm a Pinoy developer and I just released my first Android game — **Filipino Mahjong: Joker Rules**.
 
-It's the 17-tile Pinoy version with Jokers, Bisaklat, Sagasa, Sietepares — the way our titos and titas play at family gatherings. Not the international version. Not Hong Kong. The version we actually play.
+It's the 17-tile Pinoy version with Jokers, Bisaklat, Sagása, Sietepares — the way our titos and titas play at family gatherings. Not the international version. Not Hong Kong. The version we actually play.
 
 Why I built it: every other mahjong app I tried played it the wrong way. No Jokers. No Bisaklat. No Sietepares. So I made one that does it right.
 
@@ -162,7 +162,7 @@ So I built it.
 
 **What's in:**
 - Authentic 17-tile Filipino rules
-- Jokers, Sagasa, Bisaklat, Sietepares, Tódas
+- Jokers, Sagása, Bisaklat, Sietepares, Tódas
 - Three AI opponents
 - Real table sounds and calls
 - Free on Google Play (no sign-up, no paywall, no aggressive ads)
@@ -184,7 +184,7 @@ Would love feedback from anyone who plays. Did I get the rules right? Anything o
 
 Free on Google Play. Solo Pinoy developer. Built it because no existing app played the rules my family uses.
 
-Includes Jokers, Sagasa, Bisaklat, Sietepares, Tódas. Three AI opponents. Real table sounds. Browser-playable too at filipinomj.com.
+Includes Jokers, Sagása, Bisaklat, Sietepares, Tódas. Three AI opponents. Real table sounds. Browser-playable too at filipinomj.com.
 
 iOS version next. Looking for honest feedback from anyone who knows the game. Salamat po.
 
@@ -198,7 +198,7 @@ iOS version next. Looking for honest feedback from anyone who knows the game. Sa
 
 **Body:**
 
-Solo developer here. Just launched my first Android game. It's a free single-player Filipino mahjong simulator with the actual Filipino rule set — Jokers, 17 tiles per hand, Sagasa, Bisaklat, Sietepares, Tódas.
+Solo developer here. Just launched my first Android game. It's a free single-player Filipino mahjong simulator with the actual Filipino rule set — Jokers, 17 tiles per hand, Sagása, Bisaklat, Sietepares, Tódas.
 
 Different from international/Hong Kong/Riichi mahjong. If you've never played the Filipino variant, the in-game tutorial walks you through it.
 
@@ -223,7 +223,7 @@ Feedback welcome.
 Most of you probably play Hong Kong, Riichi, or American. The Filipino variant is its own animal — 17 tiles per hand instead of 13, Jokers as wildcards, plus calls like:
 
 - **Bisaklat** — instant win on the very first draw
-- **Sagasa** — completing your pung off someone else's discard for an immediate payout
+- **Sagása** — completing your pung off someone else's discard for an immediate payout
 - **Sietepares** — seven pairs win
 - **Tódas** — full clean win
 - **Escalera** — runs of consecutive tiles
@@ -263,10 +263,10 @@ The kitchen table, in your pocket. Free on Android, iPhone coming. 🀄
 
 **(0–3s) Hook text:** "3 Filipino mahjong calls only Pinoys know"
 
-**(3–15s) SAGASA:**
+**(3–15s) SAGÁSA:**
 - Show in-game pung completion
-- Voiceover: "Sagasa. Stealing someone's discard to complete your pung. Instant payout."
-- On-screen text: SAGASA
+- Voiceover: "Sagása. Stealing someone's discard to complete your pung. Instant payout."
+- On-screen text: SAGÁSA
 
 **(15–28s) BISAKLAT:**
 - Show first-draw win
@@ -290,11 +290,11 @@ Tag the tito who taught you these. Free on Android — link in bio. 🇵🇭🀄
 
 **(0–4s) Hook:** Developer to camera. "I'm a Pinoy developer. I built a mahjong app."
 
-**(4–15s):** Cut to gameplay footage. Voiceover: "Not because the world needed another mahjong app. Because the version my family plays — Jokers, 17 tiles, Bisaklat, Sagasa — wasn't on any app store. Anywhere."
+**(4–15s):** Cut to gameplay footage. Voiceover: "Not because the world needed another mahjong app. Because the version my family plays — Jokers, 17 tiles, Bisaklat, Sagása — wasn't on any app store. Anywhere."
 
 **(15–30s):** Family-table b-roll (your own footage if you have it; otherwise generic Pinoy gathering footage with permission, or stock). Voiceover: "The mahjong I grew up watching had its own language. Its own calls. Its own pace. International apps got it wrong every time."
 
-**(30–48s):** Back to gameplay highlights — Bisaklat, Sietepares, Sagasa. Voiceover: "So I built one that gets it right. Three AI opponents, real table sounds, all the calls. Free on Google Play. iPhone coming soon."
+**(30–48s):** Back to gameplay highlights — Bisaklat, Sietepares, Sagása. Voiceover: "So I built one that gets it right. Three AI opponents, real table sounds, all the calls. Free on Google Play. iPhone coming soon."
 
 **(48–60s):** End card — logo, Play Store badge, "iPhone coming soon" badge. Voiceover: "For every Pinoy who misses the kitchen table. Laro na tayo."
 

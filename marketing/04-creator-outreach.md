@@ -19,7 +19,7 @@ Three templates: warm creator pitch, cold creator pitch, and Filipino-American m
 
 Hi [Name],
 
-I'm Andrew — a Pinoy developer based in [your city]. I just launched **Filipino Mahjong: Joker Rules**, a free Android app that plays the authentic 17-tile Filipino mahjong our titos and titas play at family gatherings.
+I'm Andrew Andrada — a Pinoy developer based in [your city]. I just launched **Filipino Mahjong: Joker Rules**, a free Android app that plays the authentic 17-tile Filipino mahjong our titos and titas play at family gatherings.
 
 [**Personalization line — pick one or write your own:**]
 - I've been watching your videos on [specific topic] for a while — your stuff on [specific reference] hit me especially hard.
@@ -41,7 +41,7 @@ No payment expected, no pressure to post — just thought you'd enjoy playing it
 
 Happy to answer anything about the dev story or the rules. Maraming salamat!
 
-Andrew Medina
+Andrew Andrada
 Bayanihan Games
 filipinomahjong@gmail.com
 
@@ -57,7 +57,7 @@ filipinomahjong@gmail.com
 
 Hi [Name],
 
-Quick note from one Pinoy to another — I just released **Filipino Mahjong: Joker Rules** on Android. It's the 17-tile Filipino version with Jokers, Bisaklat, Sagasa, Sietepares — the rules our families actually play.
+Quick note from one Pinoy to another — I just released **Filipino Mahjong: Joker Rules** on Android. It's the 17-tile Filipino version with Jokers, Bisaklat, Sagása, Sietepares — the rules our families actually play.
 
 I built it because no app on the Play Store handled the Filipino rules properly. Solo developer, free, no paywall.
 
@@ -93,7 +93,7 @@ Hi [Name / Editor],
 
 I'd like to share a story I think would resonate with your readers: a solo Filipino developer just released the first authentic Filipino-rules mahjong app on the Google Play Store.
 
-**Filipino Mahjong: Joker Rules**, released [launch date], is the only mahjong app in any major store that handles the full Filipino rule set: 17 tiles per hand, Joker wildcards, Bisaklat (first-draw wins), Sagasa, Sietepares, Tódas. Every other mahjong app uses international, Hong Kong, or Japanese (Riichi) rules.
+**Filipino Mahjong: Joker Rules**, released [launch date], is the only mahjong app in any major store that handles the full Filipino rule set: 17 tiles per hand, Joker wildcards, Bisaklat (first-draw wins), Sagása, Sietepares, Tódas. Every other mahjong app uses international, Hong Kong, or Japanese (Riichi) rules.
 
 **Why it's a story:**
 - Solo Pinoy developer, first published game
@@ -115,7 +115,7 @@ Play Store: https://play.google.com/store/apps/details?id=com.bayanihangames.fil
 
 Thank you for considering. Salamat po.
 
-Andrew Medina
+Andrew Andrada
 Bayanihan Games
 filipinomahjong@gmail.com
 [Phone if comfortable sharing]

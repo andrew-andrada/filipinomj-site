@@ -27,7 +27,7 @@ Stick with the current one. "Filipino" outranks "Pinoy" for non-Filipino searche
 This is the most important field for ASO after the title. It must contain "filipino" or "pinoy" + "mahjong" + a differentiator.
 
 Alts:
-- `Filipino mahjong with Joker rules — Bisaklat, Sagasa, 17 tiles. Free.` (69)
+- `Filipino mahjong with Joker rules — Bisaklat, Sagása, 17 tiles. Free.` (69)
 - `The 17-tile Filipino mahjong with Joker rules — free, no paywall.` (65)
 
 ---
@@ -47,7 +47,7 @@ WHAT MAKES IT FILIPINO
 
 ★ Bisaklat — Win on the very first draw before any discard. The rarest, highest-paid hand in the game.
 
-★ Sagasa — Complete your pung off someone else's discard for an instant payout.
+★ Sagása — Complete your pung off someone else's discard for an instant payout.
 
 ★ Sietepares — Seven pairs. The ambitious win.
 
@@ -68,7 +68,7 @@ WHAT'S IN THE GAME
 
 THE FILIPINO MAHJONG VOCABULARY
 
-If you grew up around the Filipino mahjong table, these words feel like home: Pung. Chow. Kang. Bisaklat. Sagasa. Sietepares. Escalera. Tódas.
+If you grew up around the Filipino mahjong table, these words feel like home: Pung. Chow. Kang. Bisaklat. Sagása. Sietepares. Escalera. Tódas.
 
 If you didn't, the in-game tutorial walks you through every one. Free tuition — no need to pay your tito for lessons.
 
@@ -156,7 +156,7 @@ I can sketch the overlay designs for the first 3 if you want — they're worth t
 
 If you can record a 15-30 second video:
 - Cold open: tile shuffle sound + Pinoy voice saying "Bisaklat!"
-- Quick gameplay montage (5-10 cuts): tile placed, joker revealed, Sagasa called, Bisaklat win
+- Quick gameplay montage (5-10 cuts): tile placed, joker revealed, Sagása called, Bisaklat win
 - End card: "Filipino Mahjong: Joker Rules — Free on Google Play"
 
 This auto-plays on the Play Store listing and meaningfully lifts conversion.

@@ -16,7 +16,7 @@ Alts:
 
 ## Hero / 50 words (landing page, Play Store short description riff)
 
-> Every other mahjong app plays it the international way. Beautiful games — but not **ours**. No Jokers. No Bisaklat. No Sagasa. No Sietepares.
+> Every other mahjong app plays it the international way. Beautiful games — but not **ours**. No Jokers. No Bisaklat. No Sagása. No Sietepares.
 >
 > So I built one that does it right. The 17-tile Pinoy version, the way Lola taught Tita who taught me. Free on Android. iPhone coming soon.
 
@@ -26,7 +26,7 @@ Alts:
 
 If you're Pinoy, you know the sound. Tiles clacking on a folding table. Tito laughing too loud. Tita asking who shuffled wrong. Someone yelling **"Bisaklat!"** and the whole room losing it.
 
-That's the mahjong I grew up watching. **Jokers. Sagasa. Sietepares. Tódas.** 17 tiles per hand. The version we actually play.
+That's the mahjong I grew up watching. **Jokers. Sagása. Sietepares. Tódas.** 17 tiles per hand. The version we actually play.
 
 But every mahjong app I tried played it the international way — Hong Kong, Riichi, beautiful games but not ours. No Jokers. No Bisaklat. The version my pamilya plays just didn't exist on any app store. Anywhere.
 
