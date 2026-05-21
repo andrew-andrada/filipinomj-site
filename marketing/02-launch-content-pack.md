@@ -20,7 +20,7 @@ Replace `[PLAY_STORE_LINK]` everywhere with:
 
 The 17-tile Pinoy version. Jokers. Bisaklat. Sagása. Sietepares. Finally an app that plays it the way our titos and titas play.
 
-Sit down with **Lola Winnie, Tita Nene, and Kuya Edgar**. Climb a 7-tier Filipino ranked ladder from Baguhan all the way to Hari ng Mahjong. Real table sounds, the calls you grew up hearing, 56 milestones to chase.
+Sit down with **Lola Winnie, Tita Nene, and Kuya Edgar**. Earn Mahjong Points with every win, climb seven Filipino tiers from Baguhan to Hari ng Mahjong, unlock new tables and tile sets at each tier. Real table sounds, the calls you grew up hearing, 56 milestones to chase.
 
 Free, no sign-up, no paywall.
 
@@ -96,7 +96,7 @@ Tag the tito or tita who taught you. Free on Android — link in bio.
 ---
 
 ## Post 5 — The diaspora connection post (highest emotional resonance)
-**Suggested image:** Phone showing the game on a kitchen table with a coffee mug + pancit visible in soft focus. If you can't shoot it, use the in-browser version on a laptop screen with a cup of coffee.
+**Suggested image:** Phone showing the game on a kitchen table with a coffee mug + pancit visible in soft focus.
 
 **Caption:**
 
@@ -140,24 +140,26 @@ Free on Android. iPhone coming. Link in bio. 🀄
 
 ---
 
-## Post 7 — Climb the ranks (v1.5)
-**Suggested image:** A vertical ladder graphic showing the 7 Filipino rank tiers from Baguhan (bottom, bronze) to Hari ng Mahjong (top, gold), styled in the gold-on-blue palette. Each tier with its Tagalog name and a brief gloss.
+## Post 7 — Climb the tiers (v1.5)
+**Suggested image:** A vertical ladder graphic showing the 7 Filipino tier levels from Baguhan (Lv 1, bronze) to Hari ng Mahjong (Lv 7, gold), styled in the gold-on-blue palette. Each tier with its Tagalog name, MP threshold, and the cosmetic it unlocks.
 
 **Caption:**
 
-Seven Filipino tiers. From Baguhan (beginner) to Hari ng Mahjong (king of mahjong).
+Seven Filipino tiers. One number that drives everything: **Mahjong Points**.
 
-🥉 Baguhan
-🥈 Tito / Tita
-🥉 Manlalaro
-🟣 Mahjongista
-🟠 Dalubhasa
-🔴 Kampeon
-👑 Hari ng Mahjong
+🥉 Lv 1 · Baguhan — 0 MP
+🟢 Lv 2 · Tito / Tita — 500 MP · unlock Ocean Blue table
+🔵 Lv 3 · Manlalaro — 2,500 MP · unlock Sampaguita tiles
+🟣 Lv 4 · Mahjongista — 8,000 MP · unlock Dynasty Red table
+🟠 Lv 5 · Dalubhasa — 20,000 MP · unlock Baybayin tiles
+🔴 Lv 6 · Kampeon — 40,000 MP · unlock Royal Purple table
+👑 Lv 7 · Hari ng Mahjong — 75,000 MP · unlock the Gold table
 
-Every win earns rating. Every loss costs some. Where do you start? Where can you climb?
+Win a hand, MP goes up. Lose one, MP goes down (but never below zero). Hit Hari ng Mahjong and prestige stars start stacking every 10,000 MP after that.
 
-Elo-based ranked mode unlocks after your 5th game. Beat bots ranked above you and watch your rating jump. Beat Lola Winnie at very-hard difficulty and you're not in Baguhan anymore.
+Every cosmetic you unlock is yours forever — even if your MP later drops below the tier.
+
+Where do you start? Where can you climb?
 
 Free on Android. iPhone coming. Link in bio. 🀄
 
@@ -166,15 +168,15 @@ Free on Android. iPhone coming. Link in bio. 🀄
 ---
 
 ## Post 8 — Daily challenges (v1.5)
-**Suggested image:** Screenshot of the daily challenge banner from in-game ("📅 Daily Challenge — Win 1 game today · +100 XP") on a phone, with the streak count visible.
+**Suggested image:** Screenshot of the daily challenge banner from in-game ("📅 Daily Challenge — Win 1 game today · +100 MP") on a phone, with the streak count visible.
 
 **Caption:**
 
 A new challenge every day. Build a streak. Miss a day per week and your grace day saves you — miss two and you start over.
 
-🌞 Common: "Play 3 games today" · +80 XP
-🌒 Uncommon: "Win a game without calling Chow" · +140 XP
-🌑 Rare: "Win with Bisaklat today" · big XP
+🌞 Common: "Play 3 games today" · +80 MP
+🌒 Uncommon: "Win a game without calling Chow" · +140 MP
+🌑 Rare: "Win with Bisaklat today" · big MP
 
 The kind of small daily ritual the game my pamilya plays deserves. Open the app, claim today's challenge, deal the tiles.
 
@@ -207,11 +209,10 @@ Why I built it: every other mahjong app I tried played it the wrong way. No Joke
 ✅ Three named AI opponents — Lola Winnie, Tita Nene, Kuya Edgar (plus a rotating cast)
 ✅ Real table sounds and calls
 ✅ Authentic Filipino rules (17 tiles, Jokers, all the calls)
-✅ 7-tier Filipino ranked ladder (Baguhan → Hari ng Mahjong)
-✅ 30-level XP system + 56 achievements to chase
-✅ Daily challenges with streak rewards
+✅ Earn Mahjong Points to climb 7 Filipino tiers (Baguhan → Hari ng Mahjong)
+✅ Unlock new table designs and tile sets at every tier
+✅ 56 achievements + daily challenges with streak rewards
 ✅ Free, no sign-up, no paywall
-✅ Plays in your browser too — filipinomj.com
 
 iPhone version coming soon. For now: free on Google Play.
 
@@ -237,17 +238,19 @@ So I built it.
 - Authentic 17-tile Filipino rules
 - Jokers, Sagása, Bisaklat, Sietepares, Tódas, Escalera
 - Three named AI opponents: Lola Winnie, Tita Nene, Kuya Edgar (plus rotating cast)
-- 4 difficulty levels — bots scale by your ranked rating
-- 7-tier Filipino ranked ladder: Baguhan → Tito/Tita → Manlalaro → Mahjongista → Dalubhasa → Kampeon → Hari ng Mahjong
-- 30-level XP system with soft-prestige stars past Lv 30
-- 56 achievements + daily challenges with streak rewards
+- 4 difficulty levels — bots scale by your tier
+- **Mahjong Points (MP)** drive progression — wins add, losses subtract, floored at 0
+- 7 Filipino tiers: Baguhan → Tito/Tita → Manlalaro → Mahjongista → Dalubhasa → Kampeon → Hari ng Mahjong
+- Cosmetic unlocks at every tier (tables, tile sets) — kept forever
+- Prestige stars past Hari ng Mahjong (every 10,000 MP)
+- 56 achievements + daily challenges with streak rewards (and grace-day forgiveness)
 - Real table sounds and calls
 - Free on Google Play (no sign-up, no paywall, no aggressive ads)
-- Also playable in browser at filipinomj.com
+- More info, screenshots, and the full rules at filipinomj.com
 - iPhone version coming soon
 
 **Play Store:** [PLAY_STORE_LINK]
-**Browser:** filipinomj.com
+**Website:** filipinomj.com
 
 Would love feedback from anyone who plays. Did I get the rules right? Anything off compared to how your family plays? Salamat po!
 
@@ -261,7 +264,7 @@ Would love feedback from anyone who plays. Did I get the rules right? Anything o
 
 Free on Google Play. Solo Pinoy developer. Built it because no existing app played the rules my family uses.
 
-Includes Jokers, Sagása, Bisaklat, Sietepares, Tódas, Escalera. Three named AI opponents (Lola Winnie, Tita Nene, Kuya Edgar) across 4 difficulty levels. 7-tier Filipino ranked ladder (Baguhan → Hari ng Mahjong). 56 achievements. Daily challenges. Real table sounds. Browser-playable too at filipinomj.com.
+Includes Jokers, Sagása, Bisaklat, Sietepares, Tódas, Escalera. Three named AI opponents (Lola Winnie, Tita Nene, Kuya Edgar) across 4 difficulty levels. Earn Mahjong Points to climb 7 Filipino tiers (Baguhan → Hari ng Mahjong) and unlock new tables/tile sets. 56 achievements. Daily challenges. Real table sounds. More info at filipinomj.com.
 
 iOS version next. Looking for honest feedback from anyone who knows the game. Salamat po.
 
@@ -280,12 +283,12 @@ Solo developer here. Just launched my first Android game. It's a free single-pla
 Different from international/Hong Kong/Riichi mahjong. If you've never played the Filipino variant, the in-game tutorial walks you through it.
 
 - Free, no IAP, no aggressive ads
-- Three named AI opponents across 4 difficulty levels (Elo-based — bots scale with you)
-- 30-level XP + 7-tier ranked ladder + 56 achievements
-- Daily challenges with streak rewards (and one grace day per week)
+- Three named AI opponents across 4 difficulty levels (bots scale with your tier)
+- Earn Mahjong Points to climb 7 Filipino tiers (Baguhan → Hari ng Mahjong), unlocking cosmetics at each
+- 56 achievements + daily challenges with streak rewards (and one grace day per week)
 - Single-player, plays offline
 - Real table sounds and call audio
-- Browser version too: filipinomj.com
+- More info at filipinomj.com
 
 [PLAY_STORE_LINK]
 
@@ -307,12 +310,12 @@ Most of you probably play Hong Kong, Riichi, or American. The Filipino variant i
 - **Tódas** — full clean win
 - **Escalera** — runs of consecutive tiles
 
-I built a free Android app + browser version because no existing app handles the Filipino rules properly. Curious what global mahjong players think of the rule set after years of HK/Riichi.
+I built a free Android app because no existing app handles the Filipino rules properly. Curious what global mahjong players think of the rule set after years of HK/Riichi.
 
-Browser: filipinomj.com
 Android: [PLAY_STORE_LINK]
+Website: filipinomj.com
 
-Free, single-player vs AI (3 named bots, 4 difficulty levels with Elo-style rating). 30-level XP + 7-tier ranked ladder (Baguhan → Hari ng Mahjong). iOS coming.
+Free, single-player vs AI (3 named bots, 4 difficulty levels — bots scale with your tier). Earn Mahjong Points to climb 7 Filipino tiers (Baguhan → Hari ng Mahjong), unlocking new tables and tile sets along the way. iOS coming.
 
 ---
 
@@ -371,7 +374,7 @@ Tag the tito who taught you these. Free on Android — link in bio. 🇵🇭🀄
 
 **(2–10s):** Show Lola Winnie playing — drawing a tile, calling Pung. Voiceover: "She's at the West seat. She's seen every hand. She's waiting for you."
 
-**(10–18s):** Cut to Lola Winnie winning a hand. Voiceover: "Beat her at hard difficulty and you've earned the achievement. Beat her at very-hard and you're somebody."
+**(10–18s):** Cut to Lola Winnie winning a hand. Voiceover: "Beat her at hard difficulty and you've earned the achievement. Beat her at very-hard and your Mahjong Points jump."
 
 **(18–28s):** Quick cuts of Tita Nene and Kuya Edgar at their seats. Voiceover: "Tita Nene deals first. Kuya Edgar plays for keeps. Beat all three to become Table Champion."
 

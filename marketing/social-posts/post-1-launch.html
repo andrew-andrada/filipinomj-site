@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Post 1 — Launch Announcement</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+<style>
+  @page { size: 1080px 1080px; margin: 0; }
+
+  :root {
+    --blue-dark: #06101e;
+    --blue-felt: #0e2448;
+    --blue-mid: #152038;
+    --gold: #c9a84c;
+    --gold-light: #e8c96d;
+    --gold-deep: #a08434;
+    --ivory: #f7f2e4;
+    --ivory-dark: #e8dfc8;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    width: 1080px;
+    height: 1080px;
+    background: radial-gradient(ellipse at 40% 30%, var(--blue-mid) 0%, var(--blue-dark) 60%, #020810 100%);
+    color: var(--ivory);
+    font-family: 'Crimson Text', 'Latin Modern Roman', Georgia, serif;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Subtle gold radial accents */
+  body::before {
+    content: '';
+    position: absolute;
+    top: -200px; left: -200px;
+    width: 700px; height: 700px;
+    background: radial-gradient(circle, rgba(201,168,76,0.18) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  body::after {
+    content: '';
+    position: absolute;
+    bottom: -250px; right: -250px;
+    width: 800px; height: 800px;
+    background: radial-gradient(circle, rgba(201,168,76,0.14) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  /* Art-deco frame matching index.html */
+  .frame {
+    position: absolute;
+    inset: 50px;
+    border: 2px solid rgba(201,168,76,0.4);
+    border-radius: 4px;
+    box-shadow: inset 0 0 100px rgba(201,168,76,0.06);
+  }
+  .corner {
+    position: absolute;
+    width: 36px; height: 36px;
+    border: 3px solid var(--gold);
+  }
+  .corner.tl { top: 40px; left: 40px; border-right: none; border-bottom: none; }
+  .corner.tr { top: 40px; right: 40px; border-left: none; border-bottom: none; }
+  .corner.bl { bottom: 40px; left: 40px; border-right: none; border-top: none; }
+  .corner.br { bottom: 40px; right: 40px; border-left: none; border-top: none; }
+
+  /* Content stack */
+  .stack {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 90px;
+  }
+
+  /* "NOW LIVE" eyebrow */
+  .eyebrow {
+    font-family: 'Cinzel', 'Latin Modern Roman Caps', 'Trajan Pro', Georgia, serif;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 12px;
+    color: var(--gold);
+    text-shadow: 0 0 30px rgba(201,168,76,0.4);
+    margin-bottom: 30px;
+    padding: 10px 24px;
+    border-top: 1px solid rgba(201,168,76,0.5);
+    border-bottom: 1px solid rgba(201,168,76,0.5);
+  }
+
+  /* App icon */
+  .icon-frame {
+    width: 320px;
+    height: 320px;
+    border-radius: 56px;
+    overflow: hidden;
+    box-shadow:
+      0 30px 80px rgba(0,0,0,0.6),
+      0 0 60px rgba(201,168,76,0.25),
+      inset 0 0 0 4px rgba(201,168,76,0.6);
+    margin-bottom: 38px;
+    background: var(--blue-felt);
+  }
+  .icon-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* Title */
+  .title {
+    font-family: 'Cinzel', 'Latin Modern Roman Caps', 'Trajan Pro', Georgia, serif;
+    font-size: 76px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: var(--ivory);
+    line-height: 1;
+    margin-bottom: 14px;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  }
+  .subtitle {
+    font-family: 'Cinzel', 'Latin Modern Roman Caps', 'Trajan Pro', Georgia, serif;
+    font-size: 62px;
+    font-weight: 700;
+    letter-spacing: 18px;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 36px;
+    text-shadow: 0 0 30px rgba(201,168,76,0.35), 0 2px 6px rgba(0,0,0,0.4);
+  }
+
+  /* Tagline strip */
+  .tagline {
+    font-family: 'Cinzel', 'Latin Modern Roman Caps', 'Trajan Pro', Georgia, serif;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 8px;
+    color: var(--gold-light);
+    opacity: 0.9;
+    margin-bottom: 50px;
+  }
+  .tagline .dot {
+    color: var(--gold);
+    margin: 0 14px;
+    opacity: 0.65;
+  }
+
+  /* Google Play badge — built inline so we don't depend on a downloaded asset */
+  .play-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+    background: linear-gradient(180deg, #1f1f1f 0%, #050505 100%);
+    color: var(--ivory);
+    padding: 18px 38px;
+    border-radius: 14px;
+    border: 1.5px solid rgba(201,168,76,0.35);
+    box-shadow: 0 12px 36px rgba(0,0,0,0.5);
+    text-decoration: none;
+  }
+  .play-badge svg {
+    width: 42px; height: 42px;
+    flex-shrink: 0;
+  }
+  .play-badge .b-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1;
+  }
+  .play-badge .b-top {
+    font-family: 'Cinzel', 'Latin Modern Roman Caps', 'Trajan Pro', Georgia, serif;
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: var(--gold-light);
+    margin-bottom: 5px;
+  }
+  .play-badge .b-bottom {
+    font-family: 'Cinzel', 'Latin Modern Roman Caps', 'Trajan Pro', Georgia, serif;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--ivory);
+  }
+
+  /* Footer strip removed — handle and URL live in the IG caption instead.
+     Decorative call words removed too — they clashed with content. */
+</style>
+</head>
+<body>
+
+<div class="frame"></div>
+<div class="corner tl"></div>
+<div class="corner tr"></div>
+<div class="corner bl"></div>
+<div class="corner br"></div>
+
+<div class="stack">
+  <div class="eyebrow">NOW LIVE ON ANDROID</div>
+
+  <div class="icon-frame">
+    <img src="../../Images/App Icon_3.png" alt="Filipino Mahjong app icon">
+  </div>
+
+  <div class="title">FILIPINO MAHJONG</div>
+  <div class="subtitle">JOKER RULES</div>
+
+  <div class="tagline">17 TILES<span class="dot">·</span>JOKERS<span class="dot">·</span>BISAKLAT<span class="dot">·</span>FREE</div>
+
+  <a class="play-badge" href="#">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="gp" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#e8c96d"/>
+          <stop offset="100%" stop-color="#c9a84c"/>
+        </linearGradient>
+      </defs>
+      <path fill="url(#gp)" d="M3.609 1.814 13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zM14.499 12.708l2.852 2.852-11.114 6.31 8.262-9.162zm3.999-3.518 2.526 1.435a1 1 0 0 1 0 1.75l-2.694 1.53L15.207 12l3.291-2.81zM6.237 2.121l11.114 6.31-2.852 2.852L6.237 2.12z"/>
+    </svg>
+    <span class="b-text">
+      <span class="b-top">GET IT ON</span>
+      <span class="b-bottom">Google Play</span>
+    </span>
+  </a>
+</div>
+
+</body>
+</html>

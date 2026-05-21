@@ -61,26 +61,25 @@ SIT DOWN WITH THE PAMILYA
 
 ★ Three named AI opponents — Lola Winnie at the west seat, Tita Nene dealing from the north, Kuya Edgar playing for keeps at the east. Plus a rotating cast of titos, titas, and lolos (Ate Darl, Tito Willie, Lolo Efren, Manay Gigi, Tita Baby, and more) who sub in.
 
-★ 4 difficulty levels — easy, normal, hard, very_hard. Bots scale by your ranked rating so the table always feels like the right fight.
+★ 4 difficulty levels — easy, normal, hard, very_hard. Bots scale with your tier so the table always feels like the right fight.
 
-CLIMB THE FILIPINO RANK LADDER
+EARN MAHJONG POINTS, CLIMB SEVEN FILIPINO TIERS
 
-7 Tagalog-named tiers with III/II/I sub-divisions, Elo-based:
+One simple progression: every win adds Mahjong Points (MP), every loss subtracts. MP can't drop below zero. Your tier is your MP total.
 
-★ Baguhan — beginner
-★ Tito / Tita — the regular weekend players
-★ Manlalaro — competent player
-★ Mahjongista — committed mahjong head
-★ Dalubhasa — expert
-★ Kampeon — champion
-★ Hari ng Mahjong — king of mahjong
+★ Lv 1 — Baguhan (0 MP) — where everyone starts
+★ Lv 2 — Tito / Tita (500 MP) — unlock the Ocean Blue table
+★ Lv 3 — Manlalaro (2,500 MP) — unlock Sampaguita tiles
+★ Lv 4 — Mahjongista (8,000 MP) — unlock the Dynasty Red table
+★ Lv 5 — Dalubhasa (20,000 MP) — unlock Baybayin tiles
+★ Lv 6 — Kampeon (40,000 MP) — unlock the Royal Purple table
+★ Lv 7 — Hari ng Mahjong (75,000 MP) — unlock the Gold table
 
-Every win earns rating. Every loss costs some. Abandons cost more. Bisaklat wins bring rating bonuses because they deserve to.
+Beyond Hari, prestige stars stack every 10,000 MP. Every cosmetic you unlock is yours forever — even if your MP later drops back below the tier.
 
-PROGRESSION + ACHIEVEMENTS
+ACHIEVEMENTS + DAILY CHALLENGES
 
-✓ 30-level XP system with soft-prestige stars past Level 30
-✓ 56 achievements across 4 sections — first-time milestones (bronze), win-type achievements (silver), streaks and XP (gold), defeating named bots (red+gold)
+✓ 56 achievements across 4 sections — first-time milestones (bronze), win-type achievements (silver), streaks and MP totals (gold), defeating named bots (red+gold)
 ✓ Daily challenges with streak rewards and a one-day-per-week grace day so you don't lose your streak to a busy Tuesday
 
 WHAT'S IN THE GAME
@@ -89,7 +88,6 @@ WHAT'S IN THE GAME
 ✓ In-game tutorial — learn the rules in a round or two
 ✓ Free, no sign-up, no paywall, no pay-to-win
 ✓ Single-player, plays offline
-✓ Browser version too at filipinomj.com — same game, same rules
 
 THE FILIPINO MAHJONG VOCABULARY
 
@@ -114,7 +112,7 @@ Free. No sign-up. No paywall. The game your pamilya already knows.
 
 — Bayanihan Games · Fil-Am solo dev
 
-iPhone version coming soon. Visit filipinomj.com for browser play and the full rules.
+iPhone version coming soon. Visit filipinomj.com for the full rules and more about the game.
 
 Mga kababayan, laro na tayo. 🇵🇭🀄
 
@@ -178,7 +176,7 @@ Recommended order:
 5. **Calls in action** — screenshot showing Pung/Chow/Kang call UI, overlay "REAL TABLE CALLS"
 6. **Tutorial / how-to-play** — your existing how-to-play screenshot
 7. **Leaderboard** — `FMJ_leaderboard.png` with overlay "TRACK YOUR WINS"
-8. **Browser play** — split image: phone + laptop showing the browser version, overlay "PLAY ANYWHERE"
+8. **Meet your opponents** — close-up of the in-game seat labels for Lola Winnie / Tita Nene / Kuya Edgar with overlay "SIT DOWN WITH THE PAMILYA"
 
 I can sketch the overlay designs for the first 3 if you want — they're worth the time investment because conversion-rate from impression to install is mostly decided by the first 3 screenshots.
 

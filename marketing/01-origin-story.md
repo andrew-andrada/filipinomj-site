@@ -32,7 +32,7 @@ But every mahjong app I tried played it the international way — Hong Kong, Rii
 
 So I built one that does it right.
 
-**Filipino Mahjong: Joker Rules** is the version Lola taught Tita who taught me. Authentic 17-tile gameplay, real table sounds and calls, the full Pinoy rule set. I even named the bots after the people I learned from — you'll be sitting across from **Lola Winnie**, **Tita Nene**, and **Kuya Edgar** every game. Climb a 7-tier Filipino ranked ladder from Baguhan all the way to Hari ng Mahjong. Free, no sign-up, no paywall — built in my spare time as one Fil-Am developer because the game my family plays deserved a proper app.
+**Filipino Mahjong: Joker Rules** is the version Lola taught Tita who taught me. Authentic 17-tile gameplay, real table sounds and calls, the full Pinoy rule set. I even named the bots after the people I learned from — you'll be sitting across from **Lola Winnie**, **Tita Nene**, and **Kuya Edgar** every game. Earn **Mahjong Points** with every win and climb seven Filipino tiers from Baguhan all the way to Hari ng Mahjong, unlocking new tables and tile sets along the way. Free, no sign-up, no paywall — built in my spare time as one Fil-Am developer because the game my family plays deserved a proper app.
 
 Whether you're in Manila or Mississauga, whether your titos taught you when you were eight or you just watched from the doorway — this one's for you.
 

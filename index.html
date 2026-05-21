@@ -12,7 +12,7 @@
 
 <!-- Open Graph / social previews -->
 <meta property="og:title" content="Filipino Mahjong: Joker Rules — Now on Google Play">
-<meta property="og:description" content="The most authentic Filipino Mahjong on mobile. Joker tile, Búnot, Sagása, Bisaklat, 30-level progression, Ranked Mode. Free, offline, no paywalls.">
+<meta property="og:description" content="The most authentic Filipino Mahjong on mobile. Joker tile, Búnot, Sagása, Bisaklat — earn Mahjong Points to climb 7 Filipino tiers from Baguhan to Hari ng Mahjong. Free, offline, no paywalls.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://filipinomj.com/">
 <meta property="og:image" content="https://filipinomj.com/Images/App%20Icon_3.png">
@@ -36,7 +36,7 @@
   "operatingSystem": "ANDROID",
   "applicationCategory": "GameApplication",
   "applicationSubCategory": "Board Game",
-  "description": "The most authentic Filipino Mahjong on mobile. Joker Rules variant with Búnot, Sagása, Bisaklat, Siete Pares, Escalera, and a 30-level Filipino progression ladder. Free, offline, no paywalls.",
+  "description": "The most authentic Filipino Mahjong on mobile. Joker Rules variant with Búnot, Sagása, Bisaklat, Siete Pares, Escalera — earn Mahjong Points to climb a 7-tier Filipino ladder from Baguhan to Hari ng Mahjong, unlocking new tables and tile sets at each tier. Free, offline, no paywalls.",
   "url": "https://filipinomj.com/",
   "installUrl": "https://play.google.com/store/apps/details?id=com.bayanihangames.filipinomj",
   "downloadUrl": "https://play.google.com/store/apps/details?id=com.bayanihangames.filipinomj",
@@ -508,6 +508,8 @@ footer .foot-links a{margin:0 10px;letter-spacing:1px;font-family:'Cinzel',serif
     <p class="lede">Jokers. Sagása. Bisaklat. Siete Pares. Escalera. The rules your Lola taught you, faithfully rebuilt. Free Android app available now — App Store version coming soon.</p>
     <div class="cta-row">
       <a class="play-store-cta"
+         data-ga-label="hero_badge"
+         target="_blank" rel="noopener"
          href="https://play.google.com/store/apps/details?id=com.bayanihangames.filipinomj"
          aria-label="Get Filipino Mahjong: Joker Rules on Google Play">
         <img alt="Get it on Google Play"
@@ -538,8 +540,8 @@ footer .foot-links a{margin:0 10px;letter-spacing:1px;font-family:'Cinzel',serif
     </div>
     <div class="feature">
       <div class="icon">▲</div>
-      <h3>30 LEVELS + RANKED</h3>
-      <p>Climb 30 levels from <strong>Baguhan</strong> to <strong>Hari ng Mahjong</strong>. Compete in Ranked Mode against tougher AI as your rating rises.</p>
+      <h3>SEVEN FILIPINO TIERS</h3>
+      <p>Earn <strong>Mahjong Points</strong> with every win. Climb seven Filipino tiers from <strong>Baguhan</strong> to <strong>Hari ng Mahjong</strong> — unlocking new tables and tile sets at each tier.</p>
     </div>
     <div class="feature">
       <div class="icon">♪</div>
@@ -637,6 +639,8 @@ footer .foot-links a{margin:0 10px;letter-spacing:1px;font-family:'Cinzel',serif
   <p>Lola Winnie, Tita Nene, Kuya Edgar at the table. Authentic rules. One download.</p>
   <div class="cta-row" style="margin-bottom:0">
     <a class="play-store-cta"
+       data-ga-label="cta_band_badge"
+       target="_blank" rel="noopener"
        href="https://play.google.com/store/apps/details?id=com.bayanihangames.filipinomj"
        aria-label="Get Filipino Mahjong: Joker Rules on Google Play">
       <img alt="Get it on Google Play"
@@ -667,6 +671,20 @@ footer .foot-links a{margin:0 10px;letter-spacing:1px;font-family:'Cinzel',serif
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Google Play badge click tracking → GA4. gtag only exists on the web build
+  // (the !window.Capacitor gate), so guard the call defensively.
+  document.querySelectorAll('.play-store-cta').forEach(function(el){
+    el.addEventListener('click', function(){
+      if (typeof gtag === 'function') {
+        gtag('event', 'play_store_click', {
+          event_category: 'conversion',
+          event_label: el.getAttribute('data-ga-label') || 'unknown',
+          value: 1
+        });
+      }
+    });
+  });
 
   // Screenshot lightbox
   (function(){
