@@ -15,8 +15,14 @@
     p{color:var(--ivory-dark);max-width:480px;margin:0 0 28px;line-height:1.5}
     .badges{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;align-items:center;margin-bottom:18px}
     .badges a{display:inline-block;line-height:0}
-    .badges img{height:80px;width:auto;display:block}
-    @media (max-width:640px){.badges img{height:60px}}
+    /* Apple badge ~75% of Google's CSS height — compensates for Google's transparent
+       padding so the visible buttons match. */
+    .play-store-cta img{height:80px;width:auto;display:block}
+    .app-store-cta  img{height:60px;width:auto;display:block}
+    @media (max-width:640px){
+      .play-store-cta img{height:60px}
+      .app-store-cta  img{height:45px}
+    }
     .back{margin-top:10px;font-size:13px}
     .back a{color:var(--gold);text-decoration:none;letter-spacing:1px;font-family:'Cinzel',serif}
     .back a:hover{text-decoration:underline}

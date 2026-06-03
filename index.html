@@ -225,10 +225,12 @@ header nav a:hover{background:rgba(201,168,76,.12)}
 .play-store-cta img{height:80px;width:auto;display:block}
 @media (max-width:640px){.play-store-cta img{height:60px}}
 
-/* Apple App Store badge — sized to match the Google Play badge next to it. */
+/* Apple App Store badge — sized so the visible button matches the Google Play
+   badge's visible button. Google's badge has ~25% transparent padding baked in,
+   so the App Store needs ~75% the CSS height to look the same size. */
 .app-store-cta{display:inline-block;line-height:0}
-.app-store-cta img{height:80px;width:auto;display:block}
-@media (max-width:640px){.app-store-cta img{height:60px}}
+.app-store-cta img{height:60px;width:auto;display:block}
+@media (max-width:640px){.app-store-cta img{height:45px}}
 
 /* Decorative floating tiles */
 .tile-deco{

@@ -102,10 +102,16 @@ header nav a:hover{background:rgba(201,168,76,.12)}
 }
 .cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;align-items:center}
 
-/* Store badges — same sizing on both pages. */
+/* Store badges. Apple badge gets ~75% of the Google CSS height because Google's
+   badge has ~25% transparent padding baked in around the visible button — equal
+   CSS heights would make the App Store one look visibly heavier. */
 .play-store-cta,.app-store-cta{display:inline-block;line-height:0}
-.play-store-cta img,.app-store-cta img{height:80px;width:auto;display:block}
-@media (max-width:640px){.play-store-cta img,.app-store-cta img{height:60px}}
+.play-store-cta img{height:80px;width:auto;display:block}
+.app-store-cta  img{height:60px;width:auto;display:block}
+@media (max-width:640px){
+  .play-store-cta img{height:60px}
+  .app-store-cta  img{height:45px}
+}
 
 /* Shared button styles */
 .btn{
