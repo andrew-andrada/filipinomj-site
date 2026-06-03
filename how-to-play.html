@@ -100,7 +100,12 @@ header nav a:hover{background:rgba(201,168,76,.12)}
   font-style:italic;
   opacity:.9;
 }
-.htp-hero .cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;align-items:center}
+
+/* Store badges — same sizing on both pages. */
+.play-store-cta,.app-store-cta{display:inline-block;line-height:0}
+.play-store-cta img,.app-store-cta img{height:80px;width:auto;display:block}
+@media (max-width:640px){.play-store-cta img,.app-store-cta img{height:60px}}
 
 /* Shared button styles */
 .btn{
@@ -319,7 +324,24 @@ footer .foot-links a{margin:0 10px;letter-spacing:1px;font-family:'Cinzel',serif
   <h1>How to Play Filipino Mahjong</h1>
   <p class="subtitle">The complete rules — tiles, calls, winning hands, and scoring. Read through once and you'll have it.</p>
   <div class="cta-row">
-    <a href="https://play.google.com/store/apps/details?id=com.bayanihangames.filipinomj" class="btn btn-primary">PLAY NOW</a>
+    <a class="play-store-cta"
+       data-ga-label="htp_hero_badge"
+       target="_blank" rel="noopener"
+       href="https://play.google.com/store/apps/details?id=com.bayanihangames.filipinomj"
+       aria-label="Get Filipino Mahjong: Joker Rules on Google Play">
+      <img alt="Get it on Google Play"
+           src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png">
+    </a>
+    <a class="app-store-cta"
+       data-ga-label="htp_hero_badge"
+       target="_blank" rel="noopener"
+       href="https://apps.apple.com/app/id6766379159"
+       aria-label="Download Filipino Mahjong: Joker Rules on the App Store">
+      <img alt="Download on the App Store"
+           src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?releaseDate=2026-05-01">
+    </a>
+  </div>
+  <div style="margin-top:18px">
     <a href="#basics" class="btn btn-secondary">START READING</a>
   </div>
 </div>
@@ -536,8 +558,25 @@ footer .foot-links a{margin:0 10px;letter-spacing:1px;font-family:'Cinzel',serif
 
 <div class="cta-band">
   <h2>READY TO PLAY?</h2>
-  <p>Three AI opponents. Authentic rules. One click.</p>
-  <a href="https://play.google.com/store/apps/details?id=com.bayanihangames.filipinomj" class="btn btn-primary">PLAY FILIPINO MAHJONG</a>
+  <p>Three AI opponents. Authentic rules. One download.</p>
+  <div class="cta-row">
+    <a class="play-store-cta"
+       data-ga-label="htp_cta_band_badge"
+       target="_blank" rel="noopener"
+       href="https://play.google.com/store/apps/details?id=com.bayanihangames.filipinomj"
+       aria-label="Get Filipino Mahjong: Joker Rules on Google Play">
+      <img alt="Get it on Google Play"
+           src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png">
+    </a>
+    <a class="app-store-cta"
+       data-ga-label="htp_cta_band_badge"
+       target="_blank" rel="noopener"
+       href="https://apps.apple.com/app/id6766379159"
+       aria-label="Download Filipino Mahjong: Joker Rules on the App Store">
+      <img alt="Download on the App Store"
+           src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?releaseDate=2026-05-01">
+    </a>
+  </div>
 </div>
 
 <footer>
@@ -549,7 +588,26 @@ footer .foot-links a{margin:0 10px;letter-spacing:1px;font-family:'Cinzel',serif
   <div>© <span id="year"></span> filipinomj.com • Built with respect for the tradition.</div>
 </footer>
 
-<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+<script>
+  document.getElementById('year').textContent=new Date().getFullYear();
+  // Store-badge click tracking → GA4. Mirrors the handler on index.html so both pages
+  // contribute to the play_store_click / app_store_click conversion totals.
+  function trackBadge(selector, eventName){
+    document.querySelectorAll(selector).forEach(function(el){
+      el.addEventListener('click', function(){
+        if (typeof gtag === 'function') {
+          gtag('event', eventName, {
+            event_category: 'conversion',
+            event_label: el.getAttribute('data-ga-label') || 'unknown',
+            value: 1
+          });
+        }
+      });
+    });
+  }
+  trackBadge('.play-store-cta', 'play_store_click');
+  trackBadge('.app-store-cta',  'app_store_click');
+</script>
 
 </body>
 </html>
