@@ -328,12 +328,12 @@
 
 <div class="container">
 
-  <p class="last-updated">Last updated: May 4, 2026</p>
+  <p class="last-updated">Last updated: June 8, 2026</p>
 
   <!-- The short version -->
   <div class="highlight-box">
     <span class="label">THE SHORT VERSION</span>
-    <p>Filipino Mahjong: Joker Rules does not collect your personal information, does not require an account, and stores all game data locally on your device only. We do not sell or share your data with anyone.</p>
+    <p>Filipino Mahjong: Joker Rules is designed with privacy in mind. The game works fully without an account &mdash; all game data stays on your device. <strong>Optional Google or Apple sign-in</strong> lets you save your progress to your account so it survives uninstall and syncs across devices. Sign-in is your choice; everything works without it. We never sell or share your data.</p>
   </div>
 
   <!-- Table of contents -->
@@ -377,7 +377,16 @@
       <li><strong>Game state</strong> — timestamps and session data used for daily-challenge windows and one-time onboarding flags, stored locally on your device.</li>
     </ul>
 
-    <p>All of the above data is stored using your device's local storage. It never leaves your device and is never transmitted to us or any third party. Note: when visiting the marketing website at filipinomj.com, anonymized analytics data is collected via Google Analytics, and in the Android/iOS app anonymized gameplay statistics are collected via Google Firebase Analytics. The app also reports anonymous crash diagnostics via Google Firebase Crashlytics. All three are described in <a href="#section-9">Section 9</a>.</p>
+    <p>All of the above data is stored using your device's local storage. It never leaves your device unless you choose to sign in (see below). Note: when visiting the marketing website at filipinomj.com, anonymized analytics data is collected via Google Analytics, and in the Android/iOS app anonymized gameplay statistics are collected via Google Firebase Analytics. The app also reports anonymous crash diagnostics via Google Firebase Crashlytics. All three are described in <a href="#section-9">Section 9</a>.</p>
+
+    <p><strong>Information collected only if you choose to sign in (optional):</strong></p>
+    <ul>
+      <li><strong>Account identifier</strong> &mdash; a unique ID (UID) issued by Firebase Authentication when you sign in with Google or Apple. Used only to identify your account.</li>
+      <li><strong>Email address</strong> &mdash; provided by Google or Apple when you sign in. If you choose Apple's "Hide My Email" option, we only receive Apple's private relay address, not your real email.</li>
+      <li><strong>Display name</strong> &mdash; provided by Google or Apple, if available. We do not display this name to other players.</li>
+      <li><strong>A copy of your game progress</strong> &mdash; the same data fields listed above (Mahjong Points, tier, milestones, cosmetics, daily challenge state, scores, achievement progress) is mirrored to Google Firestore under your account ID. This is what lets your progress survive uninstall and sync across devices. Device-only items such as your local sound preference and your local username are NOT synced.</li>
+    </ul>
+    <p>If you don't sign in, none of the above is collected and no game data leaves your device. You can sign in or sign out at any time from Settings, and you can permanently delete your cloud account &mdash; see <a href="#section-8">Section 8</a>.</p>
 
     <p><strong>Information we do NOT collect:</strong></p>
     <ul>
@@ -393,7 +402,18 @@
 
   <section class="policy-section" id="section-3">
     <h2><span class="num">03</span><span>Accounts and Registration</span></h2>
-    <p>Filipino Mahjong: Joker Rules does not require you to create an account or register in any way. There are no passwords. The username you enter in the game is stored only on your device and is used solely for display purposes within the app. It is never sent to any server.</p>
+    <p>Filipino Mahjong: Joker Rules does not require an account. You can play the entire game without signing in. The username you enter in the app is stored only on your device for display purposes.</p>
+
+    <p><strong>Optional sign-in.</strong> If you want your progress to survive uninstalling the app, or you want to use the same account across multiple devices, you can sign in using your existing Google or Apple account. Sign-in is initiated by you from Settings; we never block any feature behind sign-in and we never prompt you to sign in.</p>
+
+    <p>When you sign in:</p>
+    <ul>
+      <li>Your email and display name are provided by Google or Apple and stored in Firebase Authentication under a unique account ID.</li>
+      <li>Your game progress (Mahjong Points, tier, milestones, cosmetics, daily challenge state, scores) is mirrored to Google Firestore under that same account ID.</li>
+      <li>If you sign in for the first time on a device that already has local progress, and your account also has cloud progress, you are presented with a choice screen to pick which set to keep.</li>
+    </ul>
+
+    <p>You can sign out at any time from Settings. Sign-out leaves your local progress intact and does not delete your cloud profile &mdash; you can sign back in later and your data will be there. To permanently delete your cloud account, see <a href="#section-8">Section 8</a> or use the dedicated <a href="account-deletion.html">Account Deletion page</a>.</p>
   </section>
 
   <section class="policy-section" id="section-4">
@@ -430,18 +450,28 @@
 
   <section class="policy-section" id="section-7">
     <h2><span class="num">07</span><span>Data Storage and Security</span></h2>
-    <p>All game data is stored locally on your device using standard browser and app local storage mechanisms. We do not operate any servers that store your personal information. As a result, your game data is as secure as your device itself.</p>
-    <p>If you uninstall the app, all locally stored game data including your username, Mahjong Points, tier, achievements, cosmetic unlocks, daily challenge progress, and game history will be permanently deleted from your device.</p>
+    <p>All game data is stored locally on your device using standard app local-storage mechanisms. Your local data is as secure as your device itself.</p>
+    <p>If you uninstall the app and have not signed in, all locally stored game data including your username, Mahjong Points, tier, achievements, cosmetic unlocks, daily challenge progress, and game history will be permanently deleted from your device.</p>
+    <p>If you have signed in (Section 3), a copy of your progress is also stored in Google Firestore as part of the Firebase platform. Data is transmitted between your device and Firestore over encrypted HTTPS connections, and is protected by Firestore security rules that allow each signed-in user to read and write only their own account document. No other user &mdash; including us &mdash; can read your individual game progress. Firebase Authentication and Firestore are operated by Google under Google's infrastructure security standards.</p>
   </section>
 
   <section class="policy-section" id="section-8">
     <h2><span class="num">08</span><span>How to Delete Your Data</span></h2>
-    <p>You can delete all data stored by Filipino Mahjong: Joker Rules at any time through two methods:</p>
+    <p>You can delete all data stored by Filipino Mahjong: Joker Rules at any time. The exact steps depend on whether you've signed in.</p>
+
+    <p><strong>To delete local device data (always available):</strong></p>
     <ul>
-      <li><strong>In-app reset:</strong> Go to Settings within the app and tap "Reset Account." This clears all game data including your username, Mahjong Points, tier, achievements, cosmetic unlocks, daily challenge progress, and history.</li>
-      <li><strong>Uninstall the app:</strong> Uninstalling Filipino Mahjong: Joker Rules from your device permanently removes all locally stored data.</li>
+      <li><strong>In-app reset:</strong> Settings &rarr; Reset Account. Clears all local game data including your username, Mahjong Points, tier, achievements, cosmetic unlocks, daily challenge progress, and history.</li>
+      <li><strong>Uninstall the app:</strong> permanently removes all locally stored data from your device.</li>
     </ul>
-    <p>Since we do not store any of your data on external servers, there is no additional data deletion request necessary beyond these steps.</p>
+
+    <p><strong>To delete cloud account data (only applies if you've signed in):</strong></p>
+    <ul>
+      <li><strong>In-app Account Deletion (preferred):</strong> Settings &rarr; Delete Account. This permanently erases your cloud profile (your Firebase Authentication user record and your Firestore game-data document), signs you out, and clears local data so you can keep playing as a guest. This is the most direct path.</li>
+      <li><strong>Web-based deletion request:</strong> if you no longer have access to the app or your account, visit our dedicated <a href="account-deletion.html">Account Deletion page</a> for instructions to request deletion by email.</li>
+    </ul>
+
+    <p>Account deletion is permanent and irreversible. After deletion, your Firebase Authentication record and Firestore document are removed and cannot be recovered.</p>
   </section>
 
   <section class="policy-section" id="section-9">
@@ -454,6 +484,9 @@
       <li><strong>Google Analytics (marketing website only)</strong> — for analytics on filipinomj.com. Google Analytics (GA4) sets cookies and collects information such as IP address, browser type, pages visited, session duration, and referrer URL. This tracking only runs on the marketing website. It is <em>not</em> active in the Android/iOS app. Governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
       <li><strong>Google Firebase Analytics (Android/iOS app only)</strong> — for anonymous gameplay and usage statistics within the mobile app. Firebase Analytics collects information such as which menus you open, how many games you start and finish, ad interactions, and general device/OS information. No personally identifiable information is collected. You can opt out of personalized tracking in your device's advertising ID settings. Governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
       <li><strong>Google Firebase Crashlytics (Android/iOS app only)</strong> — for crash and error reporting. When the app crashes or encounters an unhandled error, Crashlytics collects diagnostic information such as device model, operating system version, app version, and a stack trace describing where the crash occurred. This helps us identify and fix bugs quickly. No personally identifiable information is included in crash reports. Governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+      <li><strong>Google Firebase Authentication (only if you sign in)</strong> &mdash; manages your sign-in with Google or Apple. Firebase Authentication stores your email, display name, and a unique account identifier (UID). Used only to authenticate you when you launch the app or switch devices. Governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+      <li><strong>Google Cloud Firestore (only if you sign in)</strong> &mdash; stores your game-progress data (the fields listed in <a href="#section-2">Section 2</a>'s sign-in subsection) so it persists across uninstall and devices. Each user's document is protected by Firestore security rules so only that user can read or write it. Governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+      <li><strong>Sign in with Apple (only if you choose Apple sign-in)</strong> &mdash; Apple authenticates your identity and shares your email and name with us. If you choose Apple's "Hide My Email" option, we receive a private relay address instead of your real email and cannot see your true address. Governed by <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.</li>
     </ul>
     <p>We do not sell, trade, or otherwise transfer your information to any other outside parties.</p>
   </section>
@@ -468,8 +501,14 @@
 
   <section class="policy-section" id="section-11">
     <h2><span class="num">11</span><span>Your Rights</span></h2>
-    <p>Since Filipino Mahjong: Joker Rules stores all data locally on your device and does not transmit personal information to any server, you have full control over your data at all times through the methods described in <a href="#section-8">Section 8</a>.</p>
-    <p>If you have any questions about your rights or wish to make a request, please contact us at <a href="mailto:filipinomahjong@gmail.com">filipinomahjong@gmail.com</a>.</p>
+    <p>You have the following rights regarding your data:</p>
+    <ul>
+      <li><strong>Right to access</strong> &mdash; your data is always visible to you inside the app. If you've signed in, contact us at the email below and we'll provide a copy of your Firestore profile on request.</li>
+      <li><strong>Right to deletion</strong> &mdash; delete local data via Settings &rarr; Reset Account, or uninstall. Delete your cloud account via Settings &rarr; Delete Account or the dedicated <a href="account-deletion.html">Account Deletion page</a>.</li>
+      <li><strong>Right to data portability</strong> &mdash; contact <a href="mailto:filipinomahjong@gmail.com">filipinomahjong@gmail.com</a> if you need a machine-readable copy of your cloud-stored game data.</li>
+      <li><strong>Right to withdraw consent</strong> &mdash; sign out at any time from Settings to stop your cloud profile from being updated; delete your account to remove it entirely.</li>
+    </ul>
+    <p>For any other requests or questions about your rights, please contact us at <a href="mailto:filipinomahjong@gmail.com">filipinomahjong@gmail.com</a>.</p>
   </section>
 
   <section class="policy-section" id="section-12">

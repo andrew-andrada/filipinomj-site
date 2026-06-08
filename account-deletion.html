@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T8VQ9275N0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T8VQ9275N0');
+  </script>
+  <!-- End Google tag (gtag.js) -->
+
+  <title>Account Deletion — Filipino Mahjong: Joker Rules</title>
+  <meta name="description" content="How to permanently delete your Filipino Mahjong: Joker Rules cloud account and game data. In-app one-tap deletion, plus an email request path for users who no longer have access to the app.">
+  <link rel="icon" type="image/png" href="Images/App Icon_3.png">
+  <link rel="apple-touch-icon" href="Images/App Icon_3.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --blue-dark:#06101e;
+      --blue-felt:#0e2448;
+      --blue-mid:#152038;
+      --gold:#c9a84c;
+      --gold-light:#e8c96d;
+      --ivory:#f7f2e4;
+      --ivory-dark:#e8dfc8;
+      --ink:#1a1a2e;
+      --ink-soft:#2a2a3e;
+      --paper:#f9f7f2;
+      --paper-tint:#eef2f8;
+    }
+    html{scroll-behavior:smooth}
+    body{font-family:'Crimson Text',Georgia,serif;font-size:17px;line-height:1.75;color:var(--ink);background:var(--paper)}
+
+    /* === STICKY NAV === */
+    .site-nav{position:sticky;top:0;z-index:20;background:linear-gradient(180deg,#040c18 0%,#0a1628 100%);border-bottom:2px solid var(--gold);padding:10px 20px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 3px 20px rgba(0,0,0,.45)}
+    .site-nav .brand{font-family:'Cinzel',serif;font-size:18px;font-weight:600;color:var(--gold);letter-spacing:3px;text-shadow:0 0 20px rgba(201,168,76,.35);text-decoration:none}
+    .site-nav nav{display:flex;gap:6px}
+    .site-nav nav a{font-family:'Cinzel',serif;font-size:11px;color:var(--gold);text-decoration:none;padding:4px 10px;border:1px solid rgba(201,168,76,.35);border-radius:5px;letter-spacing:1px;transition:background .15s ease}
+    .site-nav nav a:hover{background:rgba(201,168,76,.12)}
+
+    /* === PAGE HEADER === */
+    header.page-header{background:radial-gradient(ellipse at 50% 30%,var(--blue-mid) 0%,var(--blue-dark) 80%);border-bottom:3px solid var(--gold);padding:48px 24px 40px;text-align:center;position:relative}
+    header.page-header::before,header.page-header::after{content:'';position:absolute;width:60px;height:1px;top:50%;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+    header.page-header::before{left:24px}
+    header.page-header::after{right:24px}
+    header.page-header h1{font-family:'Cinzel',serif;font-size:clamp(22px,4vw,30px);font-weight:600;color:var(--gold);letter-spacing:3px;margin-bottom:8px;text-shadow:0 0 24px rgba(201,168,76,.3)}
+    header.page-header p.eyebrow{font-family:'Cinzel',serif;font-size:12px;font-weight:400;color:var(--gold-light);opacity:.8;letter-spacing:4px}
+
+    /* === MAIN CONTAINER === */
+    .container{max-width:780px;margin:0 auto;padding:48px 24px 80px}
+    .last-updated{font-size:13px;color:#888;margin-bottom:24px;font-style:italic;font-family:'Cinzel',serif;letter-spacing:1px}
+
+    /* === HIGHLIGHT BOX === */
+    .highlight-box{background:linear-gradient(180deg,var(--paper-tint) 0%,#fff 100%);border:1px solid rgba(201,168,76,.4);border-left:4px solid var(--gold);border-radius:0 8px 8px 0;padding:20px 24px;margin-bottom:36px;box-shadow:0 2px 12px rgba(14,36,72,.06)}
+    .highlight-box .label{font-family:'Cinzel',serif;font-size:11px;font-weight:600;color:var(--blue-felt);letter-spacing:2px;margin-bottom:8px;display:block}
+    .highlight-box p{margin:0;font-size:16px;color:var(--ink-soft);line-height:1.65}
+
+    /* === BODY CONTENT === */
+    section.policy-section{margin-bottom:36px;scroll-margin-top:80px}
+    section.policy-section h2{font-family:'Cinzel',serif;font-size:18px;font-weight:600;color:var(--blue-felt);margin:0 0 14px;padding-bottom:10px;border-bottom:1px solid var(--gold);letter-spacing:1px;display:flex;align-items:baseline;gap:10px}
+    section.policy-section h2 .num{font-size:13px;color:var(--gold);font-weight:400}
+    section.policy-section p{margin-bottom:14px;color:var(--ink-soft)}
+    section.policy-section ul,section.policy-section ol{margin:0 0 14px 24px;color:var(--ink-soft)}
+    section.policy-section ul li,section.policy-section ol li{margin-bottom:6px}
+    section.policy-section a{color:var(--blue-felt);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px}
+    section.policy-section a:hover{color:var(--gold)}
+
+    /* Email block — make the request template easy to copy */
+    .email-template{background:#fff;border:1px solid rgba(201,168,76,.3);border-left:4px solid var(--gold);border-radius:0 8px 8px 0;padding:16px 20px;margin:14px 0;font-family:'Cinzel',serif;font-size:14px;color:var(--ink);line-height:1.6}
+    .email-template .label{font-size:10px;color:var(--gold);letter-spacing:2px;display:block;margin-bottom:6px}
+    .email-template code{font-family:'Crimson Text',Georgia,serif;font-size:15px;color:var(--ink-soft);background:rgba(201,168,76,.08);padding:1px 6px;border-radius:3px}
+
+    .group-divider{width:80px;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:48px auto}
+
+    /* Back to top */
+    .back-to-top{text-align:center;margin-top:40px;font-family:'Cinzel',serif;font-size:11px;letter-spacing:2px}
+    .back-to-top a{color:var(--gold);text-decoration:none;border:1px solid rgba(201,168,76,.5);padding:8px 18px;border-radius:5px;transition:background .15s ease}
+    .back-to-top a:hover{background:rgba(201,168,76,.12)}
+
+    /* === FOOTER === */
+    footer.site-footer{background:linear-gradient(180deg,#0a1628 0%,#040c18 100%);border-top:2px solid var(--gold);color:var(--ivory-dark);padding:40px 24px 32px;text-align:center}
+    footer.site-footer .foot-links{margin-bottom:16px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+    footer.site-footer .foot-links a{font-family:'Cinzel',serif;font-size:11px;color:var(--gold);letter-spacing:2px;text-decoration:none;padding:4px 10px;border:1px solid rgba(201,168,76,.35);border-radius:5px;transition:background .15s ease}
+    footer.site-footer .foot-links a:hover{background:rgba(201,168,76,.12)}
+    footer.site-footer .copyright{font-family:'Cinzel',serif;font-size:11px;color:var(--ivory-dark);opacity:.6;letter-spacing:1.5px}
+    footer.site-footer .copyright a{color:var(--gold);text-decoration:none}
+    footer.site-footer .copyright a:hover{text-decoration:underline}
+
+    /* Print */
+    @media print{.site-nav,.back-to-top{display:none}body{background:#fff;font-size:11pt;line-height:1.5}header.page-header{background:none;color:var(--ink);padding:24px 0;border-bottom:2px solid var(--gold)}header.page-header h1,header.page-header p.eyebrow{color:var(--ink)}footer.site-footer{background:none;color:var(--ink);border-top:1px solid var(--gold)}footer.site-footer .foot-links{display:none}a{color:var(--ink)!important;text-decoration:underline}}
+  </style>
+</head>
+<body>
+
+<!-- Sticky site nav (matches index.html) -->
+<div class="site-nav">
+  <a href="/" class="brand">FILIPINO MAHJONG</a>
+  <nav>
+    <a href="/#features">About</a>
+    <a href="how-to-play.html">Rules</a>
+    <a href="https://play.google.com/store/apps/details?id=com.bayanihangames.filipinomj">Play</a>
+  </nav>
+</div>
+
+<header class="page-header">
+  <p class="eyebrow">FILIPINO MAHJONG: JOKER RULES</p>
+  <h1>ACCOUNT DELETION</h1>
+</header>
+
+<div class="container">
+
+  <p class="last-updated">Last updated: June 8, 2026</p>
+
+  <div class="highlight-box">
+    <span class="label">THE SHORT VERSION</span>
+    <p>If you can open the app, the fastest way to delete your account is <strong>Settings &rarr; Delete Account</strong>. One tap, one confirmation, and your cloud profile + local data are permanently erased. If you've lost access to the app, see the email request below.</p>
+  </div>
+
+  <section class="policy-section" id="section-1">
+    <h2><span class="num">01</span><span>Who Has an Account?</span></h2>
+    <p>Filipino Mahjong: Joker Rules does not require an account to play. You only have an account if you've signed in inside the app using Google or Apple. If you've never tapped <strong>Settings &rarr; Save Progress</strong>, you don't have a cloud account &mdash; all your data is stored only on your device and is removed automatically when you uninstall the app. See the <a href="privacy-policy.html#section-8">privacy policy's deletion section</a> for the local-only case.</p>
+    <p>The rest of this page covers deleting a <em>signed-in cloud account</em>.</p>
+  </section>
+
+  <section class="policy-section" id="section-2">
+    <h2><span class="num">02</span><span>In-App Deletion (Preferred)</span></h2>
+    <p>If you can still open the app, this is the fastest and most reliable path:</p>
+    <ol>
+      <li>Open Filipino Mahjong: Joker Rules on your device.</li>
+      <li>Tap the <strong>&#9881; gear icon</strong> on the home screen to open Settings.</li>
+      <li>Tap <strong>Delete Account</strong>.</li>
+      <li>Read the confirmation prompt and tap <strong>Delete Forever</strong> to confirm.</li>
+    </ol>
+    <p>The app will immediately:</p>
+    <ul>
+      <li>Permanently delete your Firebase Authentication account record (your email, display name, and account ID).</li>
+      <li>Permanently delete your Cloud Firestore document (your game progress: Mahjong Points, tier, milestones, cosmetics, daily challenge state, scores, achievement progress).</li>
+      <li>Reset your local data on this device so you can keep playing as a guest from a clean slate.</li>
+    </ul>
+    <p>This is irreversible. There is no recovery once you tap Delete Forever.</p>
+  </section>
+
+  <section class="policy-section" id="section-3">
+    <h2><span class="num">03</span><span>Email Request (If You No Longer Have the App)</span></h2>
+    <p>If you've uninstalled the app, lost access to your device, or otherwise cannot use the in-app deletion path, you can request deletion by email.</p>
+
+    <p>Send an email from <strong>the same email address you used to sign in</strong> (Google or Apple account email) to:</p>
+
+    <div class="email-template">
+      <span class="label">SEND TO</span>
+      <code>filipinomahjong@gmail.com</code>
+    </div>
+
+    <div class="email-template">
+      <span class="label">SUBJECT</span>
+      <code>Account deletion request</code>
+    </div>
+
+    <div class="email-template">
+      <span class="label">BODY (copy &amp; paste)</span>
+      Please permanently delete my Filipino Mahjong: Joker Rules account.<br><br>
+      I confirm I want my Firebase Authentication record and my Firestore game-data document permanently erased, and I understand this is irreversible.
+    </div>
+
+    <p>If your Apple sign-in used Apple's "Hide My Email" private relay address, please email us from that relay address (you can still send mail through it via your Apple ID settings). If you can't access either address, mention that in the email and we'll work with you on a manual verification path.</p>
+  </section>
+
+  <section class="policy-section" id="section-4">
+    <h2><span class="num">04</span><span>What Gets Deleted</span></h2>
+    <ul>
+      <li><strong>Firebase Authentication record</strong> &mdash; your account ID, email, and display name as stored by Firebase Auth.</li>
+      <li><strong>Cloud Firestore document</strong> &mdash; the document at <code>users/{your-account-id}</code> containing your Mahjong Points, tier, milestone unlocks, cosmetics, equipped table and tile back, achievement progress, game history, and daily challenge state.</li>
+      <li><strong>Local device data</strong> &mdash; if you use the in-app deletion path, your device's local copy is also wiped to defaults. The email request path can only delete cloud data; any local data on the device remains until you uninstall the app or use Settings &rarr; Reset Account.</li>
+    </ul>
+  </section>
+
+  <section class="policy-section" id="section-5">
+    <h2><span class="num">05</span><span>What Does NOT Get Deleted</span></h2>
+    <p>The following data is retained because it is fully anonymized and not linked to your account identity:</p>
+    <ul>
+      <li><strong>Anonymous gameplay analytics</strong> &mdash; aggregated events about which menus are opened, how many games are started/finished, and ad interactions, collected by Google Firebase Analytics. These are tied to an anonymous device install ID, not to your sign-in account, and contain no personally identifiable information.</li>
+      <li><strong>Anonymous crash diagnostics</strong> &mdash; device model, OS version, and stack traces from app crashes, collected by Google Firebase Crashlytics. Also not linked to your sign-in account.</li>
+    </ul>
+    <p>For details on these services, see <a href="privacy-policy.html#section-9">Section 9 of our Privacy Policy</a>. To remove the anonymous device-install data as well, uninstall the app from your device.</p>
+  </section>
+
+  <section class="policy-section" id="section-6">
+    <h2><span class="num">06</span><span>Timing</span></h2>
+    <ul>
+      <li><strong>In-app deletion:</strong> immediate. Your data is gone the moment you tap <em>Delete Forever</em>.</li>
+      <li><strong>Email request:</strong> typically processed within 1&ndash;3 business days, and always within 7 business days. You'll receive a confirmation reply once the deletion is complete.</li>
+    </ul>
+  </section>
+
+  <section class="policy-section" id="section-7">
+    <h2><span class="num">07</span><span>After Deletion</span></h2>
+    <p>If you reinstall the app and sign in again with the same Google or Apple account, a brand-new account will be created. None of your previous progress &mdash; Mahjong Points, tier, milestones, cosmetics &mdash; will be recovered. You'll start fresh, like a new player.</p>
+    <p>You're always welcome to come back.</p>
+  </section>
+
+  <div class="group-divider"></div>
+
+  <section class="policy-section" id="section-8">
+    <h2><span class="num">08</span><span>Questions or Help</span></h2>
+    <p>If anything about this process is unclear, if your deletion request seems stuck, or if you'd like a copy of your data before it's deleted, contact:</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:filipinomahjong@gmail.com">filipinomahjong@gmail.com</a></li>
+      <li><strong>Privacy policy:</strong> <a href="privacy-policy.html">filipinomj.com/privacy-policy.html</a></li>
+    </ul>
+  </section>
+
+  <div class="back-to-top">
+    <a href="#top">↑ BACK TO TOP</a>
+  </div>
+
+</div>
+
+<!-- Footer (matches index.html) -->
+<footer class="site-footer">
+  <div class="foot-links">
+    <a href="https://play.google.com/store/apps/details?id=com.bayanihangames.filipinomj">PLAY</a>
+    <a href="how-to-play.html">RULES</a>
+    <a href="privacy-policy.html">PRIVACY</a>
+  </div>
+  <div class="copyright">© <span id="year"></span> filipinomj.com · <a href="mailto:filipinomahjong@gmail.com">filipinomahjong@gmail.com</a></div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
