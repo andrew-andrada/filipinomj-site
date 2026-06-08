@@ -112,7 +112,7 @@ Free. No sign-up. No paywall. The game your pamilya already knows.
 
 — Bayanihan Games · Fil-Am solo dev
 
-iPhone version coming soon. Visit filipinomj.com for the full rules and more about the game.
+Now also available on the App Store. Visit filipinomj.com for the full rules and more about the game.
 
 Mga kababayan, laro na tayo. 🇵🇭🀄
 

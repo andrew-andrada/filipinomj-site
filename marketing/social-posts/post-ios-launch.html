@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>iOS Launch Post — Filipino Mahjong</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+<style>
+  @page { size: 1080px 1080px; margin: 0; }
+
+  :root {
+    --blue-dark: #06101e;
+    --blue-felt: #0e2448;
+    --blue-mid: #152038;
+    --gold: #c9a84c;
+    --gold-light: #e8c96d;
+    --gold-deep: #a08434;
+    --ivory: #f7f2e4;
+    --ivory-dark: #e8dfc8;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    width: 1080px;
+    height: 1080px;
+    background: radial-gradient(ellipse at 50% 35%, var(--blue-mid) 0%, var(--blue-dark) 60%, #020810 100%);
+    color: var(--ivory);
+    font-family: 'Crimson Text', 'Latin Modern Roman', Georgia, serif;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Gold radial accents — a touch warmer for the celebratory mood */
+  body::before {
+    content: '';
+    position: absolute;
+    top: -180px; left: 50%; transform: translateX(-50%);
+    width: 900px; height: 900px;
+    background: radial-gradient(circle, rgba(224,201,109,0.18) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  body::after {
+    content: '';
+    position: absolute;
+    bottom: -300px; left: 50%; transform: translateX(-50%);
+    width: 1000px; height: 1000px;
+    background: radial-gradient(circle, rgba(201,168,76,0.12) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  /* Art-deco frame */
+  .frame {
+    position: absolute;
+    inset: 50px;
+    border: 2px solid rgba(201,168,76,0.42);
+    border-radius: 4px;
+    box-shadow: inset 0 0 110px rgba(201,168,76,0.07);
+  }
+  .corner {
+    position: absolute;
+    width: 36px; height: 36px;
+    border: 3px solid var(--gold);
+  }
+  .corner.tl { top: 40px; left: 40px; border-right: none; border-bottom: none; }
+  .corner.tr { top: 40px; right: 40px; border-left: none; border-bottom: none; }
+  .corner.bl { bottom: 40px; left: 40px; border-right: none; border-top: none; }
+  .corner.br { bottom: 40px; right: 40px; border-left: none; border-top: none; }
+
+  /* Stack */
+  .stack {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 105px 80px;
+  }
+
+  /* Celebratory top banner: "NOW ON iPHONE TOO" */
+  .eyebrow {
+    font-family: 'Cinzel', 'Latin Modern Roman Caps', 'Trajan Pro', Georgia, serif;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 11px;
+    color: var(--gold);
+    text-shadow: 0 0 30px rgba(201,168,76,0.45);
+    margin-bottom: 24px;
+    padding: 10px 22px;
+    border-top: 1px solid rgba(201,168,76,0.5);
+    border-bottom: 1px solid rgba(201,168,76,0.5);
+  }
+
+  /* Big celebration headline */
+  .headline {
+    font-family: 'Cinzel', 'Latin Modern Roman Caps', 'Trajan Pro', Georgia, serif;
+    font-size: 88px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: var(--ivory);
+    line-height: 1.05;
+    margin-bottom: 12px;
+    text-shadow: 0 4px 24px rgba(0,0,0,0.55);
+  }
+  .headline .accent {
+    color: var(--gold);
+    text-shadow: 0 0 36px rgba(201,168,76,0.45), 0 2px 8px rgba(0,0,0,0.45);
+  }
+
+  /* Subheadline below */
+  .sub {
+    font-family: 'Cinzel', 'Latin Modern Roman Caps', 'Trajan Pro', Georgia, serif;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 7px;
+    color: var(--gold-light);
+    margin-bottom: 8px;
+    opacity: 0.95;
+  }
+  .sub-2 {
+    font-family: 'Cinzel', 'Latin Modern Roman Caps', 'Trajan Pro', Georgia, serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 6px;
+    color: var(--gold);
+    opacity: 0.75;
+    margin-bottom: 28px;
+  }
+
+  /* App icon — a touch smaller than the Android launch post since we have more text + two badges */
+  .icon-frame {
+    width: 220px;
+    height: 220px;
+    border-radius: 44px;
+    overflow: hidden;
+    box-shadow:
+      0 26px 70px rgba(0,0,0,0.6),
+      0 0 56px rgba(201,168,76,0.28),
+      inset 0 0 0 4px rgba(201,168,76,0.6);
+    margin-bottom: 32px;
+    background: var(--blue-felt);
+  }
+  .icon-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* Store badge row */
+  .badges {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    justify-content: center;
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    background: linear-gradient(180deg, #1f1f1f 0%, #050505 100%);
+    color: var(--ivory);
+    padding: 14px 28px;
+    border-radius: 12px;
+    border: 1.5px solid rgba(201,168,76,0.35);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    text-decoration: none;
+    min-width: 220px;
+  }
+  .badge svg {
+    width: 36px; height: 36px;
+    flex-shrink: 0;
+  }
+  .badge .b-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1;
+  }
+  .badge .b-top {
+    font-family: 'Cinzel', 'Latin Modern Roman Caps', 'Trajan Pro', Georgia, serif;
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    color: var(--gold-light);
+    margin-bottom: 4px;
+  }
+  .badge .b-bottom {
+    font-family: 'Cinzel', 'Latin Modern Roman Caps', 'Trajan Pro', Georgia, serif;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--ivory);
+  }
+
+  /* "NEW" pill on the App Store badge to emphasize the launch */
+  .badge.new-badge {
+    position: relative;
+    border-color: rgba(224,201,109,0.6);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5), 0 0 24px rgba(201,168,76,0.25);
+  }
+  .new-pill {
+    position: absolute;
+    top: -12px; right: -10px;
+    background: var(--gold);
+    color: var(--blue-dark);
+    font-family: 'Cinzel', 'Latin Modern Roman Caps', 'Trajan Pro', Georgia, serif;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.5);
+  }
+</style>
+</head>
+<body>
+
+<div class="frame"></div>
+<div class="corner tl"></div>
+<div class="corner tr"></div>
+<div class="corner bl"></div>
+<div class="corner br"></div>
+
+<div class="stack">
+  <div class="eyebrow">NOW ON iPHONE TOO</div>
+
+  <div class="icon-frame">
+    <img src="../../Images/App Icon_3.png" alt="Filipino Mahjong app icon">
+  </div>
+
+  <div class="headline">FILIPINO <span class="accent">MAHJONG</span></div>
+  <div class="sub">JOKER RULES</div>
+  <div class="sub-2">17 TILES · BISAKLAT · SAGÁSA · FREE</div>
+
+  <div class="badges">
+    <!-- Google Play badge (left) -->
+    <a class="badge" href="#">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="gp" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#e8c96d"/>
+            <stop offset="100%" stop-color="#c9a84c"/>
+          </linearGradient>
+        </defs>
+        <path fill="url(#gp)" d="M3.609 1.814 13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zM14.499 12.708l2.852 2.852-11.114 6.31 8.262-9.162zm3.999-3.518 2.526 1.435a1 1 0 0 1 0 1.75l-2.694 1.53L15.207 12l3.291-2.81zM6.237 2.121l11.114 6.31-2.852 2.852L6.237 2.12z"/>
+      </svg>
+      <span class="b-text">
+        <span class="b-top">GET IT ON</span>
+        <span class="b-bottom">Google Play</span>
+      </span>
+    </a>
+
+    <!-- App Store badge (right, with NEW pill) -->
+    <a class="badge new-badge" href="#">
+      <span class="new-pill">NEW</span>
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="ap" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#e8c96d"/>
+            <stop offset="100%" stop-color="#c9a84c"/>
+          </linearGradient>
+        </defs>
+        <path fill="url(#ap)" d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+      </svg>
+      <span class="b-text">
+        <span class="b-top">DOWNLOAD ON THE</span>
+        <span class="b-bottom">App Store</span>
+      </span>
+    </a>
+  </div>
+</div>
+
+</body>
+</html>

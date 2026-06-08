@@ -31,7 +31,7 @@ I built this because every other mahjong app online plays it the international w
 No payment expected, no pressure to post — just thought you'd enjoy playing it. If you do and feel like sharing it with your followers, I'd be honored.
 
 **Quick details:**
-- Free on Google Play (iPhone version coming soon)
+- Free on Google Play and the App Store
 - More info and screenshots at filipinomj.com
 - Three named AI opponents — Lola Winnie, Tita Nene, Kuya Edgar (plus a rotating cast)
 - Earn Mahjong Points to climb 7 Filipino tiers (Baguhan → Hari ng Mahjong), unlocking new tables and tile sets along the way
@@ -106,7 +106,7 @@ The current version (v1.5) ships with three named Filipino AI opponents — Lola
 - The AI opponents are named after the people he learned mahjong from (Lola Winnie, Tita Nene, Kuya Edgar) — a uniquely Filipino texture that other mahjong apps don't have
 - Free, no monetization — labor of love and small-scale cultural preservation
 - Resonates with the Filipino diaspora (US, Canada, Australia, Middle East, EU)
-- iOS version in active development for [target month/year]
+- Now available on both Google Play and the App Store (iOS launched [date])
 
 **The angle:** Tech-meets-tradition. A Pinoy developer scratching his own itch ends up building the only digital home for a uniquely Filipino game.
 

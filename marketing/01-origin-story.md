@@ -18,7 +18,7 @@ Alts:
 
 > Every other mahjong app plays it the international way. Beautiful games — but not **ours**. No Jokers. No Bisaklat. No Sagása. No Sietepares.
 >
-> So I built one that does it right. The 17-tile Pinoy version, the way Lola taught Tita who taught me. Free on Android. iPhone coming soon.
+> So I built one that does it right. The 17-tile Pinoy version, the way Lola taught Tita who taught me. Free on iPhone and Android.
 
 ---
 

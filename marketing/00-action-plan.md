@@ -47,7 +47,7 @@ Open `@filipinomahjonggame`. Update bio to:
 17 tiles · Jokers · Bisaklat · Sagása
 Play with Lola Winnie, Tita Nene & Kuya Edgar
 📱 Free on Google Play
-🍎 iPhone coming soon
+🍎 Free on the App Store
 👇
 filipinomj.com
 ```
@@ -240,21 +240,13 @@ The other big thing to plan for: **iOS launch.** When iOS ships, treat it as a *
 
 ---
 
-## What to update when iOS ships
+## iOS launch — completed
 
-These docs all have "iPhone coming soon" / "iOS in development" copy. When iOS goes live, run a find/replace:
+iOS is now live alongside Android. All marketing materials have been swept to "Now on Google Play and the App Store." App Store URL: `https://apps.apple.com/app/id6766379159`.
 
-| File | Change |
-|---|---|
-| `index.html` | "Apple coming soon" → "Now on App Store" + add Apple badge link |
-| `privacy-policy.html` | Section 4 — remove the "or Apple's App Store for iOS" conditional |
-| `01-origin-story.md` | "Free on Android. iPhone coming soon." → "Free on Android and iPhone." |
-| `02-launch-content-pack.md` | Same iPhone language updates throughout — also build a new launch post for iOS |
-| `03-play-store-aso.md` | "iPhone version coming soon" → "Now available on iPhone too" |
-| `04-creator-outreach.md` | "iPhone version in development" → "Now available on iPhone" |
-| `press-kit.html` | Quick facts: iOS (in development) → iOS (live) |
+Treat the iOS launch as a second launch event — fresh announcement posts, fresh Reddit threads, fresh creator pitches with the new hook ("Now on iPhone!"). Two launches for the cost of one.
 
-Ask me when you're a week from iOS shipping and I'll do this pass for you.
+A dedicated iOS-launch IG post lives at `social-posts/post-ios-launch.png`.
 
 ---
 

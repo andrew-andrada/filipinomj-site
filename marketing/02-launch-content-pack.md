@@ -60,7 +60,7 @@ Free on Android. iPhone coming. Link in bio.
 | 3 | Photo of a Pinoy mahjong table (use a generic Pinoy family table photo or your own) | "Jokers. Sagása. Bisaklat. Sietepares." |
 | 4 | Game screenshot | "17 tiles. Real calls. Real sounds." |
 | 5 | App icon / Play badge | "Free. No sign-up. No paywall. Forever." |
-| 6 | Plain card | "On Android now. iPhone coming soon." |
+| 6 | Plain card | "Now on iPhone and Android." |
 | 7 | Card with logo | "Mga kababayan, laro na tayo. 🀄" |
 
 **Caption:**
@@ -167,6 +167,35 @@ Free on Android. iPhone coming. Link in bio. 🀄
 
 ---
 
+## Post 9 — iOS launch announcement
+**Suggested image:** `social-posts/post-ios-launch.png` (already rendered — both store badges, "NOW ON iPHONE TOO" eyebrow, NEW pill on the App Store badge).
+
+**Caption:**
+
+🍎 Mga kababayan — Filipino Mahjong: Joker Rules is now on **iPhone** too!
+
+If you've been waiting for the iOS version: it's here. Same Jokers, same Bisaklat, same Lola Winnie waiting at the West seat. Now on the App Store.
+
+📱 Free on Google Play
+🍎 Free on the App Store
+🇵🇭 filipinomj.com
+
+If you grabbed it on Android already and have an iPhone-using tito or tita who's been jealous — tag them.
+
+Salamat sa paglalaro 🙏🀄
+
+#FilipinoMahjong #NowOniOS #AppStore #iPhone #MahjongPilipino #Pinoy #FilipinoCommunity #FilipinoAmerican #FilipinoCanadian #BayanihanGames #LaroNaTayo #PinoyDeveloper #IndieDev
+
+**Where to share:**
+- Instagram feed + Story
+- Facebook (personal + Filipino community groups you've already posted in)
+- Reddit: r/Filipino and r/Philippines as fresh threads ("iOS version is live") — totally fine to re-post the same project for a major platform launch
+- LinkedIn if you've been posting your dev journey there
+
+**Story idea** (Instagram + Facebook): a 2-frame Story — Frame 1: "Mga ka-iPhone, finally 🍎"; Frame 2: the post graphic with a "Tap to download" sticker linked to the App Store page.
+
+---
+
 ## Post 8 — Daily challenges (v1.5)
 **Suggested image:** Screenshot of the daily challenge banner from in-game ("📅 Daily Challenge — Win 1 game today · +100 MP") on a phone, with the streak count visible.
 
@@ -214,7 +243,7 @@ Why I built it: every other mahjong app I tried played it the wrong way. No Joke
 ✅ 56 achievements + daily challenges with streak rewards
 ✅ Free, no sign-up, no paywall
 
-iPhone version coming soon. For now: free on Google Play.
+Free on Google Play and the App Store.
 
 🔗 [PLAY_STORE_LINK]
 
@@ -247,7 +276,7 @@ So I built it.
 - Real table sounds and calls
 - Free on Google Play (no sign-up, no paywall, no aggressive ads)
 - More info, screenshots, and the full rules at filipinomj.com
-- iPhone version coming soon
+- Available on both Google Play and the App Store
 
 **Play Store:** [PLAY_STORE_LINK]
 **Website:** filipinomj.com
@@ -315,7 +344,7 @@ I built a free Android app because no existing app handles the Filipino rules pr
 Android: [PLAY_STORE_LINK]
 Website: filipinomj.com
 
-Free, single-player vs AI (3 named bots, 4 difficulty levels — bots scale with your tier). Earn Mahjong Points to climb 7 Filipino tiers (Baguhan → Hari ng Mahjong), unlocking new tables and tile sets along the way. iOS coming.
+Free, single-player vs AI (3 named bots, 4 difficulty levels — bots scale with your tier). Earn Mahjong Points to climb 7 Filipino tiers (Baguhan → Hari ng Mahjong), unlocking new tables and tile sets along the way. Now on both Google Play and the App Store.
 
 ---
 
@@ -394,9 +423,9 @@ The bots are named after the people I learned mahjong from. Lola Winnie hits dif
 
 **(15–30s):** Family-table b-roll (your own footage if you have it; otherwise generic Pinoy gathering footage with permission, or stock). Voiceover: "The mahjong I grew up watching had its own language. Its own calls. Its own pace. International apps got it wrong every time."
 
-**(30–48s):** Back to gameplay highlights — Bisaklat, Sietepares, Sagása. Voiceover: "So I built one that gets it right. Three AI opponents, real table sounds, all the calls. Free on Google Play. iPhone coming soon."
+**(30–48s):** Back to gameplay highlights — Bisaklat, Sietepares, Sagása. Voiceover: "So I built one that gets it right. Three AI opponents, real table sounds, all the calls. Free on Google Play and the App Store."
 
-**(48–60s):** End card — logo, Play Store badge, "iPhone coming soon" badge. Voiceover: "For every Pinoy who misses the kitchen table. Laro na tayo."
+**(48–60s):** End card — logo, Google Play badge, App Store badge. Voiceover: "For every Pinoy who misses the kitchen table. Laro na tayo."
 
 **Caption:**
 Free on Android. iPhone coming. Link in bio. 🀄
