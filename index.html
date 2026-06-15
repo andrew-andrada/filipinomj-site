@@ -640,6 +640,24 @@ footer .foot-links a{margin:0 10px;letter-spacing:1px;font-family:'Cinzel',serif
   </div>
 </section>
 
+<!-- Feedback & ratings -->
+<section id="feedback">
+  <h2>HELP US MAKE IT BETTER</h2>
+  <div class="divider"></div>
+  <p class="section-sub">Built by one Fil-Am developer who reads every message. Love the game, or have an idea to make it better? Tell us — happy players, please leave a rating; everyone else, send a note.</p>
+  <div class="cta-row" style="margin-bottom:0">
+    <a class="btn btn-primary feedback-rate"
+       data-ga-label="feedback_rate_android"
+       target="_blank" rel="noopener"
+       href="https://play.google.com/store/apps/details?id=com.bayanihangames.filipinomj">❤️ LOVE IT? RATE US</a>
+    <!-- To switch to a Google Form later, replace this mailto href with your form URL. -->
+    <a class="btn btn-secondary feedback-send"
+       data-ga-label="feedback_email"
+       href="mailto:filipinomahjong@gmail.com?subject=Filipino%20Mahjong%20Feedback%20%26%20Suggestions">💬 SEND FEEDBACK</a>
+  </div>
+  <p style="text-align:center;font-size:13px;color:var(--ivory-dark);opacity:.6;margin-top:16px">On iPhone? <a class="feedback-rate" data-ga-label="feedback_rate_ios" target="_blank" rel="noopener" href="https://apps.apple.com/app/id6766379159" style="color:var(--gold);text-decoration:none">Rate on the App Store →</a></p>
+</section>
+
 <!-- CTA band -->
 <div class="cta-band">
   <h2>READY TO DEAL?</h2>
@@ -674,8 +692,9 @@ footer .foot-links a{margin:0 10px;letter-spacing:1px;font-family:'Cinzel',serif
 
 <footer>
   <div class="foot-links">
-    <a href="https://play.google.com/store/apps/details?id=com.bayanihangames.filipinomj">PLAY</a>
+    <a href="https://play.filipinomj.com/">PLAY</a>
     <a href="how-to-play.html">RULES</a>
+    <a href="#feedback">FEEDBACK</a>
     <a href="privacy-policy.html">PRIVACY</a>
   </div>
   <div>© <span id="year"></span> Bayanihan Games • filipinomj.com</div>
@@ -710,6 +729,8 @@ footer .foot-links a{margin:0 10px;letter-spacing:1px;font-family:'Cinzel',serif
   trackBadge('.play-store-cta', 'play_store_click');
   trackBadge('.app-store-cta',  'app_store_click');
   trackBadge('.play-web-cta',   'web_play_click');
+  trackBadge('.feedback-rate',  'rate_us_click');
+  trackBadge('.feedback-send',  'feedback_click');
 
   // Screenshot lightbox
   (function(){
