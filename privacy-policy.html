@@ -328,12 +328,12 @@
 
 <div class="container">
 
-  <p class="last-updated">Last updated: June 8, 2026</p>
+  <p class="last-updated">Last updated: June 15, 2026</p>
 
   <!-- The short version -->
   <div class="highlight-box">
     <span class="label">THE SHORT VERSION</span>
-    <p>Filipino Mahjong: Joker Rules is designed with privacy in mind. The game works fully without an account &mdash; all game data stays on your device. <strong>Optional Google or Apple sign-in</strong> lets you save your progress to your account so it survives uninstall and syncs across devices. Sign-in is your choice; everything works without it. We never sell or share your data.</p>
+    <p>Filipino Mahjong: Joker Rules is designed with privacy in mind. The game works fully without an account &mdash; by default all game data stays on your device. <strong>Optional Google or Apple sign-in</strong> lets you save your progress so it survives uninstall and syncs across devices, and <strong>Online Multiplayer</strong> sends the data needed to play with others over the internet. Both are your choice; the rest of the game works without them. We never sell or share your data.</p>
   </div>
 
   <!-- Table of contents -->
@@ -342,7 +342,7 @@
     <ol>
       <li><a href="#section-1">Who We Are</a></li>
       <li><a href="#section-2">Information We Collect</a></li>
-      <li><a href="#section-3">Accounts and Registration</a></li>
+      <li><a href="#section-3">Accounts, Cloud Save &amp; Online Multiplayer</a></li>
       <li><a href="#section-4">Virtual Currency and Ads</a></li>
       <li><a href="#section-5">Advertising</a></li>
       <li><a href="#section-6">Children's Privacy</a></li>
@@ -366,7 +366,7 @@
 
     <p><strong>Information stored locally on your device:</strong></p>
     <ul>
-      <li><strong>Username</strong> — a display name you choose when you first open the app. This is stored only on your device and is never transmitted to any server.</li>
+      <li><strong>Username</strong> — a display name you choose when you first open the app. It is stored on your device. It is shared with the other players at your table only when you play Online Multiplayer (see Section 3), and is saved with your cloud progress if you sign in.</li>
       <li><strong>Mahjong Points (MP)</strong> — your competitive points total. Wins add MP, losses subtract MP (floored at zero). Your tier (Baguhan through Hari ng Mahjong) is derived from this total. Stored locally only.</li>
       <li><strong>Game history</strong> — your win/loss record, total winnings, high score, and recent game results, stored locally for your personal Stats display.</li>
       <li><strong>Cosmetic unlocks</strong> — which table designs and tile sets you've unlocked by reaching new tiers, stored locally so they persist between sessions.</li>
@@ -377,7 +377,7 @@
       <li><strong>Game state</strong> — timestamps and session data used for daily-challenge windows and one-time onboarding flags, stored locally on your device.</li>
     </ul>
 
-    <p>All of the above data is stored using your device's local storage. It never leaves your device unless you choose to sign in (see below). Note: when visiting the marketing website at filipinomj.com, anonymized analytics data is collected via Google Analytics, and in the Android/iOS app anonymized gameplay statistics are collected via Google Firebase Analytics. The app also reports anonymous crash diagnostics via Google Firebase Crashlytics. All three are described in <a href="#section-9">Section 9</a>.</p>
+    <p>All of the above data is stored using your device's local storage. It does not leave your device unless you choose to sign in (Cloud Save) or play Online Multiplayer — both described in <a href="#section-3">Section 3</a>. Note: when visiting the marketing website at filipinomj.com, anonymized analytics data is collected via Google Analytics; on the web version of the game (play.filipinomj.com) error monitoring and product analytics with session replay are collected via Sentry and PostHog; and in the Android/iOS app anonymized gameplay statistics are collected via Google Firebase Analytics with anonymous crash diagnostics via Google Firebase Crashlytics. All of these are described in <a href="#section-9">Section 9</a>.</p>
 
     <p><strong>Information collected only if you choose to sign in (optional):</strong></p>
     <ul>
@@ -401,8 +401,8 @@
   </section>
 
   <section class="policy-section" id="section-3">
-    <h2><span class="num">03</span><span>Accounts and Registration</span></h2>
-    <p>Filipino Mahjong: Joker Rules does not require an account. You can play the entire game without signing in. The username you enter in the app is stored only on your device for display purposes.</p>
+    <h2><span class="num">03</span><span>Accounts, Cloud Save &amp; Online Multiplayer</span></h2>
+    <p>Filipino Mahjong: Joker Rules does not require an account. You can play the entire game — solo and pass-and-play — without signing in, with all data kept on your device. The username you enter is stored on your device for display purposes (and is shared with other players only during Online Multiplayer, below).</p>
 
     <p><strong>Optional sign-in.</strong> If you want your progress to survive uninstalling the app, or you want to use the same account across multiple devices, you can sign in using your existing Google or Apple account. Sign-in is initiated by you from Settings; we never block any feature behind sign-in and we never prompt you to sign in.</p>
 
@@ -414,6 +414,8 @@
     </ul>
 
     <p>You can sign out at any time from Settings. Sign-out leaves your local progress intact and does not delete your cloud profile &mdash; you can sign back in later and your data will be there. To permanently delete your cloud account, see <a href="#section-8">Section 8</a> or use the dedicated <a href="account-deletion.html">Account Deletion page</a>.</p>
+
+    <p><strong>Online Multiplayer.</strong> When you host or join an online table, the following is sent to Google Firebase so others can play with you in real time: a short room code, the display name you chose, and the live game state (tiles played, discards, whose turn it is). Your display name is visible to the other players at your table. Players who do not sign in are given an <strong>anonymous</strong> identifier purely so the game can tell seats apart — it is not linked to your real identity. This game data is temporary and scoped to the table; it is not used to build a profile of you, and it is removed when the table ends. Online play is entirely optional.</p>
   </section>
 
   <section class="policy-section" id="section-4">
@@ -453,6 +455,7 @@
     <p>All game data is stored locally on your device using standard app local-storage mechanisms. Your local data is as secure as your device itself.</p>
     <p>If you uninstall the app and have not signed in, all locally stored game data including your username, Mahjong Points, tier, achievements, cosmetic unlocks, daily challenge progress, and game history will be permanently deleted from your device.</p>
     <p>If you have signed in (Section 3), a copy of your progress is also stored in Google Firestore as part of the Firebase platform. Data is transmitted between your device and Firestore over encrypted HTTPS connections, and is protected by Firestore security rules that allow each signed-in user to read and write only their own account document. No other user &mdash; including us &mdash; can read your individual game progress. Firebase Authentication and Firestore are operated by Google under Google's infrastructure security standards.</p>
+    <p>Online Multiplayer game data (room code, display names, and live game state) is also stored in Firestore while a table is active, over the same encrypted connections, and is removed when the table ends. Concealed tiles are protected by security rules so only their owner can read them.</p>
   </section>
 
   <section class="policy-section" id="section-8">
@@ -484,9 +487,11 @@
       <li><strong>Google Analytics (marketing website only)</strong> — for analytics on filipinomj.com. Google Analytics (GA4) sets cookies and collects information such as IP address, browser type, pages visited, session duration, and referrer URL. This tracking only runs on the marketing website. It is <em>not</em> active in the Android/iOS app. Governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
       <li><strong>Google Firebase Analytics (Android/iOS app only)</strong> — for anonymous gameplay and usage statistics within the mobile app. Firebase Analytics collects information such as which menus you open, how many games you start and finish, ad interactions, and general device/OS information. No personally identifiable information is collected. You can opt out of personalized tracking in your device's advertising ID settings. Governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
       <li><strong>Google Firebase Crashlytics (Android/iOS app only)</strong> — for crash and error reporting. When the app crashes or encounters an unhandled error, Crashlytics collects diagnostic information such as device model, operating system version, app version, and a stack trace describing where the crash occurred. This helps us identify and fix bugs quickly. No personally identifiable information is included in crash reports. Governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
-      <li><strong>Google Firebase Authentication (only if you sign in)</strong> &mdash; manages your sign-in with Google or Apple. Firebase Authentication stores your email, display name, and a unique account identifier (UID). Used only to authenticate you when you launch the app or switch devices. Governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
-      <li><strong>Google Cloud Firestore (only if you sign in)</strong> &mdash; stores your game-progress data (the fields listed in <a href="#section-2">Section 2</a>'s sign-in subsection) so it persists across uninstall and devices. Each user's document is protected by Firestore security rules so only that user can read or write it. Governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+      <li><strong>Google Firebase Authentication (sign-in &amp; online play)</strong> &mdash; manages your sign-in with Google or Apple (storing your email, display name, and a unique account identifier), and, for Online Multiplayer, issues an <strong>anonymous</strong> identifier if you have not signed in so the game can tell players apart. Governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+      <li><strong>Google Cloud Firestore (Cloud Save &amp; online play)</strong> &mdash; stores your saved game progress (the fields listed in <a href="#section-2">Section 2</a>'s sign-in subsection) when you sign in, and the live table data (room code, display names, game state) while you play Online Multiplayer. Documents are protected by Firestore security rules so each user can read only their own data. Governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
       <li><strong>Sign in with Apple (only if you choose Apple sign-in)</strong> &mdash; Apple authenticates your identity and shares your email and name with us. If you choose Apple's "Hide My Email" option, we receive a private relay address instead of your real email and cannot see your true address. Governed by <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.</li>
+      <li><strong>Sentry (web version of the game only)</strong> &mdash; error monitoring on play.filipinomj.com. When the web game hits an error, Sentry records technical diagnostics (browser type, operating system, page URL, a stack trace) and a short replay of the on-screen interactions leading up to it, with any text you type masked. No personally identifiable information is collected. Governed by <a href="https://sentry.io/privacy/" target="_blank" rel="noopener">Sentry's Privacy Policy</a>.</li>
+      <li><strong>PostHog (web version of the game only)</strong> &mdash; product analytics and session replay on play.filipinomj.com. PostHog records anonymous usage events (which screens and buttons you use, games started and finished) and a visual replay of your gameplay session (mouse, taps, and screens viewed), with any text you type masked. Used only to understand and improve the game. No personally identifiable information is collected. Governed by <a href="https://posthog.com/privacy" target="_blank" rel="noopener">PostHog's Privacy Policy</a>.</li>
     </ul>
     <p>We do not sell, trade, or otherwise transfer your information to any other outside parties.</p>
   </section>
