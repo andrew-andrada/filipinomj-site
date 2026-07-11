@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Filipino Mahjong: Joker Rules — Free</title>
+<meta name="description" content="Free authentic Filipino Mahjong — download for Android or iPhone, or play instantly in your browser.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="Filipino Mahjong: Joker Rules — Free">
+<meta property="og:description" content="The real Pinoy rules — Jokers, Sagása, Búnot. Free on Android, iPhone, and in your browser.">
+<meta property="og:image" content="https://filipinomj.com/Images/App%20Icon_3.png">
+<link rel="icon" href="../Images/App%20Icon_3.png">
+<script>if(!window.Capacitor){var ga=document.createElement('script');ga.async=true;ga.src='https://www.googletagmanager.com/gtag/js?id=G-T8VQ9275N0';document.head.appendChild(ga);window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-T8VQ9275N0');}</script>
+<style>
+:root{--gold:#c9a84c;--gold-light:#e8c96d;--ivory:#f5f0e0;--ivory-dark:#d8cfb4;--blue-dark:#06101e}
+*{margin:0;padding:0;box-sizing:border-box}
+body{min-height:100vh;background:radial-gradient(ellipse at 50% 30%,#152038 0%,var(--blue-dark) 65%,#020810 100%);color:var(--ivory);font-family:'Crimson Text',Georgia,serif;display:flex;align-items:center;justify-content:center;padding:24px 20px;text-align:center}
+.wrap{max-width:420px;width:100%}
+.logo{width:96px;height:96px;border-radius:22px;box-shadow:0 6px 30px rgba(0,0,0,.6),0 0 0 2px rgba(201,168,76,.4);margin-bottom:14px}
+h1{font-family:'Cinzel','Palatino Linotype',Palatino,serif;font-size:26px;line-height:1.25;color:var(--gold);letter-spacing:1px;margin-bottom:6px}
+.sub{font-size:18px;color:var(--ivory-dark);margin-bottom:22px;line-height:1.45}
+.btn{display:block;width:100%;padding:16px 18px;border-radius:12px;text-decoration:none;font-family:'Cinzel','Palatino Linotype',Palatino,serif;font-size:18px;letter-spacing:1px;margin-bottom:12px;border:1px solid transparent}
+.btn-primary{background:linear-gradient(180deg,var(--gold-light) 0%,var(--gold) 55%,#a07842 100%);color:#1a1206;font-weight:700;box-shadow:0 4px 18px rgba(201,168,76,.35)}
+.btn-secondary{background:rgba(201,168,76,.08);border-color:rgba(201,168,76,.55);color:var(--gold-light)}
+.alt{font-size:15px;color:var(--ivory-dark);opacity:.85;margin-top:10px}
+.alt a{color:var(--gold);text-decoration:none}
+.hint{font-size:14px;color:var(--ivory-dark);opacity:.6;margin-top:22px;line-height:1.4}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <img class="logo" src="../Images/App%20Icon_3.png" alt="Filipino Mahjong app icon">
+  <h1>Filipino Mahjong<br>Joker Rules</h1>
+  <p class="sub">The real Pinoy rules your Lola taught you.<br><strong>100% free</strong> — play solo or host a table with family.</p>
+
+  <a id="store-btn" class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.bayanihangames.filipinomj">GET THE FREE APP</a>
+  <a id="web-btn" class="btn btn-secondary" href="https://play.filipinomj.com/">▶ OR PLAY NOW IN YOUR BROWSER<br><span style="font-size:13px;letter-spacing:.5px;opacity:.8">no download needed</span></a>
+
+  <p class="alt" id="alt-line"></p>
+  <p class="hint">Salamat for scanning! 🍓 Enjoy the strawberries — and tag <strong>@filipinomahjonggame</strong> if you win your first game.</p>
+</div>
+<script>
+(function(){
+  var PLAY='https://play.google.com/store/apps/details?id=com.bayanihangames.filipinomj';
+  var APPLE='https://apps.apple.com/app/id6766379159';
+  var ua=navigator.userAgent||'';
+  var isIOS=/iPad|iPhone|iPod/.test(ua)||(/Macintosh/.test(ua)&&navigator.maxTouchPoints>1);
+  var isAndroid=/android/i.test(ua);
+  var store=document.getElementById('store-btn'),alt=document.getElementById('alt-line');
+  var platform=isIOS?'ios':(isAndroid?'android':'other');
+  if(isIOS){
+    store.href=APPLE;store.textContent='DOWNLOAD ON THE APP STORE';
+    alt.innerHTML='On Android? <a href="'+PLAY+'">Get it on Google Play →</a>';
+  }else if(isAndroid){
+    store.href=PLAY;store.textContent='GET IT ON GOOGLE PLAY';
+    alt.innerHTML='On iPhone? <a href="'+APPLE+'">Download on the App Store →</a>';
+  }else{
+    store.href=PLAY;store.textContent='GET IT ON GOOGLE PLAY';
+    alt.innerHTML='On iPhone? <a href="'+APPLE+'">Download on the App Store →</a>';
+  }
+  // Scan-source attribution: /go/?s=cup (sticker) vs /go/?s=sign (booth sign)
+  var src=new URLSearchParams(location.search).get('s')||'direct';
+  if(typeof gtag==='function'){
+    gtag('event','qr_landing',{qr_source:src,platform:platform});
+    store.addEventListener('click',function(){gtag('event','qr_store_click',{qr_source:src,platform:platform});});
+    document.getElementById('web-btn').addEventListener('click',function(){gtag('event','qr_web_click',{qr_source:src,platform:platform});});
+    alt.addEventListener('click',function(){gtag('event','qr_altstore_click',{qr_source:src,platform:platform});});
+  }
+})();
+</script>
+</body>
+</html>
