@@ -220,7 +220,10 @@ header nav a:hover{background:rgba(201,168,76,.12)}
 }
 .btn-secondary:hover{background:rgba(201,168,76,.12)}
 
-/* Google Play badge — uses Google's official hosted brand asset */
+/* Google Play badge — self-hosted (Images/google-play-badge.png). Do NOT hotlink
+   play.google.com's badge URL: it's blocked by ad/privacy blockers and rate-limits
+   hotlinks, which silently drops it to alt text. Per Google's brand guidelines the
+   badge must be downloaded and served locally. */
 .play-store-cta{
   display:inline-block;
   line-height:0;
@@ -516,7 +519,7 @@ footer .foot-links a{margin:0 10px;letter-spacing:1px;font-family:'Cinzel',serif
          href="https://play.google.com/store/apps/details?id=com.bayanihangames.filipinomj"
          aria-label="Get Filipino Mahjong: Joker Rules on Google Play">
         <img alt="Get it on Google Play"
-             src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png">
+             src="Images/google-play-badge.png">
       </a>
       <a class="app-store-cta"
          data-ga-label="hero_badge"
@@ -684,7 +687,7 @@ footer .foot-links a{margin:0 10px;letter-spacing:1px;font-family:'Cinzel',serif
        href="https://play.google.com/store/apps/details?id=com.bayanihangames.filipinomj"
        aria-label="Get Filipino Mahjong: Joker Rules on Google Play">
       <img alt="Get it on Google Play"
-           src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png">
+           src="Images/google-play-badge.png">
     </a>
     <a class="app-store-cta"
        data-ga-label="cta_band_badge"
