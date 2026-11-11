@@ -211,9 +211,14 @@ header nav a.current{background:rgba(201,168,76,.18)}
 }
 .cta-band p{color:var(--ivory-dark);margin-bottom:22px;opacity:.85}
 .cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;align-items:center}
+/* Store badges. Google Play badge is self-hosted (Images/google-play-badge.png) —
+   do NOT hotlink play.google.com's badge URL: ad/privacy blockers drop it, silently
+   falling back to the anchor's alt text. The Apple badge gets ~75% of the Google CSS
+   height because Google's badge has ~25% transparent padding baked in around the
+   visible button — equal CSS heights would make the App Store one look heavier. */
 .play-store-cta,.app-store-cta{display:inline-block;line-height:0}
 .play-store-cta img{height:80px;width:auto;display:block}
-.app-store-cta  img{height:70px;width:auto;display:block}
+.app-store-cta  img{height:60px;width:auto;display:block}
 @media (max-width:640px){
   .play-store-cta img{height:60px}
   .app-store-cta  img{height:45px}
@@ -323,7 +328,7 @@ footer .foot-links a{margin:0 10px;letter-spacing:1px;font-family:'Cinzel',serif
        href="https://play.google.com/store/apps/details?id=com.bayanihangames.filipinomj"
        aria-label="Get Filipino Mahjong: Joker Rules on Google Play">
       <img alt="Get it on Google Play"
-           src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png">
+           src="Images/google-play-badge.png">
     </a>
     <a class="app-store-cta"
        data-ga-label="updates_cta_band_badge"
