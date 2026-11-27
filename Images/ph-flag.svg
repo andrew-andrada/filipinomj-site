@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Flag of the Philippines">
+  <defs>
+    <polygon id="phstar" points="0,-1 0.225,-0.309 0.951,-0.309 0.363,0.118 0.588,0.809 0,0.382 -0.588,0.809 -0.363,0.118 -0.951,-0.309 -0.225,-0.309" fill="#FCD116"/>
+  </defs>
+  <!-- bands -->
+  <rect x="0" y="0" width="400" height="100" fill="#0038A8"/>
+  <rect x="0" y="100" width="400" height="100" fill="#CE1126"/>
+  <!-- white hoist triangle (equilateral, apex pointing right) -->
+  <polygon points="0,0 0,200 173.2,100" fill="#FFFFFF"/>
+  <!-- sun -->
+  <g fill="none" stroke="#FCD116" stroke-width="4" stroke-linecap="round">
+    <line x1="77" y1="100" x2="92" y2="100"/>
+    <line x1="72.6" y1="110.6" x2="83.2" y2="121.2"/>
+    <line x1="62" y1="115" x2="62" y2="130"/>
+    <line x1="51.4" y1="110.6" x2="40.8" y2="121.2"/>
+    <line x1="47" y1="100" x2="32" y2="100"/>
+    <line x1="51.4" y1="89.4" x2="40.8" y2="78.8"/>
+    <line x1="62" y1="85" x2="62" y2="70"/>
+    <line x1="72.6" y1="89.4" x2="83.2" y2="78.8"/>
+  </g>
+  <circle cx="62" cy="100" r="13" fill="#FCD116"/>
+  <!-- three stars at the triangle corners -->
+  <use href="#phstar" transform="translate(26,26) scale(9)"/>
+  <use href="#phstar" transform="translate(26,174) scale(9)"/>
+  <use href="#phstar" transform="translate(150,100) scale(9)"/>
+</svg>

@@ -33,8 +33,12 @@
   --ink-soft:#6b6454;     /* secondary text */
   --gold:#c2a04a;         /* decorative gold */
   --gold-deep:#8a6a22;    /* readable gold — headings / links */
+  --gold-light:#e8c96d;   /* bright gold — on the blue header */
   --jade:#2f6f52;         /* quiet accent */
   --plum:#7b5ea8;         /* joker accent (matches in-game) */
+  --ph-blue:#0038A8;      /* Filipino flag */
+  --ph-red:#CE1126;
+  --ph-yellow:#FCD116;
   --shadow:rgba(70,58,24,.14);
 }
 html{scroll-behavior:smooth}
@@ -51,35 +55,39 @@ body{
 /* Header */
 header{
   width:100%;
-  background:rgba(253,251,246,.88);
-  backdrop-filter:blur(10px);
-  -webkit-backdrop-filter:blur(10px);
+  background:linear-gradient(180deg,#071428 0%,#0e2448 100%);
   border-bottom:2px solid var(--gold);
-  padding:10px 20px;
+  padding:11px 20px;
   display:flex;align-items:center;justify-content:space-between;
-  box-shadow:0 2px 16px var(--shadow);
+  box-shadow:0 3px 18px rgba(0,0,0,.4);
   position:sticky;top:0;z-index:10;
+}
+/* Filipino-flag tricolor accent under the header */
+header::after{
+  content:'';position:absolute;left:0;right:0;bottom:-5px;height:3px;
+  background:linear-gradient(90deg,var(--ph-blue) 0 40%,var(--ph-red) 40% 80%,var(--ph-yellow) 80% 100%);
 }
 header .brand{
   font-family:'Cinzel',serif;
-  font-size:18px;
-  color:var(--gold-deep);
+  font-size:19px;
+  color:var(--gold-light);
   letter-spacing:3px;
   text-decoration:none;
+  text-shadow:0 0 18px rgba(201,168,76,.3);
 }
 header nav{display:flex;gap:6px}
 header nav a{
   font-family:'Cinzel',serif;
-  font-size:11px;
-  color:var(--gold-deep);
+  font-size:14px;
+  color:var(--gold-light);
   text-decoration:none;
-  padding:4px 10px;
-  border:1px solid rgba(194,160,74,.45);
+  padding:5px 13px;
+  border:1px solid rgba(232,201,109,.4);
   border-radius:5px;
   letter-spacing:1px;
   transition:background .15s ease;
 }
-header nav a:hover{background:rgba(194,160,74,.14)}
+header nav a:hover{background:rgba(232,201,109,.15)}
 
 /* Hero */
 .htp-hero{
@@ -147,16 +155,16 @@ header nav a:hover{background:rgba(194,160,74,.14)}
 }
 .toc .toc-title{
   font-family:'Cinzel',serif;
-  font-size:12px;
+  font-size:14px;
   letter-spacing:2px;
   color:var(--gold-deep);
-  margin-bottom:8px;
+  margin-bottom:10px;
 }
-.toc ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px 18px}
+.toc ul{list-style:none;display:flex;flex-wrap:wrap;gap:12px 22px}
 .toc a{
   color:var(--ink);
   text-decoration:none;
-  font-size:17px;
+  font-size:20px;
   border-bottom:1px dotted rgba(194,160,74,.5);
   padding-bottom:1px;
 }
@@ -190,7 +198,7 @@ section.rule .divider{
 section.rule p{
   color:var(--ink);
   margin-bottom:14px;
-  font-size:20px;
+  font-size:21px;
 }
 section.rule p.muted{color:var(--ink-soft)}
 section.rule p strong{color:var(--ink);font-weight:600}
@@ -264,7 +272,7 @@ section.rule h3{
   margin-bottom:6px;
   display:block;
 }
-.rule-card p{margin-bottom:8px;font-size:19px;color:var(--ink)}
+.rule-card p{margin-bottom:8px;font-size:20px;color:var(--ink)}
 .rule-card p:last-child{margin-bottom:0}
 .rule-card .note{color:var(--ink-soft);font-style:italic;font-size:17px}
 
@@ -297,22 +305,29 @@ section.rule h3{
 
 /* CTA band */
 .cta-band{
-  background:var(--pearl-lift);
-  border-top:1px solid var(--pearl-edge);
-  border-bottom:1px solid var(--pearl-edge);
-  padding:50px 24px;
+  position:relative;
+  background:var(--ph-blue) url('Images/ph-flag.svg') center/cover no-repeat;
+  border-top:3px solid var(--gold);
+  padding:64px 24px;
   text-align:center;
-  margin-top:34px;
-  box-shadow:0 -2px 18px var(--shadow) inset;
+  margin-top:40px;
+  overflow:hidden;
 }
+/* scrim so the headline + badges stay readable over the flag */
+.cta-band::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(6,14,28,.5) 0%,rgba(6,14,28,.64) 100%);
+}
+.cta-band > *{position:relative;z-index:1}
 .cta-band h2{
   font-family:'Cinzel',serif;
-  font-size:clamp(22px,3.5vw,28px);
-  color:var(--gold-deep);
+  font-size:clamp(24px,3.8vw,32px);
+  color:#fff;
   letter-spacing:3px;
   margin-bottom:10px;
+  text-shadow:0 2px 14px rgba(0,0,0,.65);
 }
-.cta-band p{color:var(--ink-soft);margin-bottom:22px}
+.cta-band p{color:#f1ede3;margin-bottom:22px;text-shadow:0 1px 8px rgba(0,0,0,.6)}
 
 footer{
   padding:30px 24px 40px;
@@ -323,7 +338,7 @@ footer{
 footer a{color:var(--gold-deep);text-decoration:none}
 footer a:hover{text-decoration:underline}
 footer .foot-links{margin-bottom:10px}
-footer .foot-links a{margin:0 10px;letter-spacing:1px;font-family:'Cinzel',serif;font-size:11px}
+footer .foot-links a{margin:0 10px;letter-spacing:1px;font-family:'Cinzel',serif;font-size:13px}
 </style>
 </head>
 <body>
@@ -579,10 +594,10 @@ footer .foot-links a{margin:0 10px;letter-spacing:1px;font-family:'Cinzel',serif
         <span class="tile-card sm"><img src="Images/Tile faces/Suits/16-characters-9.svg" alt=""></span>
       </span>
       <span class="set">
-        <span class="set-cap">+ 1 báhay</span>
-        <span class="tile-card sm"><img src="Images/Tile faces/Suits/21-circles-5.svg" alt=""></span>
-        <span class="tile-card sm"><img src="Images/Tile faces/Suits/21-circles-5.svg" alt=""></span>
-        <span class="tile-card sm"><img src="Images/Tile faces/Suits/21-circles-5.svg" alt=""></span>
+        <span class="set-cap">+ 1 báhay (chow)</span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/23-circles-7.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/24-circles-8.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/25-circles-9.svg" alt=""></span>
       </span>
     </div>
   </div>
@@ -590,10 +605,10 @@ footer .foot-links a{margin:0 10px;letter-spacing:1px;font-family:'Cinzel',serif
   <!-- ESCALERA -->
   <div class="rule-card">
     <span class="term">ESCALERA — THE LADDER</span>
-    <p>A full <strong>1–9 run in a single suit</strong> inside your hand. Its unmistakable staircase is the signature:</p>
+    <p>A full <strong>1–9 run in a single suit</strong> inside your hand — its unmistakable staircase is the signature. Here it is as a complete winning hand: the ladder, plus two more sets and the pair.</p>
     <div class="hand-demo">
       <span class="set">
-        <span class="set-cap">1 → 9, one suit</span>
+        <span class="set-cap">1 → 9 — the escalera</span>
         <span class="tile-card sm"><img src="Images/Tile faces/Suits/08-characters-1.svg" alt=""></span>
         <span class="tile-card sm"><img src="Images/Tile faces/Suits/09-characters-2.svg" alt=""></span>
         <span class="tile-card sm"><img src="Images/Tile faces/Suits/10-characters-3.svg" alt=""></span>
@@ -603,6 +618,23 @@ footer .foot-links a{margin:0 10px;letter-spacing:1px;font-family:'Cinzel',serif
         <span class="tile-card sm"><img src="Images/Tile faces/Suits/14-characters-7.svg" alt=""></span>
         <span class="tile-card sm"><img src="Images/Tile faces/Suits/15-characters-8.svg" alt=""></span>
         <span class="tile-card sm"><img src="Images/Tile faces/Suits/16-characters-9.svg" alt=""></span>
+      </span>
+      <span class="set">
+        <span class="set-cap">Pung</span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/21-circles-5.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/21-circles-5.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/21-circles-5.svg" alt=""></span>
+      </span>
+      <span class="set">
+        <span class="set-cap">Chow</span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/28-bamboos-3.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/29-bamboos-4.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/30-bamboos-5.svg" alt=""></span>
+      </span>
+      <span class="set eye">
+        <span class="set-cap">Pair (eye)</span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/25-circles-9.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/25-circles-9.svg" alt=""></span>
       </span>
     </div>
   </div>
@@ -618,13 +650,51 @@ footer .foot-links a{margin:0 10px;letter-spacing:1px;font-family:'Cinzel',serif
     <span class="term">🃏 JOKER EYE — THE WILD PAIR</span>
     <p>A rare, prized self-draw. You're holding <strong>five complete sets</strong> plus a single, unpaired <strong>lone joker</strong>. Because the joker is wild, the very next tile you self-draw pairs with it to become your eye — and you win.</p>
     <p>You can be holding other jokers inside your sets; all that matters is that <strong>one lone joker</strong> is waiting to pair with the tile you draw.</p>
+    <p class="muted" style="margin-top:4px"><strong>Step 1 — your hand: five complete sets, with a single lone joker left over.</strong></p>
+    <div class="hand-demo">
+      <span class="set">
+        <span class="set-cap">Pung</span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/21-circles-5.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/21-circles-5.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/21-circles-5.svg" alt=""></span>
+      </span>
+      <span class="set">
+        <span class="set-cap">Chow</span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/26-bamboos-1.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/27-bamboos-2.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/28-bamboos-3.svg" alt=""></span>
+      </span>
+      <span class="set">
+        <span class="set-cap">Chow</span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/11-characters-4.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/12-characters-5.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/13-characters-6.svg" alt=""></span>
+      </span>
+      <span class="set">
+        <span class="set-cap">Pung</span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/23-circles-7.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/23-circles-7.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/23-circles-7.svg" alt=""></span>
+      </span>
+      <span class="set">
+        <span class="set-cap">Chow</span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/32-bamboos-7.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/33-bamboos-8.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/34-bamboos-9.svg" alt=""></span>
+      </span>
+      <span class="set eye">
+        <span class="set-cap">Lone joker</span>
+        <span class="tile-card sm joker"><img src="Images/Tile faces/Suits/17-circles-1.svg" alt="Lone joker (wild)"></span>
+      </span>
+    </div>
+    <p class="muted" style="margin-top:14px"><strong>Step 2 — you self-draw almost anything; the wild joker pairs with it to become your eye — and you win.</strong></p>
     <div class="hand-demo">
       <span class="set eye">
         <span class="set-cap">The eye</span>
         <span class="tile-card sm joker"><img src="Images/Tile faces/Suits/17-circles-1.svg" alt="Lone joker (wild)"></span>
         <span class="tile-card sm"><img src="Images/Tile faces/Suits/30-bamboos-5.svg" alt="The tile you self-draw"></span>
       </span>
-      <span class="demo-cap" style="align-self:center">lone joker&nbsp;+&nbsp;the tile you draw&nbsp;=&nbsp;a winning pair, on top of your 5 sets</span>
+      <span class="demo-cap" style="align-self:center">lone joker&nbsp;+&nbsp;the tile you draw&nbsp;=&nbsp;a winning pair 🎉</span>
     </div>
   </div>
 </section>
@@ -640,13 +710,28 @@ footer .foot-links a{margin:0 10px;letter-spacing:1px;font-family:'Cinzel',serif
   </div>
   <div class="rule-card">
     <span class="term">13 FLOWERS</span>
-    <p>You collect all thirteen flowers over the course of a hand.</p>
+    <p>You collect all thirteen flowers over the course of a hand — the complete set:</p>
+    <div class="tile-row demo">
+      <span class="tile-card sm"><img src="Images/Tile faces/Flowers/01-white-dragon.svg" alt="White dragon"></span>
+      <span class="tile-card sm"><img src="Images/Tile faces/Flowers/02-green-dragon.svg" alt="Green dragon"></span>
+      <span class="tile-card sm"><img src="Images/Tile faces/Flowers/03-red-dragon.svg" alt="Red dragon"></span>
+      <span class="tile-card sm"><img src="Images/Tile faces/Flowers/04-east-wind.svg" alt="East wind"></span>
+      <span class="tile-card sm"><img src="Images/Tile faces/Flowers/05-south-wind.svg" alt="South wind"></span>
+      <span class="tile-card sm"><img src="Images/Tile faces/Flowers/06-west-wind.svg" alt="West wind"></span>
+      <span class="tile-card sm"><img src="Images/Tile faces/Flowers/07-north-wind.svg" alt="North wind"></span>
+      <span class="tile-card sm"><img src="Images/Tile faces/Flowers/35-spring.svg" alt="Spring"></span>
+      <span class="tile-card sm"><img src="Images/Tile faces/Flowers/36-summer.svg" alt="Summer"></span>
+      <span class="tile-card sm"><img src="Images/Tile faces/Flowers/37-autumn.svg" alt="Autumn"></span>
+      <span class="tile-card sm"><img src="Images/Tile faces/Flowers/38-winter.svg" alt="Winter"></span>
+      <span class="tile-card sm"><img src="Images/Tile faces/Flowers/39-plum.svg" alt="Plum"></span>
+      <span class="tile-card sm"><img src="Images/Tile faces/Flowers/40-orchid.svg" alt="Orchid"></span>
+    </div>
   </div>
 </section>
 
 <div class="cta-band">
   <h2>READY TO PLAY?</h2>
-  <p>Three AI opponents. Authentic rules. One download.</p>
+  <p>Authentic Rules. One download. Unlimited fun.</p>
   <div class="cta-row">
     <a class="play-store-cta"
        data-ga-label="htp_cta_band_badge"
