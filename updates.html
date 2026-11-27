@@ -27,23 +27,29 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --blue-dark:#06101e;
-  --blue-felt:#0e2448;
-  --blue-mid:#152038;
-  --gold:#c9a84c;
+  --pearl:#f6f3ec;
+  --pearl-lift:#fdfbf6;
+  --pearl-edge:#e4ddcc;
+  --ink:#322e26;
+  --ink-soft:#6b6454;
+  --gold:#c2a04a;
+  --gold-deep:#8a6a22;
   --gold-light:#e8c96d;
-  --ivory:#f7f2e4;
-  --ivory-dark:#e8dfc8;
-  --tag-new:#7ec987;
-  --tag-fixed:#e8c96d;
-  --tag-improved:#8fb8e0;
+  --ph-blue:#0038A8;
+  --ph-red:#CE1126;
+  --ph-yellow:#FCD116;
+  --shadow:rgba(70,58,24,.14);
+  --tag-new:#2f8a4a;
+  --tag-fixed:#8a6a22;
+  --tag-improved:#2f6b9e;
 }
 html{scroll-behavior:smooth}
 body{
   font-family:'Crimson Text',Georgia,serif;
-  background:radial-gradient(ellipse at 40% 30%,var(--blue-mid) 0%,var(--blue-dark) 60%,#020810 100%);
+  background:radial-gradient(ellipse at 50% -5%,#fefdfa 0%,#f5f1e8 55%,#ece5d6 100%);
+  background-attachment:fixed;
   min-height:100vh;
-  color:var(--ivory);
+  color:var(--ink);
   line-height:1.7;
   overflow-x:hidden;
 }
@@ -51,35 +57,39 @@ body{
 /* Header — matches landing page */
 header{
   width:100%;
-  background:linear-gradient(180deg,#040c18 0%,#0a1628 100%);
+  background:linear-gradient(180deg,#071428 0%,#0e2448 100%);
   border-bottom:2px solid var(--gold);
-  padding:10px 20px;
+  padding:11px 20px;
   display:flex;align-items:center;justify-content:space-between;
-  box-shadow:0 3px 20px rgba(0,0,0,.7);
+  box-shadow:0 3px 18px rgba(0,0,0,.4);
   position:sticky;top:0;z-index:10;
+}
+header::after{
+  content:'';position:absolute;left:0;right:0;bottom:-5px;height:3px;
+  background:linear-gradient(90deg,var(--ph-blue) 0 40%,var(--ph-red) 40% 80%,var(--ph-yellow) 80% 100%);
 }
 header .brand{
   font-family:'Cinzel',serif;
-  font-size:18px;
-  color:var(--gold);
+  font-size:19px;
+  color:var(--gold-light);
   letter-spacing:3px;
-  text-shadow:0 0 20px rgba(201,168,76,.35);
+  text-shadow:0 0 18px rgba(201,168,76,.3);
   text-decoration:none;
 }
 header nav{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
 header nav a{
   font-family:'Cinzel',serif;
-  font-size:11px;
-  color:var(--gold);
+  font-size:13px;
+  color:var(--gold-light);
   text-decoration:none;
-  padding:4px 10px;
-  border:1px solid rgba(201,168,76,.35);
+  padding:5px 12px;
+  border:1px solid rgba(232,201,109,.4);
   border-radius:5px;
   letter-spacing:1px;
   transition:background .15s ease;
 }
-header nav a:hover{background:rgba(201,168,76,.12)}
-header nav a.current{background:rgba(201,168,76,.18)}
+header nav a:hover{background:rgba(232,201,109,.15)}
+header nav a.current{background:rgba(232,201,109,.22)}
 
 /* Hero — compact */
 .htp-hero{
@@ -91,19 +101,17 @@ header nav a.current{background:rgba(201,168,76,.18)}
 .htp-hero h1{
   font-family:'Cinzel',serif;
   font-size:clamp(30px,5vw,46px);
-  color:var(--gold);
+  color:var(--gold-deep);
   letter-spacing:2px;
   margin-bottom:14px;
   line-height:1.2;
-  text-shadow:0 0 30px rgba(201,168,76,.3);
 }
 .htp-hero .subtitle{
   font-size:clamp(16px,2.2vw,19px);
-  color:var(--ivory-dark);
+  color:var(--ink-soft);
   max-width:620px;
   margin:0 auto 10px;
   font-style:italic;
-  opacity:.9;
 }
 
 /* Shared button styles */
@@ -133,12 +141,13 @@ header nav a.current{background:rgba(201,168,76,.18)}
   padding:20px 24px 10px;
 }
 .release{
-  background:linear-gradient(180deg,rgba(14,36,72,.5) 0%,rgba(6,16,30,.4) 100%);
-  border:1px solid rgba(201,168,76,.18);
+  background:var(--pearl-lift);
+  border:1px solid var(--pearl-edge);
   border-left:3px solid var(--gold);
   border-radius:8px;
   padding:22px 24px;
   margin-bottom:22px;
+  box-shadow:0 3px 14px var(--shadow);
 }
 .release .release-head{
   display:flex;align-items:baseline;flex-wrap:wrap;gap:10px 14px;
@@ -147,32 +156,29 @@ header nav a.current{background:rgba(201,168,76,.18)}
 .release .version{
   font-family:'Cinzel',serif;
   font-size:clamp(20px,3vw,26px);
-  color:var(--gold);
+  color:var(--gold-deep);
   letter-spacing:2px;
-  text-shadow:0 0 20px rgba(201,168,76,.2);
 }
 .release .date{
   font-family:'Cinzel',serif;
   font-size:12px;
   letter-spacing:2px;
-  color:var(--ivory-dark);
-  opacity:.6;
+  color:var(--ink-soft);
 }
 .release .release-title{
   font-style:italic;
   font-size:17px;
-  color:var(--gold-light);
+  color:var(--gold-deep);
   margin-bottom:16px;
-  opacity:.95;
 }
 .release ul{list-style:none;display:flex;flex-direction:column;gap:12px}
 .release li{
   display:flex;align-items:flex-start;gap:12px;
   font-size:17px;
-  color:var(--ivory-dark);
+  color:var(--ink);
 }
 .release li .body{flex:1}
-.release li .body strong{color:var(--ivory)}
+.release li .body strong{color:var(--ink);font-weight:600}
 
 /* New / Fixed / Improved pills */
 .tag{
@@ -193,23 +199,30 @@ header nav a.current{background:rgba(201,168,76,.18)}
 .tag.fixed{color:var(--tag-fixed);border-color:rgba(232,201,109,.45);background:rgba(232,201,109,.1)}
 .tag.improved{color:var(--tag-improved);border-color:rgba(143,184,224,.45);background:rgba(143,184,224,.1)}
 
-/* CTA band (shared with landing) */
+/* CTA band — Filipino flag background (shared with landing) */
 .cta-band{
-  background:linear-gradient(180deg,#0a1628 0%,#040c18 100%);
-  border-top:1px solid rgba(201,168,76,.25);
-  border-bottom:1px solid rgba(201,168,76,.25);
-  padding:50px 24px;
+  position:relative;
+  background:var(--ph-blue) url('Images/ph-flag.svg') center/cover no-repeat;
+  border-top:3px solid var(--gold);
+  padding:60px 24px;
   text-align:center;
-  margin-top:30px;
+  margin-top:36px;
+  overflow:hidden;
 }
+.cta-band::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(6,14,28,.52) 0%,rgba(6,14,28,.66) 100%);
+}
+.cta-band > *{position:relative;z-index:1}
 .cta-band h2{
   font-family:'Cinzel',serif;
-  font-size:clamp(22px,3.5vw,28px);
-  color:var(--gold);
+  font-size:clamp(24px,3.8vw,32px);
+  color:#fff;
   letter-spacing:3px;
   margin-bottom:10px;
+  text-shadow:0 2px 14px rgba(0,0,0,.65);
 }
-.cta-band p{color:var(--ivory-dark);margin-bottom:22px;opacity:.85}
+.cta-band p{color:#f1ede3;margin-bottom:22px;text-shadow:0 1px 8px rgba(0,0,0,.6)}
 .cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;align-items:center}
 /* Store badges. Google Play badge is self-hosted (Images/google-play-badge.png) —
    do NOT hotlink play.google.com's badge URL: ad/privacy blockers drop it, silently
@@ -227,11 +240,10 @@ header nav a.current{background:rgba(201,168,76,.18)}
 footer{
   padding:30px 24px 40px;
   text-align:center;
-  color:var(--ivory-dark);
-  opacity:.6;
+  color:var(--ink-soft);
   font-size:13px;
 }
-footer a{color:var(--gold);text-decoration:none}
+footer a{color:var(--gold-deep);text-decoration:none}
 footer a:hover{text-decoration:underline}
 footer .foot-links{margin-bottom:10px}
 footer .foot-links a{margin:0 10px;letter-spacing:1px;font-family:'Cinzel',serif;font-size:11px}
@@ -346,7 +358,7 @@ footer .foot-links a{margin:0 10px;letter-spacing:1px;font-family:'Cinzel',serif
 
 <div class="cta-band">
   <h2>READY TO PLAY?</h2>
-  <p>Three AI opponents. Authentic rules. One download.</p>
+  <p>Authentic Rules. One download. Unlimited fun.</p>
   <div class="cta-row">
     <a class="play-store-cta"
        data-ga-label="updates_cta_band_badge"

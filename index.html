@@ -68,22 +68,27 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --blue-dark:#06101e;
-  --blue-felt:#0e2448;
-  --blue-mid:#152038;
-  --gold:#c9a84c;
+  --pearl:#f6f3ec;
+  --pearl-lift:#fdfbf6;
+  --pearl-edge:#e4ddcc;
+  --ink:#322e26;
+  --ink-soft:#6b6454;
+  --gold:#c2a04a;
+  --gold-deep:#8a6a22;
   --gold-light:#e8c96d;
-  --ivory:#f7f2e4;
-  --ivory-dark:#e8dfc8;
-  --wood-rim:#2a1208;
-  --joker-purple:#7b2d8b;
+  --ph-blue:#0038A8;
+  --ph-red:#CE1126;
+  --ph-yellow:#FCD116;
+  --joker-purple:#7b5ea8;
+  --shadow:rgba(70,58,24,.14);
 }
 html{scroll-behavior:smooth}
 body{
   font-family:'Crimson Text',Georgia,serif;
-  background:radial-gradient(ellipse at 40% 30%,var(--blue-mid) 0%,var(--blue-dark) 60%,#020810 100%);
+  background:radial-gradient(ellipse at 50% -5%,#fefdfa 0%,#f5f1e8 55%,#ece5d6 100%);
+  background-attachment:fixed;
   min-height:100vh;
-  color:var(--ivory);
+  color:var(--ink);
   font-size:18px;
   line-height:1.7;
   overflow-x:hidden;
@@ -92,34 +97,38 @@ body{
 /* ---------- Header ---------- */
 header{
   width:100%;
-  background:linear-gradient(180deg,#040c18 0%,#0a1628 100%);
+  background:linear-gradient(180deg,#071428 0%,#0e2448 100%);
   border-bottom:2px solid var(--gold);
-  padding:10px 20px;
+  padding:11px 20px;
   display:flex;align-items:center;justify-content:space-between;
-  box-shadow:0 3px 20px rgba(0,0,0,.7);
+  box-shadow:0 3px 18px rgba(0,0,0,.4);
   position:sticky;top:0;z-index:10;
+}
+header::after{
+  content:'';position:absolute;left:0;right:0;bottom:-5px;height:3px;
+  background:linear-gradient(90deg,var(--ph-blue) 0 40%,var(--ph-red) 40% 80%,var(--ph-yellow) 80% 100%);
 }
 header .brand{
   font-family:'Cinzel',serif;
-  font-size:18px;
-  color:var(--gold);
+  font-size:19px;
+  color:var(--gold-light);
   letter-spacing:3px;
-  text-shadow:0 0 20px rgba(201,168,76,.35);
+  text-shadow:0 0 18px rgba(201,168,76,.3);
   text-decoration:none;
 }
 header nav{display:flex;gap:6px}
 header nav a{
   font-family:'Cinzel',serif;
-  font-size:13px;
-  color:var(--gold);
+  font-size:14px;
+  color:var(--gold-light);
   text-decoration:none;
-  padding:4px 10px;
-  border:1px solid rgba(201,168,76,.35);
+  padding:5px 13px;
+  border:1px solid rgba(232,201,109,.4);
   border-radius:5px;
   letter-spacing:1px;
   transition:background .15s ease;
 }
-header nav a:hover{background:rgba(201,168,76,.12)}
+header nav a:hover{background:rgba(232,201,109,.15)}
 
 /* ---------- Hero ---------- */
 .hero{
@@ -136,9 +145,10 @@ header nav a:hover{background:rgba(201,168,76,.12)}
   max-width:720px;
   margin:0 auto;
   padding:44px 36px 40px;
-  border:1px solid rgba(201,168,76,.45);
+  border:1px solid rgba(194,160,74,.5);
   border-radius:4px;
-  box-shadow:inset 0 0 60px rgba(201,168,76,.06),0 0 40px rgba(0,0,0,.35);
+  box-shadow:inset 0 0 60px rgba(194,160,74,.05),0 6px 30px var(--shadow);
+  background:rgba(253,251,246,.55);
 }
 .hero-frame::before,
 .hero-frame::after,
@@ -168,26 +178,25 @@ header nav a:hover{background:rgba(201,168,76,.12)}
 .hero .tagline{
   font-family:'Cinzel',serif;
   font-size:15px;
-  color:var(--gold-light);
+  color:var(--gold-deep);
   letter-spacing:3px;
   margin-bottom:14px;
-  opacity:.9;
 }
 .hero h1{
   font-family:'Cinzel',serif;
   font-size:clamp(28px,5vw,44px);
-  color:var(--ivory);
+  color:var(--ink);
   font-weight:600;
   letter-spacing:2px;
   margin-bottom:18px;
   line-height:1.2;
 }
-.hero h1 em{color:var(--gold);font-style:normal}
+.hero h1 em{color:var(--gold-deep);font-style:normal}
 .hero .lede{
   font-size:clamp(18px,2.4vw,22px);
   max-width:680px;
   margin:0 auto 34px;
-  color:var(--ivory-dark);
+  color:var(--ink-soft);
   line-height:1.65;
 }
 .cta-row{
@@ -246,12 +255,13 @@ header nav a:hover{background:rgba(201,168,76,.12)}
 .tile-deco{
   position:absolute;
   width:60px;height:80px;
-  background:linear-gradient(180deg,var(--ivory) 0%,var(--ivory-dark) 100%);
+  background:linear-gradient(180deg,#ffffff 0%,#f4eedf 100%);
+  border:1px solid var(--pearl-edge);
   border-radius:6px;
-  box-shadow:0 4px 14px rgba(0,0,0,.5),inset 0 -3px 0 rgba(0,0,0,.15);
+  box-shadow:0 4px 14px var(--shadow),inset 0 -3px 0 rgba(0,0,0,.05);
   display:flex;align-items:center;justify-content:center;
   padding:8px;
-  opacity:.85;
+  opacity:.9;
 }
 .tile-deco img{max-width:100%;max-height:100%}
 .tile-deco.t1{top:30px;left:5%;transform:rotate(-12deg)}
@@ -264,12 +274,12 @@ header nav a:hover{background:rgba(201,168,76,.12)}
   position:absolute;
   font-family:'Cinzel',serif;
   font-weight:700;
-  color:var(--gold);
+  color:var(--gold-deep);
   letter-spacing:2px;
-  text-shadow:0 0 18px rgba(201,168,76,.35),0 2px 4px rgba(0,0,0,.4);
+  text-shadow:0 1px 2px rgba(255,255,255,.6);
   pointer-events:none;
   white-space:nowrap;
-  opacity:.55;
+  opacity:.4;
 }
 .call-deco.c1{top:180px;left:14%;font-size:30px;transform:rotate(-6deg)}
 .call-deco.c2{top:120px;right:18%;font-size:26px;transform:rotate(8deg)}
@@ -340,16 +350,14 @@ section{
 section h2{
   font-family:'Cinzel',serif;
   font-size:clamp(22px,3.5vw,30px);
-  color:var(--gold);
+  color:var(--gold-deep);
   letter-spacing:3px;
   text-align:center;
   margin-bottom:10px;
-  text-shadow:0 0 20px rgba(201,168,76,.25);
 }
 section .section-sub{
   text-align:center;
-  color:var(--ivory-dark);
-  opacity:.85;
+  color:var(--ink-soft);
   max-width:680px;
   margin:0 auto 36px;
   font-size:19px;
@@ -367,27 +375,28 @@ section .section-sub{
   gap:22px;
 }
 .feature{
-  background:rgba(14,36,72,.4);
-  border:1px solid rgba(201,168,76,.18);
+  background:var(--pearl-lift);
+  border:1px solid var(--pearl-edge);
   border-radius:12px;
   padding:26px 22px;
   text-align:center;
+  box-shadow:0 4px 16px var(--shadow);
   transition:border-color .2s ease,transform .2s ease;
 }
-.feature:hover{border-color:rgba(201,168,76,.45);transform:translateY(-3px)}
+.feature:hover{border-color:rgba(194,160,74,.55);transform:translateY(-3px)}
 .feature .icon{
   font-size:34px;
   margin-bottom:12px;
-  color:var(--gold);
+  color:var(--gold-deep);
 }
 .feature h3{
   font-family:'Cinzel',serif;
-  color:var(--gold-light);
+  color:var(--gold-deep);
   font-size:16px;
   letter-spacing:2px;
   margin-bottom:10px;
 }
-.feature p{color:var(--ivory-dark);font-size:17px;line-height:1.6}
+.feature p{color:var(--ink);font-size:17px;line-height:1.6}
 
 /* Screenshots gallery */
 .screens{
@@ -401,15 +410,15 @@ section .section-sub{
   position:relative;
   border-radius:14px;
   overflow:hidden;
-  border:1px solid rgba(201,168,76,.28);
-  background:#0a1628;
-  box-shadow:0 8px 24px rgba(0,0,0,.5),inset 0 0 0 1px rgba(255,255,255,.03);
+  border:1px solid var(--pearl-edge);
+  background:var(--pearl-lift);
+  box-shadow:0 8px 24px var(--shadow);
   transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
 }
 .screens .shot:hover{
   transform:translateY(-4px);
-  border-color:rgba(201,168,76,.55);
-  box-shadow:0 14px 30px rgba(0,0,0,.6);
+  border-color:rgba(194,160,74,.55);
+  box-shadow:0 14px 30px var(--shadow);
 }
 .screens .shot img{
   display:block;
@@ -420,11 +429,11 @@ section .section-sub{
   font-family:'Cinzel',serif;
   font-size:13px;
   letter-spacing:2px;
-  color:var(--gold-light);
+  color:var(--gold-deep);
   text-align:center;
   padding:10px 8px;
-  background:linear-gradient(180deg,rgba(14,36,72,.4) 0%,rgba(6,16,30,.7) 100%);
-  border-top:1px solid rgba(201,168,76,.18);
+  background:var(--pearl);
+  border-top:1px solid var(--pearl-edge);
 }
 
 /* Rules preview */
@@ -434,42 +443,49 @@ section .section-sub{
   gap:16px;
 }
 .rule-card{
-  background:linear-gradient(180deg,rgba(14,36,72,.5) 0%,rgba(6,16,30,.5) 100%);
+  background:var(--pearl-lift);
+  border:1px solid var(--pearl-edge);
   border-left:3px solid var(--gold);
   padding:18px 22px;
-  border-radius:6px;
+  border-radius:8px;
+  box-shadow:0 3px 14px var(--shadow);
 }
 .rule-card .term{
   font-family:'Cinzel',serif;
-  color:var(--gold);
+  color:var(--gold-deep);
   font-size:15px;
   letter-spacing:2px;
   margin-bottom:6px;
   display:block;
 }
-.rule-card p{color:var(--ivory-dark);font-size:17px;line-height:1.6;margin:0}
+.rule-card p{color:var(--ink);font-size:17px;line-height:1.6;margin:0}
 
-/* Big CTA band */
+/* Big CTA band — Filipino flag background */
 .cta-band{
-  background:linear-gradient(180deg,#0a1628 0%,#040c18 100%);
-  border-top:1px solid rgba(201,168,76,.25);
-  border-bottom:1px solid rgba(201,168,76,.25);
-  padding:50px 24px;
+  position:relative;
+  background:var(--ph-blue) url('Images/ph-flag.svg') center/cover no-repeat;
+  border-top:3px solid var(--gold);
+  padding:60px 24px;
   text-align:center;
-  margin-top:20px;
+  margin-top:30px;
+  overflow:hidden;
 }
-.cta-band h2{margin-bottom:8px}
-.cta-band p{color:var(--ivory-dark);margin-bottom:24px;opacity:.85}
+.cta-band::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(6,14,28,.52) 0%,rgba(6,14,28,.66) 100%);
+}
+.cta-band > *{position:relative;z-index:1}
+.cta-band h2{margin-bottom:8px;color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.65)}
+.cta-band p{color:#f1ede3;margin-bottom:24px;text-shadow:0 1px 8px rgba(0,0,0,.6)}
 
 /* Footer */
 footer{
   padding:30px 24px 40px;
   text-align:center;
-  color:var(--ivory-dark);
-  opacity:.7;
+  color:var(--ink-soft);
   font-size:15px;
 }
-footer a{color:var(--gold);text-decoration:none}
+footer a{color:var(--gold-deep);text-decoration:none}
 footer a:hover{text-decoration:underline}
 footer .foot-links{margin-bottom:10px}
 footer .foot-links a{margin:0 10px;letter-spacing:1px;font-family:'Cinzel',serif;font-size:13px}
@@ -512,7 +528,7 @@ footer .foot-links a{margin:0 10px;letter-spacing:1px;font-family:'Cinzel',serif
          href="https://play.filipinomj.com/"
          aria-label="Play Filipino Mahjong free in your browser">▶ PLAY FREE IN BROWSER</a>
     </div>
-    <p style="font-size:15px;color:var(--ivory-dark);opacity:.8;margin-bottom:16px">No download. No sign-up. Works on phone, tablet &amp; desktop.</p>
+    <p style="font-size:15px;color:var(--ink-soft);margin-bottom:16px">No download. No sign-up. Works on phone, tablet &amp; desktop.</p>
     <div class="cta-row">
       <a class="play-store-cta"
          data-ga-label="hero_badge"
@@ -673,7 +689,7 @@ footer .foot-links a{margin:0 10px;letter-spacing:1px;font-family:'Cinzel',serif
 <div class="cta-band">
   <h2>READY TO DEAL?</h2>
   <div class="divider"></div>
-  <p>Lola Winnie, Tita Nene, Kuya Edgar at the table. Authentic rules. Play free in seconds.</p>
+  <p>Authentic Rules. One download. Unlimited fun.</p>
   <div class="cta-row">
     <a class="btn btn-primary play-web-cta"
        data-ga-label="cta_band_play_web"
