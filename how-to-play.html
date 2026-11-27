@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>How to Play Filipino Mahjong — Rules, Calls, and Scoring</title>
-<meta name="description" content="Complete rules for Filipino Mahjong: 17-tile hand, pung, chow, kang, sagása, bisaklat, sietepares, jokers, flowers, and the scoring table.">
+<title>How to Play Filipino Mahjong — Rules, Calls & Winning Hands</title>
+<meta name="description" content="The complete rules of Filipino Mahjong: the 17-tile hand, pung, chow, kang, sagása, jokers, flowers, and every winning hand — Tódas, Búnot, Siete Pares, Escalera, Bisaklat, and the rare Joker Eye — each shown with tile examples.">
 
 <meta property="og:title" content="How to Play Filipino Mahjong">
-<meta property="og:description" content="Complete rules for Filipino Mahjong: 17-tile hand, calls, special moves, winning hands, and scoring.">
+<meta property="og:description" content="The complete rules of Filipino Mahjong: tiles, calls, special moves, and every winning hand with tile examples — including the rare Joker Eye.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://filipinomj.com/how-to-play.html">
 <meta property="og:image" content="https://filipinomj.com/Images/App%20Icon_3.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="How to Play Filipino Mahjong">
-<meta name="twitter:description" content="Complete rules for Filipino Mahjong.">
+<meta name="twitter:description" content="The complete rules of Filipino Mahjong, with tile examples for every winning hand.">
 <meta name="twitter:image" content="https://filipinomj.com/Images/App%20Icon_3.png">
 
 <link rel="icon" type="image/png" href="Images/App Icon_3.png">
@@ -26,87 +26,87 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --blue-dark:#06101e;
-  --blue-felt:#0e2448;
-  --blue-mid:#152038;
-  --gold:#c9a84c;
-  --gold-light:#e8c96d;
-  --ivory:#f7f2e4;
-  --ivory-dark:#e8dfc8;
+  --pearl:#f6f3ec;        /* page background base */
+  --pearl-lift:#fdfbf6;   /* cards, header */
+  --pearl-edge:#e4ddcc;   /* soft borders */
+  --ink:#322e26;          /* body text */
+  --ink-soft:#6b6454;     /* secondary text */
+  --gold:#c2a04a;         /* decorative gold */
+  --gold-deep:#8a6a22;    /* readable gold — headings / links */
+  --jade:#2f6f52;         /* quiet accent */
+  --plum:#7b5ea8;         /* joker accent (matches in-game) */
+  --shadow:rgba(70,58,24,.14);
 }
 html{scroll-behavior:smooth}
 body{
   font-family:'Crimson Text',Georgia,serif;
-  background:radial-gradient(ellipse at 40% 30%,var(--blue-mid) 0%,var(--blue-dark) 60%,#020810 100%);
+  background:radial-gradient(ellipse at 50% -5%,#fefdfa 0%,#f5f1e8 55%,#ece5d6 100%);
+  background-attachment:fixed;
   min-height:100vh;
-  color:var(--ivory);
+  color:var(--ink);
   line-height:1.7;
   overflow-x:hidden;
 }
 
-/* Header — matches landing page */
+/* Header */
 header{
   width:100%;
-  background:linear-gradient(180deg,#040c18 0%,#0a1628 100%);
+  background:rgba(253,251,246,.88);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
   border-bottom:2px solid var(--gold);
   padding:10px 20px;
   display:flex;align-items:center;justify-content:space-between;
-  box-shadow:0 3px 20px rgba(0,0,0,.7);
+  box-shadow:0 2px 16px var(--shadow);
   position:sticky;top:0;z-index:10;
 }
 header .brand{
   font-family:'Cinzel',serif;
   font-size:18px;
-  color:var(--gold);
+  color:var(--gold-deep);
   letter-spacing:3px;
-  text-shadow:0 0 20px rgba(201,168,76,.35);
   text-decoration:none;
 }
 header nav{display:flex;gap:6px}
 header nav a{
   font-family:'Cinzel',serif;
   font-size:11px;
-  color:var(--gold);
+  color:var(--gold-deep);
   text-decoration:none;
   padding:4px 10px;
-  border:1px solid rgba(201,168,76,.35);
+  border:1px solid rgba(194,160,74,.45);
   border-radius:5px;
   letter-spacing:1px;
   transition:background .15s ease;
 }
-header nav a:hover{background:rgba(201,168,76,.12)}
+header nav a:hover{background:rgba(194,160,74,.14)}
 
-/* Hero — compact */
+/* Hero */
 .htp-hero{
   max-width:900px;
   margin:0 auto;
-  padding:60px 24px 30px;
+  padding:60px 24px 26px;
   text-align:center;
 }
 .htp-hero h1{
   font-family:'Cinzel',serif;
   font-size:clamp(30px,5vw,46px);
-  color:var(--gold);
+  color:var(--gold-deep);
   letter-spacing:2px;
   margin-bottom:14px;
   line-height:1.2;
-  text-shadow:0 0 30px rgba(201,168,76,.3);
 }
 .htp-hero .subtitle{
-  font-size:clamp(16px,2.2vw,19px);
-  color:var(--ivory-dark);
+  font-size:clamp(18px,2.4vw,22px);
+  color:var(--ink-soft);
   max-width:640px;
   margin:0 auto 28px;
   font-style:italic;
-  opacity:.9;
 }
 .cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;align-items:center}
 
-/* Store badges. Google Play badge is self-hosted (Images/google-play-badge.png) —
-   do NOT hotlink play.google.com's badge URL: ad/privacy blockers drop it, silently
-   falling back to the anchor's alt text. The Apple badge gets ~75% of the Google CSS
-   height because Google's badge has ~25% transparent padding baked in around the
-   visible button — equal CSS heights would make the App Store one look visibly heavier. */
+/* Store badges (self-hosted Google Play badge; Apple badge ~75% of Google height to
+   offset the ~25% transparent padding baked into Google's artwork). */
 .play-store-cta,.app-store-cta{display:inline-block;line-height:0}
 .play-store-cta img{height:80px;width:auto;display:block}
 .app-store-cta  img{height:60px;width:auto;display:block}
@@ -115,7 +115,7 @@ header nav a:hover{background:rgba(201,168,76,.12)}
   .app-store-cta  img{height:45px}
 }
 
-/* Shared button styles */
+/* Buttons */
 .btn{
   font-family:'Cinzel',serif;
   font-size:13px;
@@ -128,47 +128,41 @@ header nav a:hover{background:rgba(201,168,76,.12)}
   transition:transform .15s ease,box-shadow .15s ease;
   display:inline-block;
 }
-.btn-primary{
-  background:linear-gradient(180deg,var(--gold-light) 0%,var(--gold) 100%);
-  color:#0a0800;
-  font-weight:700;
-  box-shadow:0 4px 20px rgba(201,168,76,.4),inset 0 1px 0 rgba(255,255,255,.3);
-}
-.btn-primary:hover{transform:translateY(-2px);box-shadow:0 6px 26px rgba(201,168,76,.55)}
 .btn-secondary{
   background:transparent;
-  color:var(--gold);
-  border:1px solid rgba(201,168,76,.5);
+  color:var(--gold-deep);
+  border:1px solid rgba(194,160,74,.6);
 }
-.btn-secondary:hover{background:rgba(201,168,76,.12)}
+.btn-secondary:hover{background:rgba(194,160,74,.14)}
 
-/* Table of contents (sticky-ish list) */
+/* Table of contents */
 .toc{
   max-width:900px;
   margin:20px auto 30px;
   padding:18px 24px;
-  background:rgba(14,36,72,.35);
-  border:1px solid rgba(201,168,76,.18);
+  background:var(--pearl-lift);
+  border:1px solid var(--pearl-edge);
   border-radius:10px;
+  box-shadow:0 4px 18px var(--shadow);
 }
 .toc .toc-title{
   font-family:'Cinzel',serif;
   font-size:12px;
   letter-spacing:2px;
-  color:var(--gold-light);
+  color:var(--gold-deep);
   margin-bottom:8px;
 }
 .toc ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px 18px}
 .toc a{
-  color:var(--ivory);
+  color:var(--ink);
   text-decoration:none;
-  font-size:15px;
-  border-bottom:1px dotted rgba(201,168,76,.35);
+  font-size:17px;
+  border-bottom:1px dotted rgba(194,160,74,.5);
   padding-bottom:1px;
 }
-.toc a:hover{color:var(--gold-light);border-bottom-color:var(--gold)}
+.toc a:hover{color:var(--gold-deep);border-bottom-color:var(--gold)}
 
-/* Section styling */
+/* Sections */
 section.rule{
   max-width:900px;
   margin:0 auto;
@@ -177,14 +171,13 @@ section.rule{
 section.rule h2{
   font-family:'Cinzel',serif;
   font-size:clamp(22px,3.5vw,30px);
-  color:var(--gold);
+  color:var(--gold-deep);
   letter-spacing:3px;
   margin-bottom:6px;
-  text-shadow:0 0 20px rgba(201,168,76,.2);
 }
 section.rule h2 .num{
-  color:var(--ivory-dark);
-  opacity:.35;
+  color:var(--ink-soft);
+  opacity:.4;
   font-size:.7em;
   margin-right:10px;
   font-weight:400;
@@ -195,124 +188,139 @@ section.rule .divider{
   margin-bottom:20px;
 }
 section.rule p{
-  color:var(--ivory-dark);
-  margin-bottom:12px;
-  font-size:17px;
+  color:var(--ink);
+  margin-bottom:14px;
+  font-size:20px;
 }
-section.rule p strong{color:var(--ivory)}
+section.rule p.muted{color:var(--ink-soft)}
+section.rule p strong{color:var(--ink);font-weight:600}
 section.rule h3{
   font-family:'Cinzel',serif;
   font-size:15px;
   letter-spacing:2px;
-  color:var(--gold-light);
+  color:var(--gold-deep);
   margin:22px 0 8px;
 }
 
-/* Tile rendering */
+/* Tiles */
 .tile-card{
   display:inline-flex;align-items:center;justify-content:center;
   width:52px;height:70px;
-  background:linear-gradient(180deg,var(--ivory) 0%,var(--ivory-dark) 100%);
+  background:linear-gradient(180deg,#ffffff 0%,#f4eedf 100%);
+  border:1px solid var(--pearl-edge);
   border-radius:6px;
-  box-shadow:0 3px 10px rgba(0,0,0,.45),inset 0 -2px 0 rgba(0,0,0,.12);
+  box-shadow:0 3px 8px var(--shadow),inset 0 -2px 0 rgba(0,0,0,.05);
   padding:5px;
   vertical-align:middle;
+  flex-shrink:0;            /* tiles keep their size — crowded rows wrap, never compress */
 }
 .tile-card img{max-width:100%;max-height:100%;display:block}
-.tile-card.sm{width:38px;height:52px;padding:3px}
-.tile-row{
-  display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0 6px;
-}
+.tile-card.sm{width:46px;height:62px;padding:4px}
+.tile-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0 6px}
 .tile-row.demo{gap:4px}
-.tile-row .plus{color:var(--gold);font-family:'Cinzel',serif;padding:0 4px}
+.tile-row .plus{color:var(--gold-deep);font-family:'Cinzel',serif;padding:0 4px;font-size:18px}
 .tile-group{margin:14px 0}
 .tile-group .group-label{
   font-family:'Cinzel',serif;
   font-size:12px;
   letter-spacing:2px;
-  color:var(--gold-light);
+  color:var(--gold-deep);
   margin-bottom:6px;
   display:block;
 }
 
+/* Joker tile — wild, matches the in-game plum border + gold star */
+.tile-card.joker{
+  position:relative;
+  border:2px solid var(--plum);
+  box-shadow:0 0 0 2px rgba(194,160,74,.4),0 3px 10px var(--shadow);
+}
+.tile-card.joker::after{
+  content:'★';
+  position:absolute;top:-8px;right:-8px;
+  width:18px;height:18px;line-height:18px;
+  font-size:11px;text-align:center;
+  color:#4a3a0e;
+  background:linear-gradient(180deg,#f0d884,var(--gold));
+  border-radius:50%;
+  box-shadow:0 1px 4px var(--shadow);
+}
+
 /* Call / special-move cards */
 .rule-card{
-  background:linear-gradient(180deg,rgba(14,36,72,.5) 0%,rgba(6,16,30,.4) 100%);
+  background:var(--pearl-lift);
+  border:1px solid var(--pearl-edge);
   border-left:3px solid var(--gold);
   padding:18px 22px;
-  border-radius:6px;
+  border-radius:8px;
   margin-bottom:14px;
+  box-shadow:0 3px 14px var(--shadow);
 }
 .rule-card .term{
   font-family:'Cinzel',serif;
-  color:var(--gold);
+  color:var(--gold-deep);
   font-size:14px;
   letter-spacing:2px;
   margin-bottom:6px;
   display:block;
 }
-.rule-card p{margin-bottom:6px;font-size:16px}
+.rule-card p{margin-bottom:8px;font-size:19px;color:var(--ink)}
 .rule-card p:last-child{margin-bottom:0}
+.rule-card .note{color:var(--ink-soft);font-style:italic;font-size:17px}
 
-/* Scoring tables */
-.score-tbl{
-  width:100%;
-  border-collapse:collapse;
-  margin:10px 0 20px;
-  background:rgba(14,36,72,.3);
-  border:1px solid rgba(201,168,76,.2);
-  border-radius:6px;
-  overflow:hidden;
+/* Winning-hand demo: sets grouped into little trays */
+.hand-demo{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center;margin:12px 0 4px}
+.set{
+  display:flex;flex-wrap:wrap;gap:3px;padding:5px;
+  background:var(--pearl);
+  border:1px solid var(--pearl-edge);
+  border-radius:8px;
 }
-.score-tbl td{
-  padding:10px 14px;
-  font-size:16px;
-  border-bottom:1px solid rgba(201,168,76,.1);
+.set.eye{
+  background:linear-gradient(180deg,#fbf3d8,#f2e6c6);
+  border-color:var(--gold);
 }
-.score-tbl tr:last-child td{border-bottom:none}
-.score-tbl td:first-child{color:var(--ivory)}
-.score-tbl td:last-child{
-  color:var(--gold-light);
-  text-align:right;
-  font-family:'Cinzel',serif;
-  letter-spacing:1px;
-  font-weight:600;
+.set .set-cap,.demo-cap{
+  display:block;width:100%;
+  font-family:'Cinzel',serif;font-size:13px;letter-spacing:1px;
+  color:var(--ink-soft);margin:2px 0 -2px;
 }
-.score-heading{
-  font-family:'Cinzel',serif;
-  font-size:12px;
-  letter-spacing:2px;
-  color:var(--gold-light);
-  margin:10px 0 6px;
-  opacity:.85;
-}
+.demo-cap{color:var(--gold-deep)}
 
-/* CTA band (shared with landing) */
+/* Joker Eye showcase card */
+.rule-card.showcase{
+  border-left-color:var(--plum);
+  background:linear-gradient(180deg,#fdfbf4 0%,#faf4e4 100%);
+  box-shadow:0 4px 20px rgba(123,94,168,.14),0 3px 14px var(--shadow);
+}
+.rule-card.showcase .term{color:var(--plum)}
+
+/* CTA band */
 .cta-band{
-  background:linear-gradient(180deg,#0a1628 0%,#040c18 100%);
-  border-top:1px solid rgba(201,168,76,.25);
-  border-bottom:1px solid rgba(201,168,76,.25);
+  background:var(--pearl-lift);
+  border-top:1px solid var(--pearl-edge);
+  border-bottom:1px solid var(--pearl-edge);
   padding:50px 24px;
   text-align:center;
-  margin-top:30px;
+  margin-top:34px;
+  box-shadow:0 -2px 18px var(--shadow) inset;
 }
 .cta-band h2{
   font-family:'Cinzel',serif;
   font-size:clamp(22px,3.5vw,28px);
-  color:var(--gold);
+  color:var(--gold-deep);
   letter-spacing:3px;
   margin-bottom:10px;
 }
-.cta-band p{color:var(--ivory-dark);margin-bottom:22px;opacity:.85}
+.cta-band p{color:var(--ink-soft);margin-bottom:22px}
 
 footer{
   padding:30px 24px 40px;
   text-align:center;
-  color:var(--ivory-dark);
-  opacity:.6;
+  color:var(--ink-soft);
   font-size:13px;
 }
-footer a{color:var(--gold);text-decoration:none}
+footer a{color:var(--gold-deep);text-decoration:none}
 footer a:hover{text-decoration:underline}
 footer .foot-links{margin-bottom:10px}
 footer .foot-links a{margin:0 10px;letter-spacing:1px;font-family:'Cinzel',serif;font-size:11px}
@@ -331,7 +339,7 @@ footer .foot-links a{margin:0 10px;letter-spacing:1px;font-family:'Cinzel',serif
 
 <div class="htp-hero">
   <h1>How to Play Filipino Mahjong</h1>
-  <p class="subtitle">The complete rules — tiles, calls, winning hands, and scoring. Read through once and you'll have it.</p>
+  <p class="subtitle">The complete rules — tiles, calls, special moves, and every winning hand shown with real tiles. Read through once and you'll have it.</p>
   <div class="cta-row">
     <a class="play-store-cta"
        data-ga-label="htp_hero_badge"
@@ -364,7 +372,6 @@ footer .foot-links a{margin:0 10px;letter-spacing:1px;font-family:'Cinzel',serif
     <li><a href="#specials">4. Special Moves</a></li>
     <li><a href="#winning">5. Winning Hands</a></li>
     <li><a href="#flowers">6. Flowers</a></li>
-    <li><a href="#scoring">7. Scoring</a></li>
   </ul>
 </nav>
 
@@ -372,18 +379,18 @@ footer .foot-links a{margin:0 10px;letter-spacing:1px;font-family:'Cinzel',serif
 <section class="rule" id="basics">
   <h2><span class="num">1</span>The Basics</h2>
   <div class="divider"></div>
-  <p>Filipino Mahjong is played with <strong>108 suited tiles</strong> and <strong>36 flower tiles</strong>. Four players sit around the table.</p>
+  <p>Filipino Mahjong is played with <strong>108 suited tiles</strong> and a set of <strong>flower tiles</strong>. Four players sit around the table.</p>
   <p>Your goal is to build a winning hand of <strong>17 tiles</strong>:</p>
   <p style="margin-left:14px"><strong>5 báhay</strong> (sets of three) <strong>+ 1 pair</strong> (the "eye").</p>
   <p>A báhay can be a <strong>pung</strong> (three of a kind) or a <strong>chow</strong> (three consecutive tiles of the same suit).</p>
-  <p>Each player starts with 16 tiles. The dealer gets 17 and discards first. On your turn, draw a tile and discard one — unless you can call a set or win.</p>
+  <p>Each player starts with 16 tiles; the dealer gets 17 and discards first. On your turn you draw a tile and discard one — unless you can call a set or declare a win.</p>
 </section>
 
 <!-- 2. THE TILES -->
 <section class="rule" id="tiles">
   <h2><span class="num">2</span>The Tiles</h2>
   <div class="divider"></div>
-  <p>There are three suits, each numbered 1–9, with 4 copies of every tile.</p>
+  <p>There are three suits, each numbered 1–9, with four copies of every tile.</p>
 
   <div class="tile-group">
     <span class="group-label">BALLS (CIRCLES)</span>
@@ -416,7 +423,7 @@ footer .foot-links a{margin:0 10px;letter-spacing:1px;font-family:'Cinzel',serif
   </div>
 
   <h3>FLOWER TILES</h3>
-  <p>Flowers (including winds, dragons, and seasons) are bonus tiles. They're never part of your 17-tile playing hand — when you draw one, it's auto-replaced by another tile.</p>
+  <p>Flowers (including winds, dragons, and seasons) are bonus tiles. They're never part of your 17-tile playing hand — when you draw one, it's set aside and auto-replaced by another tile from the wall.</p>
   <div class="tile-row">
     <span class="tile-card"><img src="Images/Tile faces/Flowers/01-white-dragon.svg" alt="White dragon"></span>
     <span class="tile-card"><img src="Images/Tile faces/Flowers/02-green-dragon.svg" alt="Green dragon"></span>
@@ -437,7 +444,7 @@ footer .foot-links a{margin:0 10px;letter-spacing:1px;font-family:'Cinzel',serif
 
   <div class="rule-card">
     <span class="term">PUNG</span>
-    <p>Claim <strong>any player's discard</strong> if you already have <strong>two matching tiles</strong>. Forms a set of three identical tiles.</p>
+    <p>Claim <strong>any player's discard</strong> when you already hold <strong>two matching tiles</strong>. Forms a set of three identical tiles.</p>
     <div class="tile-row demo">
       <span class="tile-card sm"><img src="Images/Tile faces/Suits/21-circles-5.svg" alt=""></span>
       <span class="tile-card sm"><img src="Images/Tile faces/Suits/21-circles-5.svg" alt=""></span>
@@ -457,7 +464,7 @@ footer .foot-links a{margin:0 10px;letter-spacing:1px;font-family:'Cinzel',serif
 
   <div class="rule-card">
     <span class="term">KANG</span>
-    <p>Claim a discard when you already have <strong>three matching tiles</strong>. Forms a set of four. You draw a replacement tile and <strong>each player pays you $1</strong>.</p>
+    <p>Claim a discard when you already hold <strong>three matching tiles</strong>. Forms a set of four, and you draw a replacement tile from the wall.</p>
     <div class="tile-row demo">
       <span class="tile-card sm"><img src="Images/Tile faces/Suits/12-characters-5.svg" alt=""></span>
       <span class="tile-card sm"><img src="Images/Tile faces/Suits/12-characters-5.svg" alt=""></span>
@@ -466,7 +473,7 @@ footer .foot-links a{margin:0 10px;letter-spacing:1px;font-family:'Cinzel',serif
     </div>
   </div>
 
-  <p><em>Kang beats pung. Pung and kang beat chow. If two players can call the same discard, priority goes to the higher call.</em></p>
+  <p class="muted"><em>Priority when two players want the same discard, highest first: <strong>Tódas (win) › Kang › Pung › Chow</strong>.</em></p>
 </section>
 
 <!-- 4. SPECIAL MOVES -->
@@ -476,18 +483,21 @@ footer .foot-links a{margin:0 10px;letter-spacing:1px;font-family:'Cinzel',serif
 
   <div class="rule-card">
     <span class="term">SECRET KANG</span>
-    <p>If you <strong>draw</strong> a 4th tile matching three already in your hand, declare it secretly. All four tiles are placed face-down. <strong>Each player pays you $2.</strong></p>
+    <p>If you <strong>draw</strong> a 4th tile matching three already in your hand, you can declare it secretly. All four tiles are placed face-down, concealed from everyone.</p>
   </div>
 
   <div class="rule-card">
     <span class="term">SAGÁSA</span>
-    <p>If you <strong>draw</strong> a tile matching one of your open pungs, you can extend it to a kang. <strong>Each player pays you $2.</strong></p>
+    <p>If you <strong>draw</strong> a tile matching one of your open pungs, you can extend that pung into a kang, then draw a replacement.</p>
   </div>
 
   <div class="rule-card">
     <span class="term">JOKER</span>
-    <p>One random suited tile is chosen as the joker at the start of each hand. All four copies are <strong>wild</strong> — they can substitute for any tile when completing your hand.</p>
-    <p>Jokers cannot be used to call pung, chow, or kang from a discard.</p>
+    <p>At the start of every hand, one random suited tile is chosen as the <strong>joker</strong>. All four copies of it become <strong>wild</strong> — each can stand in for any tile when completing your hand.</p>
+    <p class="note">Jokers are for building your own hand. They can't be used to call pung, chow, or kang from a discard.</p>
+    <div class="tile-row demo">
+      <span class="tile-card sm joker"><img src="Images/Tile faces/Suits/17-circles-1.svg" alt="Joker (wild) tile"></span>
+    </div>
   </div>
 </section>
 
@@ -495,30 +505,127 @@ footer .foot-links a{margin:0 10px;letter-spacing:1px;font-family:'Cinzel',serif
 <section class="rule" id="winning">
   <h2><span class="num">5</span>Winning Hands</h2>
   <div class="divider"></div>
+  <p>Every win is <strong>5 báhay + 1 pair</strong>. The named hands below are special shapes and ways to win — each shown with example tiles.</p>
 
+  <!-- TÓDAS -->
   <div class="rule-card">
-    <span class="term">TÓDAS</span>
-    <p>The standard win. Your hand is complete: 5 báhay + 1 pair. Each of the three other players pays you the full score amount.</p>
+    <span class="term">TÓDAS — THE STANDARD WIN</span>
+    <p>Your hand is complete: five sets plus the pair (the eye). Here is one full winning hand, 17 tiles:</p>
+    <div class="hand-demo">
+      <span class="set">
+        <span class="set-cap">Pung</span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/21-circles-5.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/21-circles-5.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/21-circles-5.svg" alt=""></span>
+      </span>
+      <span class="set">
+        <span class="set-cap">Chow</span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/26-bamboos-1.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/27-bamboos-2.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/28-bamboos-3.svg" alt=""></span>
+      </span>
+      <span class="set">
+        <span class="set-cap">Chow</span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/11-characters-4.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/12-characters-5.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/13-characters-6.svg" alt=""></span>
+      </span>
+      <span class="set">
+        <span class="set-cap">Pung</span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/23-circles-7.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/23-circles-7.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/23-circles-7.svg" alt=""></span>
+      </span>
+      <span class="set">
+        <span class="set-cap">Chow</span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/32-bamboos-7.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/33-bamboos-8.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/34-bamboos-9.svg" alt=""></span>
+      </span>
+      <span class="set eye">
+        <span class="set-cap">Pair (eye)</span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/09-characters-2.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/09-characters-2.svg" alt=""></span>
+      </span>
+    </div>
   </div>
 
+  <!-- BÚNOT -->
   <div class="rule-card">
-    <span class="term">BÚNOT 🫳 (SELF-DRAWN WIN)</span>
-    <p>You drew the winning tile yourself from the wall instead of claiming someone's discard. Payout is <strong>doubled</strong>.</p>
+    <span class="term">BÚNOT 🫳 — SELF-DRAWN WIN</span>
+    <p>You drew your own winning tile from the wall instead of claiming someone's discard. It's the most prized way to finish any hand.</p>
   </div>
 
+  <!-- SIETE PARES -->
   <div class="rule-card">
-    <span class="term">SIETE PARES</span>
-    <p>Seven pairs + 1 báhay (pung or chow). Can include open melds. Worth <strong>$4 base</strong>.</p>
+    <span class="term">SIETE PARES — SEVEN PAIRS</span>
+    <p>A special shape: <strong>seven pairs + one báhay</strong> (a pung or chow). Open melds are allowed.</p>
+    <div class="hand-demo">
+      <span class="set eye">
+        <span class="set-cap">7 pairs</span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/17-circles-1.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/17-circles-1.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/20-circles-4.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/20-circles-4.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/28-bamboos-3.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/28-bamboos-3.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/33-bamboos-8.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/33-bamboos-8.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/09-characters-2.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/09-characters-2.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/13-characters-6.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/13-characters-6.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/16-characters-9.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/16-characters-9.svg" alt=""></span>
+      </span>
+      <span class="set">
+        <span class="set-cap">+ 1 báhay</span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/21-circles-5.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/21-circles-5.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/21-circles-5.svg" alt=""></span>
+      </span>
+    </div>
   </div>
 
+  <!-- ESCALERA -->
   <div class="rule-card">
-    <span class="term">ESCALERA</span>
-    <p>Tiles 1–9 of a single suit in your hand. Worth <strong>$4 base</strong>.</p>
+    <span class="term">ESCALERA — THE LADDER</span>
+    <p>A full <strong>1–9 run in a single suit</strong> inside your hand. Its unmistakable staircase is the signature:</p>
+    <div class="hand-demo">
+      <span class="set">
+        <span class="set-cap">1 → 9, one suit</span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/08-characters-1.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/09-characters-2.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/10-characters-3.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/11-characters-4.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/12-characters-5.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/13-characters-6.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/14-characters-7.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/15-characters-8.svg" alt=""></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/16-characters-9.svg" alt=""></span>
+      </span>
+    </div>
   </div>
 
+  <!-- BISAKLAT -->
   <div class="rule-card">
-    <span class="term">BISAKLAT</span>
-    <p>The dealer has a complete winning hand on the very first deal — no draws, no discards. Extremely rare. Worth <strong>$20</strong>.</p>
+    <span class="term">BISAKLAT — WON ON THE DEAL</span>
+    <p>The dealer is dealt a complete winning hand (a full Tódas shape) on the very first deal — no draws, no discards. Breathtakingly rare, and the biggest win in the game.</p>
+  </div>
+
+  <!-- JOKER EYE (showcase) -->
+  <div class="rule-card showcase">
+    <span class="term">🃏 JOKER EYE — THE WILD PAIR</span>
+    <p>A rare, prized self-draw. You're holding <strong>five complete sets</strong> plus a single, unpaired <strong>lone joker</strong>. Because the joker is wild, the very next tile you self-draw pairs with it to become your eye — and you win.</p>
+    <p>You can be holding other jokers inside your sets; all that matters is that <strong>one lone joker</strong> is waiting to pair with the tile you draw.</p>
+    <div class="hand-demo">
+      <span class="set eye">
+        <span class="set-cap">The eye</span>
+        <span class="tile-card sm joker"><img src="Images/Tile faces/Suits/17-circles-1.svg" alt="Lone joker (wild)"></span>
+        <span class="tile-card sm"><img src="Images/Tile faces/Suits/30-bamboos-5.svg" alt="The tile you self-draw"></span>
+      </span>
+      <span class="demo-cap" style="align-self:center">lone joker&nbsp;+&nbsp;the tile you draw&nbsp;=&nbsp;a winning pair, on top of your 5 sets</span>
+    </div>
   </div>
 </section>
 
@@ -526,43 +633,15 @@ footer .foot-links a{margin:0 10px;letter-spacing:1px;font-family:'Cinzel',serif
 <section class="rule" id="flowers">
   <h2><span class="num">6</span>Flowers</h2>
   <div class="divider"></div>
-  <p>Flowers are bonus tiles that are <strong>automatically replaced</strong> when drawn. They are never part of your playing hand.</p>
+  <p>Flowers are bonus tiles that are <strong>automatically replaced</strong> the moment you draw them, so they're never part of your playing hand. Two flower situations are singled out as their own small rewards:</p>
   <div class="rule-card">
     <span class="term">NO FLOWERS</span>
-    <p>If you're dealt zero flowers, each player pays you <strong>$1 immediately</strong>.</p>
+    <p>You're dealt zero flowers at the start of the hand.</p>
   </div>
   <div class="rule-card">
     <span class="term">13 FLOWERS</span>
-    <p>Collect all 13 flowers and each player pays you <strong>$1 immediately</strong>.</p>
+    <p>You collect all thirteen flowers over the course of a hand.</p>
   </div>
-</section>
-
-<!-- 7. SCORING -->
-<section class="rule" id="scoring">
-  <h2><span class="num">7</span>Scoring</h2>
-  <div class="divider"></div>
-  <p>Each of the three losers pays the winner. Mid-game bonuses are collected instantly.</p>
-
-  <div class="score-heading">WIN PAYOUTS (each player pays)</div>
-  <table class="score-tbl">
-    <tr><td>Winning</td><td>$2</td></tr>
-    <tr><td>All Pungs / Kang</td><td>+$2</td></tr>
-    <tr><td>Concealed Hand</td><td>+$1</td></tr>
-    <tr><td>Búnot 🫳 (self-draw)</td><td>×2</td></tr>
-    <tr><td>Quick Win (≤5 discards)</td><td>+$1 flat</td></tr>
-    <tr><td>Siete Pares</td><td>$4</td></tr>
-    <tr><td>Escalera</td><td>$4</td></tr>
-    <tr><td>Bisaklat</td><td>$20</td></tr>
-  </table>
-
-  <div class="score-heading">MID-GAME IMMEDIATES (each player pays)</div>
-  <table class="score-tbl">
-    <tr><td>No Flowers (at deal)</td><td>$1</td></tr>
-    <tr><td>13 Flowers</td><td>$1</td></tr>
-    <tr><td>Open Kang</td><td>$1</td></tr>
-    <tr><td>Secret Kang</td><td>$2</td></tr>
-    <tr><td>Sagása</td><td>$2</td></tr>
-  </table>
 </section>
 
 <div class="cta-band">
